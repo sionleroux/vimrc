@@ -11,21 +11,41 @@ call pathogen#runtime_append_all_bundles()
 
 " GUI only options
 " (moved this to the top so that changes to colorscheme and so on can be made
-" by plugins later on
+" by plugins later on)
+"====== the following lines only run in GVIM (not in terminal)
 if has('gui_running')
 	colorscheme solarized
 	set background=light
+	so ~/.vim/bundle/solarized/autoload/togglebg.vim " enable F5 to toggle BG dark or light
 	" :set guioptions-=T  "remove toolbar
 	" use powerline statusline and set patched Consolas font
 	set encoding=utf-8
-	" set guifont=Consolas\ for\ Powerline\ FixedD:h11
-	set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 10
+	" set guifont=Consolas\ for\ Powerline\ FixedD:h11 "Windows™ Only
+	set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 10 "Linux Only
 	let g:Powerline_symbols="fancy"
 	" let g:Powerline_symbols="unix"
 	set laststatus=2
+	" hide mouse when typing:
+	set mousehide
+	" add some custom menu options:
+	" :menu &MyVim.Current\ File.Convert\ Format.To\ Dos :set fileformat=dos<cr> :w<cr>
+	:menu &MyVim.Convert\ Format.To\ Dos :set fileformat=dos<cr> :w<cr>
+	:menu &MyVim.Convert\ Format.To\ Unix :set fileformat=unix<cr> :w<cr>
+	:menu &MyVim.Remove\ Trailing\ Spaces\ and\ Tabs :%s/[  ]*$//g<cr>
+	:menu &MyVim.Remove\ Ctrl-M :%s///g<cr>
+	:menu &MyVim.Remove\ All\ Tabs :retab<cr>
+	" Ctrl-F1,F2,F3 Toggle the visibility of menubar, toolbar, scrollbar
+	nnoremap <C-F1> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
+	nnoremap <C-F2> :if &go=~#'T'<Bar>set go-=T<Bar>else<Bar>set go+=T<Bar>endif<CR>
+	nnoremap <C-F3> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
+"===== GVIM specific commands end here!
 else
-	" colorscheme default
+"====== the following commands are vim (terminal) specific and will not run in GVIM
+	set t_Co=16
 	set background=dark
+	colorscheme default
+	" colorscheme solarized
+"====== end of vi (terminal) specific commands
 endif
 
 " change the mapleader from \ to ,
@@ -43,14 +63,14 @@ filetype plugin indent on
 
 " Show whitespace
 set list
-set listchars=tab:>.,trail:.,extends:#,nbsp:.
+set listchars=tab:»·,trail:·,extends:#,nbsp:·
 "set modeline list listchars=tab:»·,trail:·,precedes:<,extends:>
 
 if has('autocmd')
 	" Use spaces for tabs in python
 	autocmd filetype python set expandtab
 	" Not sure what this does
-	autocmd filetype html,xml set listchars=tab:>.
+	autocmd filetype html,xml set listchars=tab:>·
 	" Don't remember what this does, it might be what starts where you were
 	" last editing
 	autocmd BufReadPost *
@@ -77,10 +97,10 @@ set smarttab      " insert tabs on the start of a line according to
                   "    shiftwidth, not tabstop
 set hlsearch      " highlight search terms
 set incsearch     " show search matches as you type
-set history=1000         " remember more commands and search history
-set undolevels=1000      " use many muchos levels of undo
+set history=1000    " remember more commands and search history
+set undolevels=1000 " use many muchos levels of undo
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.pdf,*.aux,*.out,*.o,*.lol,*.lot,*.log
-set ruler			" Not sure what it does
+set ruler         " Not sure what it does
 set cursorline
 
 set title                " change the terminal's title
@@ -96,17 +116,17 @@ if has('mouse')
 endif
 
 " Use ; instead of : for commands
-" nnoremap ; :
+nnoremap ; :
 
 " Use Q for formatting the current paragraph (or selection)
 vmap Q gq
 nmap Q gqap
 
 " Easier window navigation
-" map <C-h> <C-w>h
-" map <C-j> <C-w>j
-" map <C-k> <C-w>k
-" map <C-l> <C-w>l
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 " Turn spelling and off with ,se and ,sn
 map <Leader>se :setlocal spell spelllang=en_gb<CR>
@@ -132,7 +152,7 @@ set shellslash
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat='pdf'
-" let g:Tex_ViewRule_pdf = 'AcroRd32'
+" let g:Tex_ViewRule_pdf = 'AcroRd32' "Windows™ Only
 
 " Set automatic linebreaks for Wiki files
 au! BufRead,BufNewFile *.wiki set tw=72
@@ -143,3 +163,11 @@ let wiki.path = '~/Projects/Web/vimwiki'
 let wiki.path_html = '~/Projects/Web/www/vimwiki'
 let wiki.nested_syntaxes ={'bash': 'bash', 'java': 'java'}
 let g:vimwiki_list = [wiki]
+
+" Make Enter / Shift-Enter insert newline below/above in command mode
+map <S-Enter> O<Esc>
+map <CR> o<Esc>
+
+" Add TodoList to Window Manager
+"let g:winManagerWindowLayout = 'TodoList,FileExplorer|BufExplorer'
+let g:winManagerWindowLayout = 'FileExplorer|BufExplorer'
