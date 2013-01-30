@@ -188,3 +188,35 @@ snippet table
 	</table>${4}
 snippet textarea
 	<textarea name="${1:Name}" rows="${2:8}" cols="${3:40}">${4}</textarea>${5}
+
+# My Own Custom Snippets
+snippet question
+	<div class="question" data-qno="${1:n}">
+		<span class="qno">$1.</span>
+		<div class="content">
+			<p>${2:text}</p>
+		</div>
+	</div>
+
+snippet box
+	<input type="text" class="textBox" id="" maxlength="50" name="answer[${1:n}][${3:0}]"/>${2}${4} 
+
+snippet choice
+	<div class="question" data-qno="${1:n}">
+		<div class="content">
+			<span class="qno">$1.</span>
+			<p>${2:}</p>
+			<span class="radio">
+				<input type="radio" value="a" name="answer[$1][0]" id="answer$1_0">
+				<label for="answer$1_0"></label>
+			</span>        
+			<span class="radio">
+				<input type="radio" value="b" name="answer[$1][0]" id="answer$1_1">
+				<label for="answer$1_1"></label>
+			</span>        
+			<span class="radio">
+				<input type="radio" value="c" name="answer[$1][0]" id="answer$1_2">
+				<label for="answer$1_2"></label>
+			</span>        
+		</div>
+	</div>
