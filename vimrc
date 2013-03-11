@@ -171,3 +171,9 @@ map <CR> o<Esc>
 " Add TodoList to Window Manager
 "let g:winManagerWindowLayout = 'TodoList,FileExplorer|BufExplorer'
 let g:winManagerWindowLayout = 'FileExplorer|BufExplorer'
+
+" Create/open/close folds with F9
+inoremap <F9> <C-O>za
+nnoremap <F9> za
+onoremap <F9> <C-C>za
+vnoremap <F9> zf
