@@ -24,13 +24,12 @@ if has('gui_running')
 	colorscheme solarized
 	set background=light
 	so ~/.vim/bundle/solarized/autoload/togglebg.vim " enable F5 to toggle BG dark or light
-	" :set guioptions-=T  "remove toolbar
+	" :set guioptions-=T  "remove toolbar (useful on Windows cos it's ugly)
 	" use powerline statusline and set patched Consolas font
 	set encoding=utf-8
 	" set guifont=Consolas\ for\ Powerline\ FixedD:h11 "Windows™ Only
 	set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 10 "Linux Only
 	let g:Powerline_symbols="fancy"
-	" let g:Powerline_symbols="unix"
 	set laststatus=2
 	" hide mouse when typing:
 	set mousehide
@@ -51,7 +50,8 @@ else
 	set t_Co=16
 	set background=dark
 	colorscheme default
-	" colorscheme solarized
+	"show whitespace with simple characters (enable this for old/simple terminals)
+	" set listchars=tab:>.,trail:.,extends:#,nbsp:.
 "====== end of vi (terminal) specific commands
 endif
 
