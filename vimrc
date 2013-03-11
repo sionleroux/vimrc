@@ -9,6 +9,13 @@ call pathogen#infect()
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
+" Show whitespace
+set list
+" GUI/Console specific character choices below
+" highlight white space with special characters (this can be overridden in the
+" if statement below)
+set modeline list listchars=tab:»·,trail:·,nbsp:·,precedes:←,extends:→
+
 " GUI only options
 " (moved this to the top so that changes to colorscheme and so on can be made
 " by plugins later on)
@@ -60,11 +67,6 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 syntax enable on
 filetype plugin indent on
-
-" Show whitespace
-set list
-set listchars=tab:»·,trail:·,extends:#,nbsp:·
-"set modeline list listchars=tab:»·,trail:·,precedes:<,extends:>
 
 if has('autocmd')
 	" Use spaces for tabs in python
