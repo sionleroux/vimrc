@@ -4,19 +4,29 @@ vimrc
 This is my *vimrc* as well as all plugins I use, so that I can keep it up to date between my machines.
 
 The following is a list of plugins I use:
-* abolish
-* repeat
-* sparkup
-* unimpaired
-* xml-vim
-* commentary
-* snipMate
-* speeddating
-* vim-latex
-* powerline
-* solarized
-* surround
-* vimwiki
+ * abolish
+ * afterimage
+ * bufexplorer
+ * characterize
+ * commentary
+ * endwise
+ * eunuch
+ * NrrwRgn
+ * obsession
+ * powerline
+ * repeat
+ * rsi
+ * snipMate
+ * solarized
+ * sparkup
+ * speeddating
+ * surround
+ * todolist
+ * unimpaired
+ * vim-latex
+ * vimwiki
+ * winmanager
+ * xml-vim
 
 Installation:
 ------------
