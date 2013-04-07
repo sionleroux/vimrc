@@ -5,28 +5,25 @@ This is my *vimrc* as well as all plugins I use, so that I can keep it up to dat
 
 The following is a list of plugins I use:
  * abolish
- * afterimage
  * bufexplorer
  * characterize
  * commentary
  * endwise
  * eunuch
+ * latex-suite
  * NrrwRgn
  * obsession
  * powerline
  * repeat
  * rsi
- * snipMate
+ * snipmate
  * solarized
  * sparkup
  * speeddating
  * surround
- * todolist
  * unimpaired
- * vim-latex
  * vimwiki
  * winmanager
- * xml-vim
 
 Installation:
 ------------
@@ -34,10 +31,15 @@ Installation:
 If you would like to use my *vimrc*, clone this repository to your home directory and link the `vimrc` file from `.vimrc/vimrc` to `~/.vimrc`, like this:
 
     cd ~
-    wget git://github.com/sinisterstuf/vimrc.git
-    ln -s .vim/vimrc .vimrc
+    git clone git://github.com/sinisterstuf/vimrc.git .vim
+    cd .vim
+    git submodule init
+    git submodule update
+    ln -s vimrc ../.vimrc
 
-If you're using Microsoft Windows™ then rename the `.vim` directory to `.vimfiles` and make sure it's in your "User folder" `C:\Users\YOURNAME\.vimfiles`. You'll also have to **copy** the `vimrc` file instead of linking it because that's the way things are done on Microsoft Windows™!
+I've switched to using [git sub-modules](http://git-scm.com/book/en/Git-Tools-Submodules) now, so the actual plugin files are no longer in my repository, just a `.gitmodules` file containing directory and link information to install the plugins from their own repositories.
+
+If you're using Microsoft Windows™ then rename the `.vim` directory to `.vimfiles` and make sure it's in your "User folder" `C:\Users\YOURNAME\.vimfiles`. You'll also have to **copy** the `vimrc` file to the parent folder instead of linking it, because that's the way things are done on Microsoft Windows™!
 
 If you're using Mac OSX, I assume the process is similar to that on GNU/Linux but nothing has been tested so don't complain if it does nothing or breaks everything.
 
