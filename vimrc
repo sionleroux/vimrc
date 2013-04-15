@@ -21,6 +21,9 @@ set modeline list listchars=tab:»·,trail:·,nbsp:·,precedes:←,extends:→
 " by plugins later on)
 "====== the following lines only run in GVIM (not in terminal)
 if has('gui_running')
+	" bigger window
+	set lines=50 columns=160
+	" nice colour scheme
 	colorscheme solarized
 	set background=light
 	so ~/.vim/bundle/solarized/autoload/togglebg.vim " enable F5 to toggle BG dark or light
