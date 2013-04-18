@@ -57,4 +57,4 @@
 	url = git@github.com:msanders/snipmate.vim.git
 [submodule "bundle/sparkup"]
 	path = bundle/sparkup
-	url = git@github.com:tristen/vim-snipmate.git
+	url = git://github.com/tristen/vim-sparkup.git
