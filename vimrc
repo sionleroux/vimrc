@@ -22,7 +22,7 @@ set modeline list listchars=tab:»·,trail:·,nbsp:·,precedes:←,extends:→
 "====== the following lines only run in GVIM (not in terminal)
 if has('gui_running')
 	" bigger window
-	set lines=50 columns=160
+	set lines=38 columns=100
 	" nice colour scheme
 	colorscheme solarized
 	set background=light
