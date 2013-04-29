@@ -58,3 +58,6 @@
 [submodule "bundle/sparkup"]
 	path = bundle/sparkup
 	url = git://github.com/tristen/vim-sparkup.git
+[submodule "bundle/buffergator"]
+	path = bundle/buffergator
+	url = git://github.com/vim-scripts/Buffergator.git
