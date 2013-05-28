@@ -10,6 +10,7 @@ The following is a list of plugins I use:
  * commentary
  * endwise
  * eunuch
+ * fugitive
  * latex-suite
  * NrrwRgn
  * obsession
