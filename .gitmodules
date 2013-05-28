@@ -76,7 +76,7 @@
 	ignore = dirty
 [submodule "bundle/sparkup"]
 	path = bundle/sparkup
-	url = git://github.com/tristen/vim-sparkup.git
+	url = git://github.com/sinisterstuf/vim-sparkup.git
 	ignore = dirty
 [submodule "bundle/buffergator"]
 	path = bundle/buffergator
