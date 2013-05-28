@@ -61,6 +61,7 @@
 [submodule "bundle/buffergator"]
 	path = bundle/buffergator
 	url = git://github.com/vim-scripts/Buffergator.git
+	ignore = dirty
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
