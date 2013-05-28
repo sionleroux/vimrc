@@ -1,7 +1,7 @@
-vimrc
+sinisterstuf's vimrc
 =====
 
-This is my *vimrc* as well as all plugins I use, so that I can keep it
+This is my *vimrc*, including all plugins I use, so that I can keep it
 up to date between my machines.
 
 The following is a list of plugins I use:
@@ -51,6 +51,9 @@ If you're using Microsoft Windows™ then rename the `.vim` directory to
 `C:\Users\YOURNAME\.vimfiles`. You'll also have to **copy** the `vimrc`
 file to the parent folder instead of linking it, because that's the way
 things are done on Microsoft Windows™!
+*NOTE:* apparently in Windows™ 8 you can't use the file manager to
+make a folder whose name starts with a dot, so you'll have to fire up
+good ol' Windows™ command prompt to do the renaming.
 
 If you're using Mac OSX, I assume the process is similar to that on
 GNU/Linux but nothing has been tested so don't complain if it does
@@ -60,5 +63,4 @@ This configuration works for me, but it might not necessarily work for
 you. You will probably want to read through the `vimrc` file and change
 it a bit to suit your needs and possibly add/remove some plug-ins
 depending on what you use vim for. I also accept **no responsibility**
-if you install this on your system and anything gets damaged in any way,
-
+if you install this on your system and anything gets damaged in any way.
