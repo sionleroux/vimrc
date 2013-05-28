@@ -17,41 +17,41 @@ set list
 set modeline list listchars=tab:»·,trail:·,nbsp:·,precedes:←,extends:→
 
 if has('gui_running')
-	""" GUI only options
-	" bigger window
-	set lines=38 columns=100
-	" nice colour scheme
-	colorscheme solarized
-	set background=light
-	so ~/.vim/bundle/solarized/autoload/togglebg.vim " enable F5 to toggle BG dark or light
-	set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 10 "Linux Only
-	let g:Powerline_symbols="fancy" "Only works when you're using a patched font
-	" hide mouse when typing:
-	set mousehide
-	" add some custom menu options:
-	:menu &MyVim.Convert\ Format.To\ Dos :set fileformat=dos<cr> :w<cr>
-	:menu &MyVim.Convert\ Format.To\ Unix :set fileformat=unix<cr> :w<cr>
-	:menu &MyVim.Remove\ Trailing\ Spaces\ and\ Tabs :%s/[	]*$//g<cr>
-	:menu &MyVim.Remove\ Ctrl-M :%s///g<cr>
-	:menu &MyVim.Remove\ All\ Tabs :retab<cr>
-	" Ctrl-F1,F2,F3 Toggle the visibility of menubar, toolbar, scrollbar
-	nnoremap <C-F1> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
-	nnoremap <C-F2> :if &go=~#'T'<Bar>set go-=T<Bar>else<Bar>set go+=T<Bar>endif<CR>
-	nnoremap <C-F3> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
-	""" Windows™ only options
-	if has("win95") || has("win16") || has("win32") || has("win64")
-		:set guioptions-=T	"remove toolbar (only useful on Windows™ cos it's ugly)
-		set guifont=Consolas\ for\ Powerline\ FixedD:h11 "use patched Consolas font when on Windows™
-	endif
+    """ GUI only options
+    " bigger window
+    set lines=38 columns=100
+    " nice colour scheme
+    colorscheme solarized
+    set background=light
+    so ~/.vim/bundle/solarized/autoload/togglebg.vim " enable F5 to toggle BG dark or light
+    set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 10 "Linux Only
+    let g:Powerline_symbols="fancy" "Only works when you're using a patched font
+    " hide mouse when typing:
+    set mousehide
+    " add some custom menu options:
+    :menu &MyVim.Convert\ Format.To\ Dos :set fileformat=dos<cr> :w<cr>
+    :menu &MyVim.Convert\ Format.To\ Unix :set fileformat=unix<cr> :w<cr>
+    :menu &MyVim.Remove\ Trailing\ Spaces\ and\ Tabs :%s/[  ]*$//g<cr>
+    :menu &MyVim.Remove\ Ctrl-M :%s///g<cr>
+    :menu &MyVim.Remove\ All\ Tabs :retab<cr>
+    " Ctrl-F1,F2,F3 Toggle the visibility of menubar, toolbar, scrollbar
+    nnoremap <C-F1> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
+    nnoremap <C-F2> :if &go=~#'T'<Bar>set go-=T<Bar>else<Bar>set go+=T<Bar>endif<CR>
+    nnoremap <C-F3> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
+    """ Windows™ only options
+    if has("win95") || has("win16") || has("win32") || has("win64")
+        :set guioptions-=T  "remove toolbar (only useful on Windows™ cos it's ugly)
+        set guifont=Consolas\ for\ Powerline\ FixedD:h11 "use patched Consolas font when on Windows™
+    endif
 else
-	""" These options only apply when running without GUI
-	set t_Co=16
-	set background=dark
-	colorscheme default
-	if &term == "linux" || &term == "com25" || &term == "vt100"
-		"show whitespace with simple characters (enable this for old/simple terminals)
-		set listchars=tab:>.,trail:.,extends:#,nbsp:.
-	endif
+    """ These options only apply when running without GUI
+    set t_Co=16
+    set background=dark
+    colorscheme default
+    if &term == "linux" || &term == "com25" || &term == "vt100"
+        "show whitespace with simple characters (enable this for old/simple terminals)
+        set listchars=tab:>.,trail:.,extends:#,nbsp:.
+    endif
 endif
 
 " ALWAYS load powerline
@@ -71,17 +71,17 @@ syntax enable on
 filetype plugin indent on
 
 if has('autocmd')
-	" Use spaces for tabs in python
-	autocmd filetype python set expandtab
-	" Not sure what this does
-	autocmd filetype html,xml set listchars=tab:>·
-	" Don't remember what this does, it might be what starts where you were
-	" last editing
-	autocmd BufReadPost *
-		\ if line("'\"") > 1 && line("'\"") <= line("$") |
-		\   exe "normal! g`\"" |
-		\ endif
-	autocmd VimLeave *.tex !rm *.aux *.log *.nav *.out *.snm *.toc
+    " Use spaces for tabs in python
+    autocmd filetype python set expandtab
+    " Not sure what this does
+    autocmd filetype html,xml set listchars=tab:>·
+    " Don't remember what this does, it might be what starts where you were
+    " last editing
+    autocmd BufReadPost *
+        \ if line("'\"") > 1 && line("'\"") <= line("$") |
+        \   exe "normal! g`\"" |
+        \ endif
+    autocmd VimLeave *.tex !rm *.aux *.log *.nav *.out *.snm *.toc
 endif "autocmd
 
 set nowrap        " don't wrap lines
@@ -118,7 +118,7 @@ set pastetoggle=<F2>
 
 " Enable mouse
 if has('mouse')
-	set mouse=a
+    set mouse=a
 endif
 
 " Use ; instead of : for commands
@@ -147,7 +147,7 @@ nmap <silent> ,/ :nohlsearch<CR>
 " buffer to original file)
 if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
+          \ | wincmd p | diffthis
 endif
 
 " Get sudo (only useful on Linux)
