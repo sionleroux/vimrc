@@ -5,27 +5,27 @@ This is my *vimrc* as well as all plugins I use, so that I can keep it
 up to date between my machines.
 
 The following is a list of plugins I use:
- * abolish
- * bufexplorer
- * characterize
- * commentary
- * endwise
- * eunuch
- * fugitive
- * latex-suite
- * NrrwRgn
- * obsession
- * powerline
- * repeat
- * rsi
- * snipmate
- * solarized
- * sparkup
- * speeddating
- * surround
- * unimpaired
- * vimwiki
- * winmanager
+ * [abolish](https://github.com/tpope/vim-abolish)
+ * [bufexplorer](https://github.com/vim-scripts/bufexplorer)
+ * [characterize](https://github.com/tpope/vim-characterize)
+ * [commentary](https://github.com/tpope/vim-commentary)
+ * [endwise](https://github.com/tpope/vim-endwise)
+ * [eunuch](https://github.com/tpope/vim-eunuch)
+ * [fugitive](https://github.com/tpope/vim-fugitive)
+ * [latex-suite](https://github.com/jcf/vim-latex)
+ * [NrrwRgn](https://github.com/chrisbra/NrrwRgn)
+ * [obsession](https://github.com/tpope/vim-obsession)
+ * [powerline](https://github.com/Lokaltog/vim-powerline/)
+ * [repeat](https://github.com/tpope/vim-repeat)
+ * [rsi](https://github.com/tpope/vim-rsi)
+ * [snipmate](https://github.com/msanders/snipmate)
+ * [solarized](https://github.com/altercation/vim-colors-solarized)
+ * [sparkup](https://github.com/tristen/vim-sparkup)
+ * [speeddating](https://github.com/tpope/vim-speeddating)
+ * [surround](https://github.com/tpope/vim-surround)
+ * [unimpaired](https://github.com/tpope/vim-unimpaired)
+ * [vimwiki](https://github.com/vimwiki/vimwiki)
+ * [winmanager](https://github.com/vim-scripts/winmanager)
 
 Installation:
 ------------
