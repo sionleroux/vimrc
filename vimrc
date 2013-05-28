@@ -12,9 +12,11 @@ call pathogen#runtime_append_all_bundles()
 " Show whitespace
 set list
 " GUI/Console specific character choices below
-" highlight white space with special characters (this can be overridden in the
-" if statement below)
+" highlight white space with special characters (override it below for TTY)
 set modeline list listchars=tab:»·,trail:·,nbsp:·,precedes:←,extends:→
+
+" Assume that non-tty terminals use the patched font (override it below for TTY)
+let g:Powerline_symbols="fancy" "Only works when you're using a patched font
 
 if has('gui_running')
     """ GUI only options
@@ -25,7 +27,6 @@ if has('gui_running')
     set background=light
     so ~/.vim/bundle/solarized/autoload/togglebg.vim " enable F5 to toggle BG dark or light
     set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 10 "Linux Only
-    let g:Powerline_symbols="fancy" "Only works when you're using a patched font
     " hide mouse when typing:
     set mousehide
     " add some custom menu options:
@@ -50,7 +51,8 @@ else
     colorscheme default
     if &term == "linux" || &term == "com25" || &term == "vt100"
         "show whitespace with simple characters (enable this for old/simple terminals)
-        set listchars=tab:>.,trail:.,extends:#,nbsp:.
+        set listchars=tab:>.,trail:.,extends:#,nbsp:. "override the fancy listchars
+        let g:Powerline_symbols="compatible" "override the fancy symbols
     endif
 endif
 
