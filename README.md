@@ -51,7 +51,7 @@ If you're using Microsoft Windows™ then rename the `.vim` directory to
 `C:\Users\YOURNAME\.vimfiles`. You'll also have to **copy** the `vimrc`
 file to the parent folder instead of linking it, because that's the way
 things are done on Microsoft Windows™!
-*NOTE:* apparently in Windows™ 8 you can't use the file manager to
+**NOTE:** apparently in Windows™ 8 you can't use the file manager to
 make a folder whose name starts with a dot, so you'll have to fire up
 good ol' Windows™ command prompt to do the renaming.
 
