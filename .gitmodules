@@ -1,63 +1,83 @@
 [submodule "bundle/vimwiki"]
 	path = bundle/vimwiki
 	url = git@github.com:vimwiki/vimwiki.git
+	ignore = dirty
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
 	url = git@github.com:vim-scripts/bufexplorer.zip.git
+	ignore = dirty
 [submodule "bundle/NrrwRgn"]
 	path = bundle/NrrwRgn
 	url = git@github.com:chrisbra/NrrwRgn.git
+	ignore = dirty
 [submodule "bundle/powerline"]
 	path = bundle/powerline
 	url = git@github.com:Lokaltog/vim-powerline.git
+	ignore = dirty
 [submodule "bundle/solarized"]
 	path = bundle/solarized
 	url = git@github.com:altercation/vim-colors-solarized.git
+	ignore = dirty
 [submodule "bundle/winmanager"]
 	path = bundle/winmanager
 	url = git@github.com:vim-scripts/winmanager.git
+	ignore = dirty
 [submodule "bundle/latex-suite"]
 	path = bundle/latex-suite
 	url = git@github.com:jcf/vim-latex.git
+	ignore = dirty
 [submodule "bundle/rsi"]
 	path = bundle/rsi
 	url = git@github.com:tpope/vim-rsi.git
+	ignore = dirty
 [submodule "bundle/eunuch"]
 	path = bundle/eunuch
 	url = git@github.com:tpope/vim-eunuch.git
+	ignore = dirty
 [submodule "bundle/characterize"]
 	path = bundle/characterize
 	url = git@github.com:tpope/vim-characterize.git
+	ignore = dirty
 [submodule "bundle/abolish"]
 	path = bundle/abolish
 	url = git@github.com:tpope/vim-abolish.git
+	ignore = dirty
 [submodule "bundle/commentary"]
 	path = bundle/commentary
 	url = git@github.com:tpope/vim-commentary.git
+	ignore = dirty
 [submodule "bundle/endwise"]
 	path = bundle/endwise
 	url = git@github.com:tpope/vim-endwise.git
+	ignore = dirty
 [submodule "bundle/speeddating"]
 	path = bundle/speeddating
 	url = git@github.com:tpope/vim-speeddating.git
+	ignore = dirty
 [submodule "bundle/obsession"]
 	path = bundle/obsession
 	url = git@github.com:tpope/vim-obsession.git
+	ignore = dirty
 [submodule "bundle/repeat"]
 	path = bundle/repeat
 	url = git@github.com:tpope/vim-repeat.git
+	ignore = dirty
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = git@github.com:tpope/vim-surround.git
+	ignore = dirty
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = git@github.com:tpope/vim-unimpaired.git
+	ignore = dirty
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = git@github.com:msanders/snipmate.vim.git
+	ignore = dirty
 [submodule "bundle/sparkup"]
 	path = bundle/sparkup
 	url = git://github.com/tristen/vim-sparkup.git
+	ignore = dirty
 [submodule "bundle/buffergator"]
 	path = bundle/buffergator
 	url = git://github.com/vim-scripts/Buffergator.git
@@ -65,6 +85,7 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
+	ignore = dirty
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
