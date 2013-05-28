@@ -16,47 +16,46 @@ set list
 " if statement below)
 set modeline list listchars=tab:»·,trail:·,nbsp:·,precedes:←,extends:→
 
-" GUI only options
-" (moved this to the top so that changes to colorscheme and so on can be made
-" by plugins later on)
-"====== the following lines only run in GVIM (not in terminal)
 if has('gui_running')
+	""" GUI only options
 	" bigger window
 	set lines=38 columns=100
 	" nice colour scheme
 	colorscheme solarized
 	set background=light
 	so ~/.vim/bundle/solarized/autoload/togglebg.vim " enable F5 to toggle BG dark or light
-	" :set guioptions-=T  "remove toolbar (useful on Windows cos it's ugly)
-	" use powerline statusline and set patched Consolas font
-	set encoding=utf-8
-	" set guifont=Consolas\ for\ Powerline\ FixedD:h11 "Windows™ Only
 	set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 10 "Linux Only
-	let g:Powerline_symbols="fancy"
-	set laststatus=2
+	let g:Powerline_symbols="fancy" "Only works when you're using a patched font
 	" hide mouse when typing:
 	set mousehide
 	" add some custom menu options:
-	" :menu &MyVim.Current\ File.Convert\ Format.To\ Dos :set fileformat=dos<cr> :w<cr>
 	:menu &MyVim.Convert\ Format.To\ Dos :set fileformat=dos<cr> :w<cr>
 	:menu &MyVim.Convert\ Format.To\ Unix :set fileformat=unix<cr> :w<cr>
-	:menu &MyVim.Remove\ Trailing\ Spaces\ and\ Tabs :%s/[  ]*$//g<cr>
+	:menu &MyVim.Remove\ Trailing\ Spaces\ and\ Tabs :%s/[	]*$//g<cr>
 	:menu &MyVim.Remove\ Ctrl-M :%s///g<cr>
 	:menu &MyVim.Remove\ All\ Tabs :retab<cr>
 	" Ctrl-F1,F2,F3 Toggle the visibility of menubar, toolbar, scrollbar
 	nnoremap <C-F1> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
 	nnoremap <C-F2> :if &go=~#'T'<Bar>set go-=T<Bar>else<Bar>set go+=T<Bar>endif<CR>
 	nnoremap <C-F3> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
-"===== GVIM specific commands end here!
+	""" Windows™ only options
+	if has("win95") || has("win16") || has("win32") || has("win64")
+		:set guioptions-=T	"remove toolbar (only useful on Windows™ cos it's ugly)
+		set guifont=Consolas\ for\ Powerline\ FixedD:h11 "use patched Consolas font when on Windows™
+	endif
 else
-"====== the following commands are vim (terminal) specific and will not run in GVIM
+	""" These options only apply when running without GUI
 	set t_Co=16
 	set background=dark
 	colorscheme default
-	"show whitespace with simple characters (enable this for old/simple terminals)
-	" set listchars=tab:>.,trail:.,extends:#,nbsp:.
-"====== end of vi (terminal) specific commands
+	if &term == "linux" || &term == "com25" || &term == "vt100"
+		"show whitespace with simple characters (enable this for old/simple terminals)
+		set listchars=tab:>.,trail:.,extends:#,nbsp:.
+	endif
 endif
+
+" ALWAYS load powerline
+set laststatus=2
 
 " change the mapleader from \ to ,
 let mapleader=","
@@ -108,6 +107,7 @@ set undolevels=1000 " use many muchos levels of undo
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.pdf,*.aux,*.out,*.o,*.lol,*.lot,*.log
 set ruler         " Not sure what it does
 set cursorline
+set encoding=utf-8 " UTF8 encoding
 
 set title                " change the terminal's title
 set visualbell           " don't beep
