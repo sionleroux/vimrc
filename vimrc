@@ -91,6 +91,7 @@ set tabstop=4     " a tab is four spaces
 set shiftwidth=4  " number of spaces to use for autoindenting
 set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
 set expandtab     " use spaces instead of tabs (originally this was only set for python)
+set colorcolumn=+1 " mark the end of text-width with a dark line
 set backspace=indent,eol,start
                   " allow backspacing over everything in insert mode
 set autoindent    " always set autoindenting on
