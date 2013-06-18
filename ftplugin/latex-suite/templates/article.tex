@@ -1,0 +1,27 @@
+<+	+>	!comp!	!exe!
+%        File: !comp!expand("%:p:t")!comp!
+%     Created: !comp!strftime("%a %b %d %I:00 %p %Y ").substitute(strftime('%Z'), '\<\(\w\)\(\w*\)\>\(\W\|$\)', '\1', 'g')!comp!
+% Last Change: !comp!strftime("%a %b %d %I:00 %p %Y ").substitute(strftime('%Z'), '\<\(\w\)\(\w*\)\>\(\W\|$\)', '\1', 'g')!comp!
+%
+\documentclass[a4paper]{article}
+\usepackage[british]{babel} % use [magyar] for Hungarian
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{hyperref}
+%\usepackage{graphicx} % use this if you need pictures
+
+\hypersetup{%
+pdftitle={The Title},%
+pdfsubject={The Subject},%
+pdfkeywords={some keywords},%
+pdfauthor={Si\^on Le Roux}%
+}
+
+\author{Si\^on Le Roux}
+\title{The Title}
+
+\begin{document}
+\maketitle
+<++>
+\end{document}
