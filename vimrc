@@ -163,9 +163,6 @@ let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat='pdf'
 " let g:Tex_ViewRule_pdf = 'AcroRd32' "Windows™ Only
 
-" Set automatic linebreaks for Wiki files
-au! BufRead,BufNewFile *.wiki set tw=72
-
 " Some vimwiki settings
 let wiki = {}
 let wiki.path = '~/Projects/Web/vimwiki'
