@@ -53,7 +53,7 @@ file to the parent folder instead of linking it, because that's the way
 things are done on Microsoft Windows™!
 **NOTE:** apparently in Windows™ 8 you can't use the file manager to
 make a folder whose name starts with a dot, so you'll have to fire up
-good ol' Windows™ command prompt to do the renaming.
+good ol' Windows™ command prompt to do [the renaming](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/rename.mspx?mfr=true).
 
 If you're using Mac OSX, I assume the process is similar to that on
 GNU/Linux but nothing has been tested so don't complain if it does
