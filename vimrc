@@ -107,7 +107,7 @@ set hlsearch      " highlight search terms
 set incsearch     " show search matches as you type
 set history=1000    " remember more commands and search history
 set undolevels=1000 " use many muchos levels of undo
-set wildignore=*.swp,*.bak,*.pyc,*.class,*.pdf,*.aux,*.out,*.o,*.lol,*.lot,*.log
+set wildignore=*.swp,*.bak,*.pyc,*.class,*.pdf,*.aux,*.out,*.o,*.lol,*.lot
 set ruler         " Not sure what it does
 set cursorline
 set encoding=utf-8 " UTF8 encoding
@@ -188,3 +188,6 @@ nnoremap <Leader>wm :WMToggle<CR>
 
 " command LoadGameTetris so ~/.vim/games/Tetris.vim
 " command LoadGameXandO so ~/.vim/games/X-and-O.vim
+
+" convert vimwiki page to HTML with <Leader>vh
+nnoremap <Leader>vh :Vimwiki2HTML<CR>
