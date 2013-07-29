@@ -185,3 +185,6 @@ vnoremap <F9> zf
 
 " Toggle Window Manager with <Leader>wm
 nnoremap <Leader>wm :WMToggle<CR>
+
+" command LoadGameTetris so ~/.vim/games/Tetris.vim
+" command LoadGameXandO so ~/.vim/games/X-and-O.vim
