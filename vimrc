@@ -7,7 +7,7 @@ autocmd!
 " Setup Pathogen to load all bundles and their helptags
 call pathogen#infect()
 call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+call pathogen#incubate()
 
 " Show whitespace
 set list
