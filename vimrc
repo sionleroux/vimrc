@@ -13,7 +13,7 @@ call pathogen#incubate()
 set list
 " GUI/Console specific character choices below
 " highlight white space with special characters (override it below for TTY)
-set modeline list listchars=tab:»·,trail:·,nbsp:·,precedes:←,extends:→
+set modeline list listchars=tab:»·,trail:·,nbsp:·,precedes:«,extends:»
 
 " Assume that non-tty terminals use the patched font (override it below for TTY)
 let g:Powerline_symbols="fancy" "Only works when you're using a patched font
