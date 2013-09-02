@@ -39,7 +39,7 @@ like this:
     cd .vim
     git submodule init
     git submodule update
-    ln -s vimrc ../.vimrc
+    ln -s .vim/vimrc ../.vimrc
 
 I've switched to using [git sub-modules](http://git-scm.com/book/en/Git-Tools-Submodules) now, so the actual plugin files
 are no longer in my repository, just a `.gitmodules` file containing
