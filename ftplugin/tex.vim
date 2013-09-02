@@ -8,4 +8,8 @@ if has("win95") || has("win16") || has("win32") || has("win64")
     let g:Tex_ViewRule_pdf = 'AcroRd32' "Windows™ Only
 endif
 
+if has("autocmd")
+    autocmd VimLeave *.tex !rm *.aux *.log *.nav *.out *.snm *.toc
+endif
+
 "TODO: maybe set the indent to 2 and that other thing here:
