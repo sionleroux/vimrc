@@ -191,3 +191,6 @@ nnoremap <Leader>wm :WMToggle<CR>
 
 " convert vimwiki page to HTML with <Leader>vh
 nnoremap <Leader>vh :Vimwiki2HTML<CR>
+
+" put cursor at start of file for git commit messages
+au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
