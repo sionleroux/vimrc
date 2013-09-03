@@ -77,9 +77,8 @@ if has('autocmd')
     autocmd filetype python set expandtab
     " Not sure what this does
     autocmd filetype html,xml set listchars=tab:>·
-    " Don't remember what this does, it might be what starts where you were
-    " last editing
-    autocmd BufReadPost *
+    " recall the last line you were editing
+    autocmd BufReadPost *\(.git/COMMIT_EDITMSG\)\@<!
         \ if line("'\"") > 1 && line("'\"") <= line("$") |
         \   exe "normal! g`\"" |
         \ endif
@@ -191,6 +190,3 @@ nnoremap <Leader>wm :WMToggle<CR>
 
 " convert vimwiki page to HTML with <Leader>vh
 nnoremap <Leader>vh :Vimwiki2HTML<CR>
-
-" put cursor at start of file for git commit messages
-au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
