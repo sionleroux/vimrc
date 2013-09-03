@@ -1,5 +1,4 @@
-sinisterstuf's vimrc
-=====
+# sinisterstuf's vimrc
 
 This is my *vimrc*, including all plugins I use, so that I can keep it
 up to date between my machines.
@@ -33,8 +32,7 @@ The following is a list of plugins I use:
  * [vimwiki](https://github.com/vimwiki/vimwiki)
  * [winmanager](https://github.com/vim-scripts/winmanager)
 
-Installation:
-------------
+## Installation:
 
 If you would like to use my *vimrc*, clone this repository to your home
 directory and link the `vimrc` file from `.vimrc/vimrc` to `~/.vimrc`,
@@ -52,6 +50,8 @@ are no longer in my repository, just a `.gitmodules` file containing
 directory and link information to install the plugins from their own
 repositories.
 
+### Windows:
+
 If you're using Microsoft Windows™ then rename the `.vim` directory to
 `.vimfiles` and make sure it's in your "User folder"
 `C:\Users\YOURNAME\.vimfiles`. You'll also have to **copy** the `vimrc`
@@ -61,9 +61,13 @@ things are done on Microsoft Windows™!
 make a folder whose name starts with a dot, so you'll have to fire up
 good ol' Windows™ command prompt to do [the renaming](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/rename.mspx?mfr=true).
 
+### Mac OSX
+
 If you're using Mac OSX, I assume the process is similar to that on
 GNU/Linux but nothing has been tested so don't complain if it does
 nothing or breaks everything.
+
+### Disclaimer
 
 This configuration works for me, but it might not necessarily work for
 you. You will probably want to read through the `vimrc` file and change
