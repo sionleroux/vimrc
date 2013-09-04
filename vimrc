@@ -190,3 +190,6 @@ nnoremap <Leader>wm :WMToggle<CR>
 
 " convert vimwiki page to HTML with <Leader>vh
 nnoremap <Leader>vh :Vimwiki2HTML<CR>
+
+" CD to directory of current file with <Leader>cd
+nnoremap <Leader>cd :CD<CR>
