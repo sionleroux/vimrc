@@ -26,7 +26,7 @@ if has('gui_running')
     colorscheme solarized
     set background=light
     so ~/.vim/bundle/solarized/autoload/togglebg.vim " enable F5 to toggle BG dark or light
-    set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 10 "Linux Only
+    set guifont=Inconsolata-dz\ for\ Powerline\ dz\ 10 "Linux Only
     " hide mouse when typing:
     set mousehide
     " add some custom menu options:
@@ -49,7 +49,7 @@ else
     set t_Co=16
     set background=dark
     colorscheme default
-    if &term == "linux" || &term == "com25" || &term == "vt100"
+    if &term == "linux" || &term == "com25" || &term == "vt100" || &term == "builtin_gui"
         "show whitespace with simple characters (enable this for old/simple terminals)
         set listchars=tab:>.,trail:.,extends:#,nbsp:. "override the fancy listchars
         let g:Powerline_symbols="compatible" "override the fancy symbols
@@ -110,6 +110,7 @@ set wildignore=*.swp,*.bak,*.pyc,*.class,*.pdf,*.aux,*.out,*.o,*.lol,*.lot,*.lof
 set ruler         " Not sure what it does
 set cursorline
 set encoding=utf-8 " UTF8 encoding
+scriptencoding utf-8
 
 set title                " change the terminal's title
 set visualbell           " don't beep
