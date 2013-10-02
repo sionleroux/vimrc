@@ -119,6 +119,14 @@ set noerrorbells         " don't beep
 " Toggle disable of auto-indent for pasting large code using F2
 set pastetoggle=<F2>
 
+" A mouse mode is needed for iTerm2 on OSX
+if has('unix')
+    let s:uname = system("uname")
+    if s:uname == "Darwin\n"
+        set ttymouse=xterm2
+    endif
+endif
+
 " Enable mouse
 if has('mouse')
     set mouse=a
