@@ -35,7 +35,7 @@ The following is a list of plugins I use:
 ## Installation:
 
 If you would like to use my *vimrc*, clone this repository to your home
-directory and link the `vimrc` file from `.vimrc/vimrc` to `~/.vimrc`,
+directory and link the `vimrc` file from `.vim/vimrc` to `~/.vimrc`,
 like this:
 
     git clone --recursive git://github.com/sinisterstuf/vimrc.git "$HOME/.vim"
