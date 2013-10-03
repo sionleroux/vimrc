@@ -38,12 +38,8 @@ If you would like to use my *vimrc*, clone this repository to your home
 directory and link the `vimrc` file from `.vimrc/vimrc` to `~/.vimrc`,
 like this:
 
-    cd ~
-    git clone git://github.com/sinisterstuf/vimrc.git .vim
-    cd .vim
-    git submodule init
-    git submodule update
-    ln -s .vim/vimrc ../.vimrc
+    git clone --recursive git://github.com/sinisterstuf/vimrc.git "$HOME/.vim"
+    ln -s "$HOME/.vim/vimrc" "$HOME/.vimrc"
 
 I've switched to using [git sub-modules](http://git-scm.com/book/en/Git-Tools-Submodules) now, so the actual plugin files
 are no longer in my repository, just a `.gitmodules` file containing
