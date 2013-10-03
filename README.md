@@ -46,6 +46,11 @@ are no longer in my repository, just a `.gitmodules` file containing
 directory and link information to install the plugins from their own
 repositories.
 
+I use Tim Pope's [pathogen plugin](https://github.com/tpope/vim-pathogen)
+to keep it all together.  Each plugin pathogen manages is a submodule
+living in the `bundle` directory, so if you see some you like but don't
+want my whole repo, just add the plugins you like, in a similar fashion.
+
 ### Windows:
 
 If you're using Microsoft Windows™ then rename the `.vim` directory to
