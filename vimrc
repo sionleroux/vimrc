@@ -18,12 +18,13 @@ set modeline list listchars=tab:»·,trail:·,nbsp:·,precedes:«,extends:»
 " Assume that non-tty terminals use the patched font (override it below for TTY)
 let g:Powerline_symbols="fancy" "Only works when you're using a patched font
 
+" use solarized colour scheme by default
+colorscheme solarized
+
 if has('gui_running')
     """ GUI only options
     " bigger window
     set lines=38 columns=100
-    " nice colour scheme
-    colorscheme solarized
     set background=light
     so ~/.vim/bundle/solarized/autoload/togglebg.vim " enable F5 to toggle BG dark or light
     set guifont=Inconsolata-dz\ for\ Powerline\ dz\ 10 "Linux Only
@@ -46,10 +47,10 @@ if has('gui_running')
     endif
 else
     """ These options only apply when running without GUI
-    set t_Co=16
-    set background=dark
-    colorscheme default
+    set t_Co=16 " use less colours
+    set background=dark " these terminals are either B&W or solarized dark
     if &term == "linux" || &term == "com25" || &term == "vt100" || &term == "builtin_gui"
+        colorscheme default " give up on using solarized
         "show whitespace with simple characters (enable this for old/simple terminals)
         set listchars=tab:>.,trail:.,extends:#,nbsp:. "override the fancy listchars
         let g:Powerline_symbols="compatible" "override the fancy symbols
