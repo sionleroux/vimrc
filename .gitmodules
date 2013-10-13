@@ -79,3 +79,6 @@
 [submodule "bundle/ragtag"]
 	path = bundle/ragtag
 	url = https://github.com/tpope/vim-ragtag.git
+[submodule "bundle/arduino"]
+	path = bundle/arduino
+	url = https://github.com/sinisterstuf/vim-arduino.git
