@@ -21,13 +21,15 @@ let g:Powerline_symbols="fancy" "Only works when you're using a patched font
 " use solarized colour scheme by default
 colorscheme solarized
 
+" Stuff varying by OS or terminal is set here
 if has('gui_running')
     """ GUI only options
     " bigger window
     set lines=38 columns=100
     set background=light
     so ~/.vim/bundle/solarized/autoload/togglebg.vim " enable F5 to toggle BG dark or light
-    set guifont=Inconsolata-dz\ for\ Powerline\ dz\ 10 "Linux Only
+    " Linux font by default, override elsewhere as needed
+    set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 10
     " hide mouse when typing:
     set mousehide
     " add some custom menu options:
@@ -120,11 +122,14 @@ set noerrorbells         " don't beep
 " Toggle disable of auto-indent for pasting large code using F2
 set pastetoggle=<F2>
 
-" A mouse mode is needed for iTerm2 on OSX
+" Mac OSX Specific stuff
 if has('unix')
     let s:uname = system("uname")
     if s:uname == "Darwin\n"
+        " A mouse mode is needed for iTerm2 on OSX:
         set ttymouse=xterm2
+        " OSX won't use Inconsolate font unless you write it like this:
+        set guifont=Inconsolata-dz\ for\ Powerline\ dz\ 10 "Linux Only
     endif
 endif
 
