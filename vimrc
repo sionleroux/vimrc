@@ -59,6 +59,22 @@ else
     endif
 endif
 
+" Mac OSX Specific stuff
+if has('unix')
+    let s:uname = system("uname")
+    if s:uname == "Darwin\n"
+        " A mouse mode is needed for iTerm2 on OSX:
+        set ttymouse=xterm2
+        " OSX won't use Inconsolate font unless you write it like this:
+        set guifont=Inconsolata-dz\ for\ Powerline\ dz\ 10 "Linux Only
+    endif
+endif
+
+" Enable mouse
+if has('mouse')
+    set mouse=a
+endif
+
 " ALWAYS load powerline
 set laststatus=2
 
@@ -121,22 +137,6 @@ set noerrorbells         " don't beep
 
 " Toggle disable of auto-indent for pasting large code using F2
 set pastetoggle=<F2>
-
-" Mac OSX Specific stuff
-if has('unix')
-    let s:uname = system("uname")
-    if s:uname == "Darwin\n"
-        " A mouse mode is needed for iTerm2 on OSX:
-        set ttymouse=xterm2
-        " OSX won't use Inconsolate font unless you write it like this:
-        set guifont=Inconsolata-dz\ for\ Powerline\ dz\ 10 "Linux Only
-    endif
-endif
-
-" Enable mouse
-if has('mouse')
-    set mouse=a
-endif
 
 " Use ; instead of : for commands
 nnoremap ; :
