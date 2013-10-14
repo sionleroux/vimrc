@@ -82,3 +82,6 @@
 [submodule "bundle/arduino"]
 	path = bundle/arduino
 	url = https://github.com/sinisterstuf/vim-arduino.git
+[submodule "bundle/ddldbl"]
+	path = bundle/ddldbl
+	url = https://github.com/duff/vim-ddldbl
