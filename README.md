@@ -5,6 +5,7 @@ up to date between my machines.
 
 The following is a list of plugins I use:
  * [abolish](https://github.com/tpope/vim-abolish)
+ * [arduino](https://github.com/tclem/vim-arduino)
  * [bufexplorer](https://github.com/vim-scripts/bufexplorer)
  * [buffergator](https://github.com/vim-scripts/Buffergator)
  * [cd](https://github.com/vim-scripts/CD.vim)
