@@ -208,3 +208,6 @@ nnoremap <Leader>vh :Vimwiki2HTML<CR>
 
 " CD to directory of current file with <Leader>cd
 nnoremap <Leader>cd :CD<CR>
+
+" Toggle indentation with tabs/spaces(4) with F4
+nnoremap <F4> :set et!<CR>:retab!<CR>
