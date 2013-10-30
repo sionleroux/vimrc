@@ -109,7 +109,6 @@ set tabstop=4     " a tab is four spaces
 set shiftwidth=4  " number of spaces to use for autoindenting
 set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
 set expandtab     " use spaces instead of tabs (originally this was only set for python)
-set colorcolumn=+1 " mark the end of text-width with a dark line
 set backspace=indent,eol,start
                   " allow backspacing over everything in insert mode
 set autoindent    " always set autoindenting on
@@ -134,6 +133,10 @@ scriptencoding utf-8
 set title                " change the terminal's title
 set visualbell           " don't beep
 set noerrorbells         " don't beep
+
+if version > 702 " stuff that doesn't work in Vim 7.2 (thank you Centos 6!)
+    set colorcolumn=+1 " mark the end of text-width with a dark line
+endif
 
 " Toggle disable of auto-indent for pasting large code using F2
 set pastetoggle=<F2>
