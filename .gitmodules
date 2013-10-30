@@ -85,3 +85,6 @@
 [submodule "bundle/ddldbl"]
 	path = bundle/ddldbl
 	url = https://github.com/duff/vim-ddldbl
+[submodule "bundle/scriptease"]
+	path = bundle/scriptease
+	url = https://github.com/tpope/vim-scriptease.git
