@@ -101,7 +101,6 @@ if has('autocmd')
         \ if line("'\"") > 1 && line("'\"") <= line("$") |
         \   exe "normal! g`\"" |
         \ endif
-    autocmd VimLeave *.tex !rm *.aux *.log *.nav *.out *.snm *.toc
 endif "autocmd
 
 set nowrap        " don't wrap lines
@@ -172,12 +171,6 @@ endif
 
 " Get sudo (only useful on Linux)
 cmap w!! w !sudo tee % >/dev/null
-
-"Options for LaTeX Suite
-set shellslash
-set grepprg=grep\ -nH\ $*
-let g:tex_flavor='latex'
-let g:Tex_DefaultTargetFormat='pdf'
 
 " Some vimwiki settings
 let wiki = {}
