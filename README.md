@@ -25,6 +25,7 @@ The following is a list of plugins I use:
  * [ragtag](https://github.com/tpope/vim-ragtag)
  * [repeat](https://github.com/tpope/vim-repeat)
  * [rsi](https://github.com/tpope/vim-rsi)
+ * [sensible](https://github.com/tpope/vim-sensible)
  * [scriptease](https://github.com/tpope/vim-scriptease)
  * [snipmate](https://github.com/msanders/snipmate)
  * [solarized](https://github.com/altercation/vim-colors-solarized)
