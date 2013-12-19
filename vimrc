@@ -180,7 +180,7 @@ cmap w!! w !sudo tee % >/dev/null
 
 " Some vimwiki settings
 let wiki = {}
-let wiki.path = '~/Projects/Web/vimwiki'
+let wiki.path = '~/Documents/vimwiki'
 let wiki.path_html = '~/Projects/Web/www/vimwiki'
 let wiki.nested_syntaxes ={'bash': 'bash', 'java': 'java'}
 let g:vimwiki_list = [wiki]
