@@ -22,5 +22,5 @@ endif
 if has("autocmd")
     " TODO: this is not very smart because it always deletes in $HOME
     " but it worked in Windows. Investigate!
-    autocmd VimLeave *.tex !rm *.aux *.log *.nav *.out *.snm *.toc
+    autocmd VimLeave *.tex !rm -f *.aux *.log *.nav *.out *.snm *.toc
 endif
