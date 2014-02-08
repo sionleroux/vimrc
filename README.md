@@ -3,39 +3,6 @@
 This is my *vimrc*, including all plugins I use, so that I can keep it
 up to date between my machines.
 
-The following is a list of plugins I use:
- * [abolish](https://github.com/tpope/vim-abolish)
- * [arduino](https://github.com/tclem/vim-arduino)
- * [bufexplorer](https://github.com/vim-scripts/bufexplorer)
- * [buffergator](https://github.com/vim-scripts/Buffergator)
- * [cd](https://github.com/vim-scripts/CD.vim)
- * [characterize](https://github.com/tpope/vim-characterize)
- * [commentary](https://github.com/tpope/vim-commentary)
- * [ctrlp](https://github.com/kien/ctrlp.vim)
- * [ddldbl](https://github.com/duff/vim-ddldbl)
- * [endwise](https://github.com/tpope/vim-endwise)
- * [eunuch](https://github.com/tpope/vim-eunuch)
- * [fugitive](https://github.com/tpope/vim-fugitive)
- * [latex-suite](https://github.com/jcf/vim-latex)
- * [markdown](https://github.com/tpope/vim-markdown)
- * [NrrwRgn](https://github.com/chrisbra/NrrwRgn)
- * [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
- * [obsession](https://github.com/tpope/vim-obsession)
- * [powerline](https://github.com/Lokaltog/vim-powerline/)
- * [ragtag](https://github.com/tpope/vim-ragtag)
- * [repeat](https://github.com/tpope/vim-repeat)
- * [rsi](https://github.com/tpope/vim-rsi)
- * [sensible](https://github.com/tpope/vim-sensible)
- * [scriptease](https://github.com/tpope/vim-scriptease)
- * [snipmate](https://github.com/msanders/snipmate)
- * [solarized](https://github.com/altercation/vim-colors-solarized)
- * [sparkup](https://github.com/tristen/vim-sparkup)
- * [speeddating](https://github.com/tpope/vim-speeddating)
- * [surround](https://github.com/tpope/vim-surround)
- * [unimpaired](https://github.com/tpope/vim-unimpaired)
- * [vimwiki](https://github.com/vimwiki/vimwiki)
- * [winmanager](https://github.com/vim-scripts/winmanager)
-
 ## Installation:
 
 If you would like to use my *vimrc*, clone this repository to your home
@@ -79,3 +46,38 @@ you. You will probably want to read through the `vimrc` file and change
 it a bit to suit your needs and possibly add/remove some plug-ins
 depending on what you use vim for. I also accept **no responsibility**
 if you install this on your system and anything gets damaged in any way.
+
+## Plugin List
+
+The following is a list of plugins I use:
+ * [abolish](https://github.com/tpope/vim-abolish)
+ * [arduino](https://github.com/tclem/vim-arduino)
+ * [bufexplorer](https://github.com/vim-scripts/bufexplorer)
+ * [buffergator](https://github.com/vim-scripts/Buffergator)
+ * [cd](https://github.com/vim-scripts/CD.vim)
+ * [characterize](https://github.com/tpope/vim-characterize)
+ * [commentary](https://github.com/tpope/vim-commentary)
+ * [ctrlp](https://github.com/kien/ctrlp.vim)
+ * [ddldbl](https://github.com/duff/vim-ddldbl)
+ * [endwise](https://github.com/tpope/vim-endwise)
+ * [eunuch](https://github.com/tpope/vim-eunuch)
+ * [fugitive](https://github.com/tpope/vim-fugitive)
+ * [latex-suite](https://github.com/jcf/vim-latex)
+ * [markdown](https://github.com/tpope/vim-markdown)
+ * [NrrwRgn](https://github.com/chrisbra/NrrwRgn)
+ * [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
+ * [obsession](https://github.com/tpope/vim-obsession)
+ * [powerline](https://github.com/Lokaltog/vim-powerline/)
+ * [ragtag](https://github.com/tpope/vim-ragtag)
+ * [repeat](https://github.com/tpope/vim-repeat)
+ * [rsi](https://github.com/tpope/vim-rsi)
+ * [sensible](https://github.com/tpope/vim-sensible)
+ * [scriptease](https://github.com/tpope/vim-scriptease)
+ * [snipmate](https://github.com/msanders/snipmate)
+ * [solarized](https://github.com/altercation/vim-colors-solarized)
+ * [sparkup](https://github.com/tristen/vim-sparkup)
+ * [speeddating](https://github.com/tpope/vim-speeddating)
+ * [surround](https://github.com/tpope/vim-surround)
+ * [unimpaired](https://github.com/tpope/vim-unimpaired)
+ * [vimwiki](https://github.com/vimwiki/vimwiki)
+ * [winmanager](https://github.com/vim-scripts/winmanager)
