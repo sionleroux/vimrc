@@ -1,3 +1,3 @@
 " automatic linebreaks at 72 chars
-set wrap
+set nowrap
 set tw=72
