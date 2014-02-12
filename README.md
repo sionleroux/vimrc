@@ -73,7 +73,7 @@ The following is a list of plugins I use:
  * [rsi](https://github.com/tpope/vim-rsi)
  * [sensible](https://github.com/tpope/vim-sensible)
  * [scriptease](https://github.com/tpope/vim-scriptease)
- * [snipmate](https://github.com/msanders/snipmate)
+ * [snipmate](https://github.com/msanders/snipmate.vim)
  * [solarized](https://github.com/altercation/vim-colors-solarized)
  * [sparkup](https://github.com/tristen/vim-sparkup)
  * [speeddating](https://github.com/tpope/vim-speeddating)
