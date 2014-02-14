@@ -11,10 +11,6 @@ call pathogen#incubate()
 
 " Show whitespace
 set list
-" GUI/Console specific character choices below
-" highlight white space with special characters (override it below for TTY)
-set modeline list listchars=tab:»·,trail:·,nbsp:·,precedes:«,extends:»
-
 " Assume that non-tty terminals use the patched font (override it below for TTY)
 let g:Powerline_symbols="fancy" "Only works when you're using a patched font
 
@@ -59,8 +55,6 @@ else
     \ &term == "xterm" ||
     \ &term == "screen"
         colorscheme default " give up on using solarized
-        "show whitespace with simple characters (enable this for old/simple terminals)
-        set listchars=tab:>.,trail:.,extends:#,nbsp:. "override the fancy listchars
         let g:Powerline_symbols="compatible" "override the fancy symbols
     endif
 endif
@@ -100,8 +94,6 @@ filetype plugin indent on
 if has('autocmd')
     " Use spaces for tabs in python
     autocmd filetype python set expandtab
-    " Not sure what this does
-    autocmd filetype html,xml set listchars=tab:>·
     " recall the last line you were editing
     autocmd BufReadPost *\(.git/COMMIT_EDITMSG\)\@<!
         \ if line("'\"") > 1 && line("'\"") <= line("$") |
