@@ -172,8 +172,12 @@ cmap w!! w !sudo tee % >/dev/null
 
 " Some vimwiki settings
 let wiki = {}
-let wiki.path = '~/Documents/vimwiki'
-let wiki.path_html = '~/Projects/Web/www/vimwiki'
+if isdirectory($HOME . '/Documents') " this only exists on my laptop
+    let wiki.path = '~/Documents/vimwiki'
+endif
+if isdirectory($HOME . '/Projects/Web/www') " same thing here
+    let wiki.path_html = '~/Projects/Web/www/vimwiki'
+endif
 let wiki.nested_syntaxes ={'bash': 'bash', 'java': 'java'}
 let g:vimwiki_list = [wiki]
 
