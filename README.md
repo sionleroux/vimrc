@@ -59,6 +59,7 @@ The following is a list of plugins I use:
  * [commentary](https://github.com/tpope/vim-commentary)
  * [ctrlp](https://github.com/kien/ctrlp.vim)
  * [ddldbl](https://github.com/duff/vim-ddldbl)
+ * [easy-align](https://github.com/junegunn/vim-easy-align)
  * [endwise](https://github.com/tpope/vim-endwise)
  * [eunuch](https://github.com/tpope/vim-eunuch)
  * [fugitive](https://github.com/tpope/vim-fugitive)
