@@ -94,3 +94,6 @@
 [submodule "bundle/easy-align"]
 	path = bundle/easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
+[submodule "bundle/jdaddy"]
+	path = bundle/jdaddy
+	url = https://github.com/tpope/vim-jdaddy.git

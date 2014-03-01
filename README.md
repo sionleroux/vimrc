@@ -63,6 +63,7 @@ The following is a list of plugins I use:
  * [endwise](https://github.com/tpope/vim-endwise)
  * [eunuch](https://github.com/tpope/vim-eunuch)
  * [fugitive](https://github.com/tpope/vim-fugitive)
+ * [jdaddy](https://github.com/tpope/vim-jdaddy)
  * [latex-suite](https://github.com/jcf/vim-latex)
  * [markdown](https://github.com/tpope/vim-markdown)
  * [NrrwRgn](https://github.com/chrisbra/NrrwRgn)
