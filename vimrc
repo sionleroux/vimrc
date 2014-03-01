@@ -28,6 +28,7 @@ if has('gui_running')
     set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 10
     " hide mouse when typing:
     set mousehide
+    set mousemodel=popup_setpos "enable right-click context menu
     " add some custom menu options:
     :menu &MyVim.Convert\ Format.To\ Dos :set fileformat=dos<cr> :w<cr>
     :menu &MyVim.Convert\ Format.To\ Unix :set fileformat=unix<cr> :w<cr>
