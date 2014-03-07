@@ -79,9 +79,6 @@
 [submodule "bundle/ragtag"]
 	path = bundle/ragtag
 	url = https://github.com/tpope/vim-ragtag.git
-[submodule "bundle/arduino"]
-	path = bundle/arduino
-	url = https://github.com/sinisterstuf/vim-arduino.git
 [submodule "bundle/ddldbl"]
 	path = bundle/ddldbl
 	url = https://github.com/duff/vim-ddldbl
@@ -97,3 +94,6 @@
 [submodule "bundle/jdaddy"]
 	path = bundle/jdaddy
 	url = https://github.com/tpope/vim-jdaddy.git
+[submodule "bundle/arduino"]
+	path = bundle/arduino
+	url = https://github.com/jplaut/vim-arduino-ino.git
