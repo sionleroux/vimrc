@@ -51,7 +51,7 @@ if you install this on your system and anything gets damaged in any way.
 
 The following is a list of plugins I use:
  * [abolish](https://github.com/tpope/vim-abolish)
- * [arduino](https://github.com/tclem/vim-arduino)
+ * [arduino-ino](https://github.com/jplaut/vim-arduino-ino.git)
  * [bufexplorer](https://github.com/vim-scripts/bufexplorer)
  * [buffergator](https://github.com/vim-scripts/Buffergator)
  * [cd](https://github.com/vim-scripts/CD.vim)
