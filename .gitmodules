@@ -97,3 +97,6 @@
 [submodule "bundle/arduino"]
 	path = bundle/arduino
 	url = https://github.com/jplaut/vim-arduino-ino.git
+[submodule "bundle/choosewin"]
+	path = bundle/choosewin
+	url = https://github.com/t9md/vim-choosewin.git

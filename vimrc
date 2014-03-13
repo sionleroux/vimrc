@@ -213,3 +213,7 @@ nnoremap <Leader>cd :CD<CR>
 
 " Toggle indentation with tabs/spaces(4) with F4
 nnoremap <F4> :set et!<CR>:retab!<CR>
+
+" Choose windows by letter
+nmap  -  <Plug>(choosewin)
+let g:choosewin_overlay_enable = 1

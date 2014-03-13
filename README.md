@@ -57,6 +57,7 @@ The following is a list of plugins I use:
  * [cd](https://github.com/vim-scripts/CD.vim)
  * [characterize](https://github.com/tpope/vim-characterize)
  * [commentary](https://github.com/tpope/vim-commentary)
+ * [choosewin](https://github.com/t9md/vim-choosewin)
  * [ctrlp](https://github.com/kien/ctrlp.vim)
  * [ddldbl](https://github.com/duff/vim-ddldbl)
  * [easy-align](https://github.com/junegunn/vim-easy-align)
