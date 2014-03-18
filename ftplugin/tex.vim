@@ -1,7 +1,6 @@
 " Options for LaTeX Suite
 set shellslash
 set grepprg=grep\ -nH\ $*
-let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat='pdf'
 
 " LaTeX looks nicer with 2 spaces for indentation
