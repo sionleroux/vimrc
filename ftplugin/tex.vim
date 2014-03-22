@@ -19,5 +19,5 @@ if has("win95") || has("win16") || has("win32") || has("win64")
 endif
 
 if has("autocmd")
-    autocmd VimLeave *.tex !find "%:h" -type f | grep -sE '\.(aux|log|nav|out|snm|toc)$' | xargs rm
+    autocmd VimLeave *.tex !find "%:h" -type f | grep -sE '\.(aux|log|nav|out|snm|toc)$' | xargs rm -f
 endif
