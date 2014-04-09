@@ -139,9 +139,6 @@ endif
 " Toggle disable of auto-indent for pasting large code using F2
 set pastetoggle=<F2>
 
-" Use ; instead of : for commands
-nnoremap ; :
-
 " Use Q for formatting the current paragraph (or selection)
 vmap Q gq
 nmap Q gqap
