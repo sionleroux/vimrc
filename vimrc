@@ -193,9 +193,6 @@ nnoremap <F9> za
 onoremap <F9> <C-C>za
 vnoremap <F9> zf
 
-nnoremap d< :diffget<CR>
-nnoremap d> :diffput<CR>
-
 " Toggle Window Manager with <Leader>wm
 nnoremap <Leader>wm :WMToggle<CR>
 
