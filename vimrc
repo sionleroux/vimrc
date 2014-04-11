@@ -13,6 +13,11 @@ call pathogen#incubate()
 set list
 " Assume that non-tty terminals use the patched font (override it below for TTY)
 let g:Powerline_symbols="fancy" "Only works when you're using a patched font
+let g:Powerline_mode_n = 'N'
+let g:Powerline_mode_i = 'I'
+let g:Powerline_mode_R = 'R'
+let g:Powerline_mode_v = 'V'
+let g:Powerline_stl_path_style = 'short'
 
 " use solarized colour scheme by default
 colorscheme solarized
