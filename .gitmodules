@@ -100,3 +100,9 @@
 [submodule "bundle/choosewin"]
 	path = bundle/choosewin
 	url = https://github.com/t9md/vim-choosewin.git
+[submodule "bundle/projectile"]
+	path = bundle/projectile
+	url = https://github.com/tpope/vim-projectile.git
+[submodule "bundle/dispatch"]
+	path = bundle/dispatch
+	url = https://github.com/tpope/vim-dispatch.git
