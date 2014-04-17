@@ -76,6 +76,7 @@ The following is a list of plugins I use:
  * [ragtag](https://github.com/tpope/vim-ragtag)
  * [repeat](https://github.com/tpope/vim-repeat)
  * [rsi](https://github.com/tpope/vim-rsi)
+ * [scratch](https://github.com/mtth/scratch.vim.git)
  * [scriptease](https://github.com/tpope/vim-scriptease)
  * [sensible](https://github.com/tpope/vim-sensible)
  * [snipmate](https://github.com/msanders/snipmate.vim)
