@@ -92,7 +92,7 @@ nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 " Hide buffers on :e instead of closing them
-set hidden
+au BufRead,BufNewFile */sion/* setlocal bufhidden=hide
 
 syntax enable on
 filetype plugin indent on
