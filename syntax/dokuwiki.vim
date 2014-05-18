@@ -40,6 +40,12 @@ nmap <buffer> <leader>hp :s#\(.*\)#=\1=#<CR>:let @/ = ""<CR>
 nmap <buffer> - :s#=\(.*\)=#\1#<CR>:let @/ = ""<CR>
 nmap <buffer> = :s#\(.*\)#=\1=#<CR>:let @/ = ""<CR>
 
+"embelishments
+nmap <buffer> ,bb ysiW*.
+nmap <buffer> ,tt ysiW'.
+nmap <buffer> ,ii ysiW/.
+nmap <buffer> ,uu ysiW_.
+
 "}}}1
 
 
