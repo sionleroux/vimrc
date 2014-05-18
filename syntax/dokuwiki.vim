@@ -37,6 +37,8 @@ imap <buffer> WH6 = <++> =<CR><++><Esc>k0<C-J>
 "promote and demote
 nmap <buffer> <leader>hd :s#=\(.*\)=#\1#<CR>:let @/ = ""<CR>
 nmap <buffer> <leader>hp :s#\(.*\)#=\1=#<CR>:let @/ = ""<CR>
+nmap <buffer> - :s#=\(.*\)=#\1#<CR>:let @/ = ""<CR>
+nmap <buffer> = :s#\(.*\)#=\1=#<CR>:let @/ = ""<CR>
 
 "}}}1
 
