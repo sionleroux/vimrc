@@ -148,12 +148,6 @@ set pastetoggle=<F2>
 vmap Q gq
 nmap Q gqap
 
-" Easier window navigation
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-
 " Turn spelling and off with ,se and ,sn
 map <Leader>se :setlocal spell spelllang=en_gb<CR>
 map <Leader>sh :setlocal spell spelllang=hu_hu<CR>
