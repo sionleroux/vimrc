@@ -10,27 +10,6 @@
 "
 "TODO Might have to tweak Wikimedia.vim because at the end it unlets main_syntax. Hmm.
 "
-"AUTOMATIC MATCHING {{{1
-
-"At present, you have to activate this highlighting manually.
-":se ft=dokuwiki
-
-"because there isn't a canonical extension for DokuWiki
-"files (at least, that I know of). However, you can set all
-"*.txt files to automatically be set to DokuWiki if you
-"wish.
-"
-"(Modified from http://en.wikipedia.org/wiki/Wikipedia:Text_editor_support#Vim)
-
-"Make or edit $HOME/.vim/ftdetect/txt.vim.
-"And, without comments, add the following:
-"
-"augroup filetypedetect
-	"au BufNewFile,BufRead *.txt,*.wiki setf dokuwiki
-"augroup END
-
-"}}}1
-"
 "==============================================
 "And now, the syntax file:
 
