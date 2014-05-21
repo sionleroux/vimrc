@@ -12,12 +12,18 @@ call pathogen#incubate()
 " Show whitespace
 set list
 " Assume that non-tty terminals use the patched font (override it below for TTY)
-let g:Powerline_symbols="fancy" "Only works when you're using a patched font
-let g:Powerline_mode_n = 'N'
-let g:Powerline_mode_i = 'I'
-let g:Powerline_mode_R = 'R'
-let g:Powerline_mode_v = 'V'
-let g:Powerline_stl_path_style = 'short'
+if !exists('g:airline_symbols')
+let g:airline_symbols = {}
+endif
+
+" use old vim-powerline symbols
+let g:airline_left_sep = '⮀'
+let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
+let g:airline_symbols.branch = '⭠'
+let g:airline_symbols.readonly = '⭤'
+let g:airline_symbols.linenr = '⭡'
 
 " use solarized colour scheme by default
 colorscheme solarized
@@ -61,7 +67,6 @@ else
     \ &term == "xterm" ||
     \ &term == "screen"
         colorscheme default " give up on using solarized
-        let g:Powerline_symbols="compatible" "override the fancy symbols
     endif
 endif
 
@@ -81,7 +86,7 @@ if has('mouse')
     set mouse=a
 endif
 
-" ALWAYS load powerline
+" ALWAYS load statusline
 set laststatus=2
 
 " change the mapleader from \ to ,

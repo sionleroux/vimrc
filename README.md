@@ -71,7 +71,7 @@ The following is a list of plugins I use:
  * [markdown](https://github.com/tpope/vim-markdown)
  * [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
  * [obsession](https://github.com/tpope/vim-obsession)
- * [powerline](https://github.com/Lokaltog/vim-powerline/)
+ * [airline](https://github.com/bling/vim-airline/)
  * [projectile](https://github.com/tpope/vim-projectile.git)
  * [ragtag](https://github.com/tpope/vim-ragtag)
  * [repeat](https://github.com/tpope/vim-repeat)
