@@ -112,3 +112,6 @@
 [submodule "bundle/splitjoin"]
 	path = bundle/splitjoin
 	url = https://github.com/AndrewRadev/splitjoin.vim.git
+[submodule "bundle/lion"]
+	path = bundle/lion
+	url = https://github.com/tommcdo/vim-lion.git

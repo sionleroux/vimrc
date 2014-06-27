@@ -50,8 +50,10 @@ if you install this on your system and anything gets damaged in any way.
 ## Plugin List
 
 The following is a list of plugins I use:
+
  * [NrrwRgn](https://github.com/chrisbra/NrrwRgn)
  * [abolish](https://github.com/tpope/vim-abolish)
+ * [airline](https://github.com/bling/vim-airline/)
  * [arduino-ino](https://github.com/jplaut/vim-arduino-ino.git)
  * [bufexplorer](https://github.com/vim-scripts/bufexplorer)
  * [buffergator](https://github.com/vim-scripts/Buffergator)
@@ -68,10 +70,10 @@ The following is a list of plugins I use:
  * [fugitive](https://github.com/tpope/vim-fugitive)
  * [jdaddy](https://github.com/tpope/vim-jdaddy)
  * [latex-suite](https://github.com/jcf/vim-latex)
+ * [lion](https://github.com/tommcdo/vim-lion.git)
  * [markdown](https://github.com/tpope/vim-markdown)
  * [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
  * [obsession](https://github.com/tpope/vim-obsession)
- * [airline](https://github.com/bling/vim-airline/)
  * [projectile](https://github.com/tpope/vim-projectile.git)
  * [ragtag](https://github.com/tpope/vim-ragtag)
  * [repeat](https://github.com/tpope/vim-repeat)
