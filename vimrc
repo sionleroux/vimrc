@@ -218,3 +218,6 @@ let g:choosewin_overlay_enable = 1
 
 " Make .tex files always tex, not plaintex
 let g:tex_flavor='latex'
+
+let g:splitjoin_split_mapping = 'sj'
+let g:splitjoin_join_mapping = 'sk'

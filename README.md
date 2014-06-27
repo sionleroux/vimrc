@@ -83,6 +83,7 @@ The following is a list of plugins I use:
  * [solarized](https://github.com/altercation/vim-colors-solarized)
  * [sparkup](https://github.com/tristen/vim-sparkup)
  * [speeddating](https://github.com/tpope/vim-speeddating)
+ * [splitjoin](https://github.com/AndrewRadev/splitjoin.vim.git)
  * [surround](https://github.com/tpope/vim-surround)
  * [unimpaired](https://github.com/tpope/vim-unimpaired)
  * [vimwiki](https://github.com/vimwiki/vimwiki)
