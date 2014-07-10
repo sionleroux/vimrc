@@ -1,5 +1,7 @@
 " Options for LaTeX Suite
-set shellslash
+if exists('+shellslash')
+    set shellslash
+endif
 set grepprg=grep\ -nH\ $*
 let g:Tex_DefaultTargetFormat='pdf'
 
