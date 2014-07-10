@@ -20,9 +20,13 @@ if has("win95") || has("win16") || has("win32") || has("win64")
 endif
 
 if has("autocmd")
-    autocmd VimLeave,BufDelete *.tex
-                \ silent
-                \ !find "<afile>:h" -type f |
-                \ grep -sE '\.(aux|log|nav|out|snm|toc)$' |
-                \ xargs rm -f
+    augroup filetype_tex
+        autocmd!
+        " Clean up LaTeX generated rubbish on close/exit
+        autocmd VimLeave,BufDelete *.tex
+                    \ silent
+                    \ !find "<afile>:h" -type f |
+                    \ grep -sE '\.(aux|log|nav|out|snm|toc)$' |
+                    \ xargs rm -f
+    augroup END
 endif
