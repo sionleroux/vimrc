@@ -115,3 +115,9 @@
 [submodule "bundle/lion"]
 	path = bundle/lion
 	url = https://github.com/tommcdo/vim-lion.git
+[submodule "bundle/togglelist"]
+	path = bundle/togglelist
+	url = https://github.com/milkypostman/vim-togglelist.git
+[submodule "bundle/toggle"]
+	path = bundle/toggle
+	url = https://github.com/taku-o/vim-toggle.git
