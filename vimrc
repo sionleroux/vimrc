@@ -221,3 +221,13 @@ let g:tex_flavor='latex'
 
 let g:splitjoin_split_mapping = 'sj'
 let g:splitjoin_join_mapping = 'sk'
+
+" Speedread integration
+function! SpeedRead()
+    if has('gui_running')
+        !xterm -e speedread -w 500 %
+    else
+        !speedread -w 500 %
+    endif
+endfunction
+command! SpeedRead call SpeedRead()
