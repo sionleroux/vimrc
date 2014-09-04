@@ -231,3 +231,4 @@ function! SpeedRead()
     endif
 endfunction
 command! SpeedRead call SpeedRead()
+nnoremap <Leader>sr :SpeedRead<CR>
