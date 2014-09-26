@@ -132,7 +132,6 @@ set hlsearch      " highlight search terms
 set incsearch     " show search matches as you type
 set history=1000    " remember more commands and search history
 set undolevels=1000 " use many muchos levels of undo
-set wildignore=*.swp,*.bak,*.pyc,*.class,*.pdf,*.aux,*.out,*.o,*.lol,*.lot,*.lof
 set ruler         " Not sure what it does
 set cursorline
 set encoding=utf-8 " UTF8 encoding
@@ -141,6 +140,16 @@ scriptencoding utf-8
 set title                " change the terminal's title
 set visualbell           " don't beep
 set noerrorbells         " don't beep
+
+" Ctrl-P and file search-related
+let g:ctrlp_working_path_mode = 'rc'
+let g:ctrlp_use_caching = 1
+let g:ctrlp_clear_cache_on_exit = 1
+set wildignore+=*.swo,*.swp,*.bak,*.pyc,*.class,*.o
+set wildignore+=*.pdf,*.aux,*.out,*.lol,*.lot,*.lof,*.toc
+let g:ctrlp_custom_ignore = {
+    \ 'dir': '\v.+/(tmp|temp)',
+    \ }
 
 if version > 702 " stuff that doesn't work in Vim 7.2 (thank you Centos 6!)
     set colorcolumn=+1 " mark the end of text-width with a dark line
