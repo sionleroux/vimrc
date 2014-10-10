@@ -121,3 +121,9 @@
 [submodule "bundle/toggle"]
 	path = bundle/toggle
 	url = https://github.com/taku-o/vim-toggle.git
+[submodule "bundle/tern"]
+	path = bundle/tern
+	url = https://github.com/marijnh/tern_for_vim.git
+[submodule "bundle/rainbow"]
+	path = bundle/rainbow
+	url = https://github.com/kien/rainbow_parentheses.vim.git
