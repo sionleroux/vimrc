@@ -108,7 +108,7 @@ filetype plugin indent on
 
 if has('autocmd')
     " Use spaces for tabs in python
-    autocmd filetype python set expandtab
+    autocmd filetype json,javascript set shiftwidth=2
     " recall the last line you were editing
     autocmd BufReadPost *\(.git/COMMIT_EDITMSG\)\@<!
         \ if line("'\"") > 1 && line("'\"") <= line("$") |
@@ -120,7 +120,7 @@ set nowrap        " don't wrap lines
 set tabstop=4     " a tab is four spaces
 set shiftwidth=4  " number of spaces to use for autoindenting
 set shiftround    " use multiple of shiftwidth when indenting with '<' and '>'
-set expandtab     " use spaces instead of tabs (originally this was only set for python)
+set expandtab     " use spaces instead of tabs
 set backspace=indent,eol,start
                   " allow backspacing over everything in insert mode
 set autoindent    " always set autoindenting on
