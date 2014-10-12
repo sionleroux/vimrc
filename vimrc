@@ -138,6 +138,7 @@ set history=1000    " remember more commands and search history
 set undolevels=1000 " use many muchos levels of undo
 set ruler         " Not sure what it does
 set cursorline
+set autoread
 set encoding=utf-8 " UTF8 encoding
 scriptencoding utf-8
 
