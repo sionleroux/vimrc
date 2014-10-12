@@ -98,8 +98,15 @@ set laststatus=2
 let mapleader=","
 
 " Quickly edit/reload the vimrc file
-nmap <silent> <leader>ev :e $MYVIMRC<CR>
-nmap <silent> <leader>sv :so $MYVIMRC<CR>
+fun! OpenVimrc()
+    if line('$') == 1 && getline(1) == ''
+        e $MYVIMRC
+    else
+        sp $MYVIMRC
+    endif
+endf
+nnoremap <silent> <leader>ev :call OpenVimrc()<CR>
+nnoremap <silent> <leader>sv :so $MYVIMRC<CR>
 
 " Hide buffers on :e instead of closing them
 au BufRead,BufNewFile */sion/* setlocal bufhidden=hide
