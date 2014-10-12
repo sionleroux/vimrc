@@ -50,6 +50,10 @@ if has('gui_running')
     nnoremap <C-F1> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
     nnoremap <C-F2> :if &go=~#'T'<Bar>set go-=T<Bar>else<Bar>set go+=T<Bar>endif<CR>
     nnoremap <C-F3> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
+    " In fact hide them by default
+    set go-=m " menubar
+    set go-=T " toolbar
+    set go-=r " scrollbar
     """ Windows™ only options
     if has("win95") || has("win16") || has("win32") || has("win64")
         :set guioptions-=T  "remove toolbar (only useful on Windows™ cos it's ugly)
