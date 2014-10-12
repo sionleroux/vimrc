@@ -32,7 +32,7 @@ colorscheme solarized
 if has('gui_running')
     """ GUI only options
     " bigger window
-    set lines=38 columns=100
+    set lines=40 columns=85
     set background=light
     so ~/.vim/bundle/solarized/autoload/togglebg.vim " enable F5 to toggle BG dark or light
     " Linux font by default, override elsewhere as needed
