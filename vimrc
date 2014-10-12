@@ -1,5 +1,6 @@
 " turn off vi compatibility
 set nocompatible
+scriptencoding utf-8
 
 " Remove ALL autocommands for the current group.
 autocmd!
@@ -140,7 +141,6 @@ set ruler         " Not sure what it does
 set cursorline
 set autoread
 set encoding=utf-8 " UTF8 encoding
-scriptencoding utf-8
 
 set title                " change the terminal's title
 set visualbell           " don't beep
