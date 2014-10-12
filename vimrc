@@ -88,7 +88,7 @@ endif
 
 " Enable mouse
 if has('mouse')
-    set mouse=a
+    set mouse=nv
 endif
 
 " ALWAYS load statusline
