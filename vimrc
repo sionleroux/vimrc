@@ -235,6 +235,15 @@ nnoremap <Leader>cd :CD<CR>
 " Toggle indentation with tabs/spaces(4) with F4
 nnoremap <F4> :set et!<CR>:retab!<CR>
 
+" Like the do and dp commands
+nnoremap <Leader>du :diffupdate<CR>
+
+" Some tab shortcuts I feel are missing
+nnoremap <Leader>tn :tabnext<CR>
+nnoremap <Leader>tp :tabprevious<CR>
+nnoremap <Leader>tq :tabclose<CR>
+nnoremap <Leader>tu :tabnew<CR>
+
 " Choose windows by letter
 nmap  -  <Plug>(choosewin)
 let g:choosewin_overlay_enable = 1
