@@ -151,6 +151,8 @@ let g:ctrlp_use_caching = 1
 let g:ctrlp_clear_cache_on_exit = 1
 set wildignore+=*.swo,*.swp,*.bak,*.pyc,*.class,*.o
 set wildignore+=*.pdf,*.aux,*.out,*.lol,*.lot,*.lof,*.toc
+set wildignore+=*/node_modules/*,Session.vim
+set suffixes+=.log
 let g:ctrlp_custom_ignore = {
     \ 'dir': '\v.+/(tmp|temp)',
     \ }
