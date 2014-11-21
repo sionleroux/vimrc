@@ -2,9 +2,6 @@
 set nocompatible
 scriptencoding utf-8
 
-" Remove ALL autocommands for the current group.
-autocmd!
-
 " Setup Pathogen to load all bundles and their helptags
 call pathogen#infect()
 call pathogen#helptags()
@@ -108,21 +105,8 @@ endf
 nnoremap <silent> <leader>ev :call OpenVimrc()<CR>
 nnoremap <silent> <leader>sv :so $MYVIMRC<CR>
 
-" Hide buffers on :e instead of closing them
-au BufRead,BufNewFile */sion/* setlocal bufhidden=hide
-
 syntax enable on
 filetype plugin indent on
-
-if has('autocmd')
-    " Use spaces for tabs in python
-    autocmd filetype json,javascript set shiftwidth=2
-    " recall the last line you were editing
-    autocmd BufReadPost *\(.git/COMMIT_EDITMSG\)\@<!
-        \ if line("'\"") > 1 && line("'\"") <= line("$") |
-        \   exe "normal! g`\"" |
-        \ endif
-endif "autocmd
 
 set nowrap        " don't wrap lines
 set tabstop=4     " a tab is four spaces
@@ -266,3 +250,22 @@ function! SpeedRead()
 endfunction
 command! SpeedRead call SpeedRead()
 nnoremap <Leader>sr :SpeedRead<CR>
+
+if has('autocmd')
+    augroup sinisterstuf
+        " Remove ALL autocommands for the current group.
+        autocmd!
+
+        " Hide buffers on :e instead of closing them
+        autocmd BufRead,BufNewFile */sion/* setlocal bufhidden=hide
+
+        " Use spaces for tabs in python
+        autocmd filetype json,javascript set shiftwidth=2
+
+        " Recall the last line you were editing
+        autocmd BufReadPost *\(.git/COMMIT_EDITMSG\)\@<!
+                    \ if line("'\"") > 1 && line("'\"") <= line("$") |
+                    \   exe "normal! g`\"" |
+                    \ endif
+    augroup END
+endif "autocmd
