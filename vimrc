@@ -267,5 +267,8 @@ if has('autocmd')
                     \ if line("'\"") > 1 && line("'\"") <= line("$") |
                     \   exe "normal! g`\"" |
                     \ endif
+
+        " Turn on English spell-checking automatically
+        autocmd filetype gitcommit,vimwiki setlocal spell spelllang=en_gb
     augroup END
 endif "autocmd
