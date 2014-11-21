@@ -251,6 +251,11 @@ let g:tex_flavor='latex'
 let g:splitjoin_split_mapping = 'sj'
 let g:splitjoin_join_mapping = 'sk'
 
+" Delete comment character when joining commented lines
+if v:version > 703 || v:version == 703 && has("patch541")
+    set formatoptions+=j
+endif
+
 " Speedread integration
 function! SpeedRead()
     if has('gui_running')
