@@ -130,3 +130,6 @@
 [submodule "bundle/figlet"]
 	path = bundle/figlet
 	url = https://github.com/vim-scripts/Figlet.vim.git
+[submodule "bundle/ansiesc"]
+	path = bundle/ansiesc
+	url = https://github.com/vim-scripts/Improved-AnsiEsc.git
