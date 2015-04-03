@@ -133,3 +133,9 @@
 [submodule "bundle/ansiesc"]
 	path = bundle/ansiesc
 	url = https://github.com/vim-scripts/Improved-AnsiEsc.git
+[submodule "bundle/sleuth"]
+	path = bundle/sleuth
+	url = https://github.com/tpope/vim-sleuth.git
+[submodule "bundle/tbone"]
+	path = bundle/tbone
+	url = https://github.com/tpope/vim-tbone.git
