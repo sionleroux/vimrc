@@ -1,6 +1,7 @@
 " turn off vi compatibility
 set nocompatible
 scriptencoding utf-8
+set fileencodings=ucs-bom,utf-8,default,latin2
 
 " Setup Pathogen to load all bundles and their helptags
 call pathogen#infect()
