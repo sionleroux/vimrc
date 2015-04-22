@@ -261,6 +261,12 @@ endfunction
 command! SpeedRead call SpeedRead()
 nnoremap <Leader>sr :SpeedRead<CR>
 
+" Ignore superfluous non-error output
+set errorformat^=%-Gsass\ %f\ >%m
+set errorformat^=%-Gcp\ %f\ %m
+set errorformat^=%-Gmkdir\ %f
+set errorformat^=%-Grm\ %f
+
 if has('autocmd')
     augroup sinisterstuf
         " Remove ALL autocommands for the current group.
