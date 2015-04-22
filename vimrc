@@ -12,7 +12,7 @@ call pathogen#incubate()
 set list
 " Assume that non-tty terminals use the patched font (override it below for TTY)
 if !exists('g:airline_symbols')
-let g:airline_symbols = {}
+    let g:airline_symbols = {}
 endif
 
 " use old vim-powerline symbols
