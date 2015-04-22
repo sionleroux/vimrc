@@ -10,6 +10,9 @@ call pathogen#incubate()
 
 " Show whitespace
 set list
+if !has('win32') && (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8')
+    let &listchars = "tab:\u21e5 ,trail:\u2423,extends:\u21c9,precedes:\u21c7,nbsp:\u00b7"
+endif
 " Assume that non-tty terminals use the patched font (override it below for TTY)
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
