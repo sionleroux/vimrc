@@ -76,6 +76,12 @@ else
     endif
 endif
 
+" Shortcuts to change font size
+command! FontRegular set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 10
+command! FontSmall set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 8
+command! FontLarge set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 14
+command! FontHuge set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 20
+
 " Mac OSX Specific stuff
 if has('unix')
     let s:uname = system("uname")
