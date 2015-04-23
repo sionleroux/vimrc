@@ -155,6 +155,7 @@ set wildignore+=*.swo,*.swp,*.bak,*.pyc,*.class,*.o
 set wildignore+=*.pdf,*.aux,*.out,*.lol,*.lot,*.lof,*.toc
 set wildignore+=*/node_modules/*,Session.vim
 set suffixes+=.log
+set wildmode=list:longest,full
 let g:ctrlp_custom_ignore = {
     \ 'dir': '\v.+/(tmp|temp)',
     \ }
