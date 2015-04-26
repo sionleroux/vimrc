@@ -212,6 +212,8 @@ let g:winManagerWindowLayout = 'FileExplorer|BufExplorer'
 
 " Run Dispatch's Make with F9
 nnoremap <F9> :Make<CR>
+" Toggle tagbar with F8
+nmap <F8> :TagbarToggle<CR>
 " Toggle Window Manager with <Leader>wm
 nnoremap <Leader>wm :WMToggle<CR>
 

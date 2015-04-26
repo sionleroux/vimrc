@@ -91,6 +91,7 @@ The following is a list of plugins I use:
  * [speeddating](https://github.com/tpope/vim-speeddating)
  * [splitjoin](https://github.com/AndrewRadev/splitjoin.vim)
  * [surround](https://github.com/tpope/vim-surround)
+ * [tagbar](https://github.com/majutsushi/tagbar)
  * [tbone](https://github.com/tpope/vim-tbone)
  * [tern](https://github.com/marijnh/tern_for_vim)
  * [toggle](https://github.com/taku-o/vim-toggle)
