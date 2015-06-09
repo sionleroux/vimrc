@@ -65,6 +65,9 @@ else
     """ These options only apply when running without GUI
     set t_Co=16 " use less colours
     set background=dark " these terminals are either B&W or solarized dark
+    colorscheme default
+    hi Normal ctermbg=none
+    hi NonText ctermbg=none
     "xterm used by the dropdown terminal, but probably good for actual xterm too, screen used by GNU screen:
     if &term == "linux" ||
     \ &term == "com25" ||
