@@ -142,3 +142,12 @@
 [submodule "bundle/winmanager"]
 	path = bundle/winmanager
 	url = https://github.com/vim-scripts/winmanager.git
+[submodule "bundle/brainfuck-syntax"]
+	path = bundle/brainfuck-syntax
+	url = https://github.com/Beerstorm/vim-brainfuck.git
+[submodule "bundle/php-manual"]
+	path = bundle/php-manual
+	url = https://github.com/alvan/vim-php-manual.git
+[submodule "bundle/wakatime"]
+	path = bundle/wakatime
+	url = https://github.com/wakatime/vim-wakatime.git
