@@ -78,6 +78,7 @@ The following is a list of plugins I use:
  * [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
  * [obsession](https://github.com/tpope/vim-obsession)
  * [php-manual](https://github.com/alvan/vim-php-manual)
+ * [php-folding](https://github.com/rayburgemeestre/phpfolding.vim)
  * [projectionist](https://github.com/tpope/vim-projectionist)
  * [ragtag](https://github.com/tpope/vim-ragtag)
  * [rainbow](https://github.com/kien/rainbow_parentheses.vim)
