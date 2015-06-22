@@ -63,6 +63,7 @@ The following is a list of plugins I use:
  * [characterize](https://github.com/tpope/vim-characterize)
  * [choosewin](https://github.com/t9md/vim-choosewin)
  * [commentary](https://github.com/tpope/vim-commentary)
+ * [css-color](https://github.com/ap/vim-css-color.git)
  * [ctrlp](https://github.com/kien/ctrlp.vim)
  * [ddldbl](https://github.com/duff/vim-ddldbl)
  * [dispatch](https://github.com/tpope/vim-dispatch)
