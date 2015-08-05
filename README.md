@@ -68,6 +68,7 @@ The following is a list of plugins I use:
  * [ddldbl](https://github.com/duff/vim-ddldbl)
  * [dispatch](https://github.com/tpope/vim-dispatch)
  * [easy-align](https://github.com/junegunn/vim-easy-align)
+ * [editorconfig](https://github.com/editorconfig/editorconfig-vim)
  * [endwise](https://github.com/tpope/vim-endwise)
  * [eunuch](https://github.com/tpope/vim-eunuch)
  * [figlet](https://github.com/vim-scripts/Figlet.vim)

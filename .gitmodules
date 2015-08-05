@@ -157,3 +157,6 @@
 [submodule "bundle/wakatime"]
 	path = bundle/wakatime
 	url = https://github.com/wakatime/vim-wakatime.git
+[submodule "bundle/editorconfig"]
+	path = bundle/editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim.git
