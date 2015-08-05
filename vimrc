@@ -150,6 +150,9 @@ set title                " change the terminal's title
 set visualbell           " don't beep
 set noerrorbells         " don't beep
 
+" More powerful Ruby completion
+let g:rubycomplete_buffer_loading = 1
+
 " Ctrl-P and file search-related
 let g:ctrlp_working_path_mode = 'rc'
 let g:ctrlp_use_caching = 1
