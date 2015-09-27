@@ -85,6 +85,7 @@ The following is a list of plugins I use:
  * [ragtag](https://github.com/tpope/vim-ragtag)
  * [rainbow](https://github.com/kien/rainbow_parentheses.vim)
  * [repeat](https://github.com/tpope/vim-repeat)
+ * [repress](https://github.com/vim-scripts/VimRepress)
  * [rsi](https://github.com/tpope/vim-rsi)
  * [scratch](https://github.com/mtth/scratch.vim)
  * [scriptease](https://github.com/tpope/vim-scriptease)
@@ -105,3 +106,4 @@ The following is a list of plugins I use:
  * [vimwiki](https://github.com/vimwiki/vimwiki)
  * [wakatime](https://github.com/wakatime/vim-wakatime)
  * [winmanager](https://github.com/vim-scripts/winmanager)
+ * [wordpress](https://github.com/dsawardekar/wordpress.vim)

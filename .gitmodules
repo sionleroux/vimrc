@@ -160,3 +160,9 @@
 [submodule "bundle/editorconfig"]
 	path = bundle/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "bundle/wordpress"]
+	path = bundle/wordpress
+	url = https://github.com/dsawardekar/wordpress.vim.git
+[submodule "bundle/repress"]
+	path = bundle/repress
+	url = https://github.com/vim-scripts/VimRepress.git
