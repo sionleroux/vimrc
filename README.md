@@ -73,6 +73,7 @@ The following is a list of plugins I use:
  * [eunuch](https://github.com/tpope/vim-eunuch)
  * [figlet](https://github.com/vim-scripts/Figlet.vim)
  * [fugitive](https://github.com/tpope/vim-fugitive)
+ * [goyo](https://github.com/junegunn/goyo.vim)
  * [javascript](https://github.com/pangloss/vim-javascript)
  * [jdaddy](https://github.com/tpope/vim-jdaddy)
  * [latex-suite](https://github.com/jcf/vim-latex)
