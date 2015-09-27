@@ -166,3 +166,6 @@
 [submodule "bundle/repress"]
 	path = bundle/repress
 	url = https://github.com/vim-scripts/VimRepress.git
+[submodule "bundle/javascript"]
+	path = bundle/javascript
+	url = https://github.com/pangloss/vim-javascript.git
