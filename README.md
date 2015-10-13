@@ -85,6 +85,7 @@ The following is a list of plugins I use:
  * [php-manual](https://github.com/alvan/vim-php-manual)
  * [php-folding](https://github.com/rayburgemeestre/phpfolding.vim)
  * [projectionist](https://github.com/tpope/vim-projectionist)
+ * [python-mode](https://github.com/klen/python-mode)
  * [ragtag](https://github.com/tpope/vim-ragtag)
  * [rainbow](https://github.com/kien/rainbow_parentheses.vim)
  * [repeat](https://github.com/tpope/vim-repeat)
