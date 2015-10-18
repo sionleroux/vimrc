@@ -106,6 +106,7 @@ The following is a list of plugins I use:
  * [togglelist](https://github.com/milkypostman/vim-togglelist)
  * [unimpaired](https://github.com/tpope/vim-unimpaired)
  * [vimwiki](https://github.com/vimwiki/vimwiki)
+ * [vim-tags](https://github.com/szw/vim-tags)
  * [wakatime](https://github.com/wakatime/vim-wakatime)
  * [winmanager](https://github.com/vim-scripts/winmanager)
  * [wordpress](https://github.com/dsawardekar/wordpress.vim)
