@@ -67,6 +67,7 @@ The following is a list of plugins I use:
  * [ctrlp](https://github.com/kien/ctrlp.vim)
  * [ddldbl](https://github.com/duff/vim-ddldbl)
  * [dispatch](https://github.com/tpope/vim-dispatch)
+ * [DrawIt](https://github.com/vim-scripts/DrawIt)
  * [easy-align](https://github.com/junegunn/vim-easy-align)
  * [editorconfig](https://github.com/editorconfig/editorconfig-vim)
  * [endwise](https://github.com/tpope/vim-endwise)
