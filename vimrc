@@ -86,7 +86,7 @@ command! FontLarge set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 14
 command! FontHuge set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 20
 
 " Distraction free writing with large font shortcut
-nnoremap <C-G> :FontLarge<CR>:Goyo<CR>
+nnoremap <Leader>go :FontLarge<CR>:Goyo<CR>
 
 " Mac OSX Specific stuff
 if has('unix')
