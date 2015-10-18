@@ -153,6 +153,9 @@ set title                " change the terminal's title
 set visualbell           " don't beep
 set noerrorbells         " don't beep
 
+" Complete from dictionary when spelling is turned on
+set complete+=kspell
+
 " More powerful Ruby completion
 let g:rubycomplete_buffer_loading = 1
 
