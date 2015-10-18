@@ -85,8 +85,35 @@ command! FontSmall set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 8
 command! FontLarge set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 14
 command! FontHuge set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 20
 
-" Distraction free writing with large font shortcut
-nnoremap <Leader>go :FontLarge<CR>:Goyo<CR>
+" Hack to fullscreen Gvim in GNOME
+if has('gui_running')
+    " TODO: figure out similar command for Awesome WM
+    " Fullscreen command for GNOME
+    command! FullScreenToggle call
+        \ system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")
+    map <silent> <F11> :FullScreenToggle<CR>
+endif
+
+" Distraction free writing shortcut and personal hooks
+nnoremap <Leader>go :Goyo<CR>
+
+function! s:goyo_enter()
+    if has('gui_running')
+        FullScreenToggle
+        FontLarge
+    endif
+endfunction
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+
+function! s:goyo_leave()
+    if has('gui_running')
+        FontRegular
+        FullScreenToggle
+        " restore my favourite Window Size
+        set lines=40 columns=85
+    endif
+endfunction
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 " Mac OSX Specific stuff
 if has('unix')
