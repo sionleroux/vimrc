@@ -8,6 +8,9 @@ call pathogen#infect()
 call pathogen#helptags()
 call pathogen#incubate()
 
+" change the mapleader from \ to ,
+let mapleader=","
+
 " Show whitespace
 set list
 if !has('win32') && (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8')
@@ -133,9 +136,6 @@ endif
 
 " ALWAYS load statusline
 set laststatus=2
-
-" change the mapleader from \ to ,
-let mapleader=","
 
 " Quickly edit/reload the vimrc file
 fun! OpenVimrc()
