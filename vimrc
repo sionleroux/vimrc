@@ -301,6 +301,9 @@ nnoremap <Leader>gs :Gstatus<CR>
 nnoremap <Leader>gc :Gcommit<CR>
 nnoremap <Leader>gw :Gwrite<CR>
 
+" Let fugitive's Gbrowse recognise Schibsted's GitHub Enterprise domain
+let g:fugitive_github_domains = ['github.schibsted.io']
+
 " Choose windows by letter
 nmap  -  <Plug>(choosewin)
 let g:choosewin_overlay_enable = 1
