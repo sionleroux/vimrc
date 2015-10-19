@@ -30,6 +30,17 @@ let g:airline_symbols.branch = '⭠'
 let g:airline_symbols.readonly = '⭤'
 let g:airline_symbols.linenr = '⭡'
 
+" JavaScript conceal characters
+let g:javascript_conceal_function   = "ƒ"
+let g:javascript_conceal_null       = "ø"
+let g:javascript_conceal_this       = "@"
+let g:javascript_conceal_return     = "⇚"
+let g:javascript_conceal_undefined  = "¿"
+let g:javascript_conceal_NaN        = "ℕ"
+let g:javascript_conceal_prototype  = "¶"
+let g:javascript_conceal_static     = "•"
+let g:javascript_conceal_super      = "Ω"
+
 " use solarized colour scheme by default
 colorscheme solarized
 
@@ -306,20 +317,6 @@ endfunction
 command! SpeedRead call SpeedRead()
 nnoremap <Leader>sr :SpeedRead<CR>
 
-" Enable concealment
-set conceallevel=2
-
-" JavaScript conceal characters
-let g:javascript_conceal_function   = "ƒ"
-let g:javascript_conceal_null       = "ø"
-let g:javascript_conceal_this       = "@"
-let g:javascript_conceal_return     = "⇚"
-let g:javascript_conceal_undefined  = "¿"
-let g:javascript_conceal_NaN        = "ℕ"
-let g:javascript_conceal_prototype  = "¶"
-let g:javascript_conceal_static     = "•"
-let g:javascript_conceal_super      = "Ω"
-
 " Ignore superfluous non-error output
 set errorformat^=%-Gsass\ %f\ >%m
 set errorformat^=%-Gcp\ %f\ %m
@@ -333,9 +330,6 @@ if has('autocmd')
 
         " Hide buffers on :e instead of closing them
         autocmd BufRead,BufNewFile */sion/* setlocal bufhidden=hide
-
-        " Use spaces for tabs in python
-        autocmd filetype json,javascript set shiftwidth=2
 
         " Recall the last line you were editing
         autocmd BufReadPost *\(.git/COMMIT_EDITMSG\)\@<!
