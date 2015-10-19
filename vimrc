@@ -291,6 +291,16 @@ nnoremap <Leader>tp :tabprevious<CR>
 nnoremap <Leader>tq :tabclose<CR>
 nnoremap <Leader>tu :tabnew<CR>
 
+" Close all other windows in this tab (useful for hiding diffs)
+nnoremap <Leader>o :only<CR>
+
+" Git-related shortcuts for fugitive commands
+nnoremap <Leader>gb :Gblame<CR>
+nnoremap <Leader>gd :Gdiff<CR>
+nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gc :Gcommit<CR>
+nnoremap <Leader>gw :Gwrite<CR>
+
 " Choose windows by letter
 nmap  -  <Plug>(choosewin)
 let g:choosewin_overlay_enable = 1
