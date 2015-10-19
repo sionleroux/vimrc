@@ -21,28 +21,10 @@ if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 
-" use old vim-powerline symbols
-let g:airline_left_sep = '⮀'
-let g:airline_left_alt_sep = '⮁'
-let g:airline_right_sep = '⮂'
-let g:airline_right_alt_sep = '⮃'
-let g:airline_symbols.branch = '⭠'
-let g:airline_symbols.readonly = '⭤'
-let g:airline_symbols.linenr = '⭡'
-
-" JavaScript conceal characters
-let g:javascript_conceal_function   = "ƒ"
-let g:javascript_conceal_null       = "ø"
-let g:javascript_conceal_this       = "@"
-let g:javascript_conceal_return     = "⇚"
-let g:javascript_conceal_undefined  = "¿"
-let g:javascript_conceal_NaN        = "ℕ"
-let g:javascript_conceal_prototype  = "¶"
-let g:javascript_conceal_static     = "•"
-let g:javascript_conceal_super      = "Ω"
-
-" use solarized colour scheme by default
+" override these if the terminal is lame
 colorscheme solarized
+set cursorline
+let g:lame_terminal = 0
 
 " Stuff varying by OS or terminal is set here
 if has('gui_running')
@@ -77,20 +59,53 @@ if has('gui_running')
     endif
 else
     """ These options only apply when running without GUI
-    set t_Co=16 " use less colours
-    set background=dark " these terminals are either B&W or solarized dark
-    colorscheme default
+
+    " Fix for background transparency in non-solarized (black) terminals
     hi Normal ctermbg=none
     hi NonText ctermbg=none
-    "xterm used by the dropdown terminal, but probably good for actual xterm too, screen used by GNU screen:
+
+    " xterm: used by GNOME dropdown terminal
+    " linux: used in tty
     if &term == "linux" ||
     \ &term == "com25" ||
     \ &term == "vt100" ||
     \ &term == "builtin_gui" ||
     \ &term == "xterm" ||
     \ &term == "screen"
+        " lamer settings for weaker terminals
+        let g:lame_terminal=1
+
+        let g:airline_symbols = {}
+        let g:airline_left_sep = '>'
+        " set t_Co=16 " use less colours
         colorscheme default " give up on using solarized
+        set nocursorline
+
     endif
+
+    set background=dark " these terminals are either B&W or solarized dark
+endif
+
+if !g:lame_terminal
+    " use old vim-powerline symbols
+    let g:airline_left_sep = '⮀'
+    let g:airline_left_alt_sep = '⮁'
+    let g:airline_right_sep = '⮂'
+    let g:airline_right_alt_sep = '⮃'
+    let g:airline_symbols.branch = '⭠'
+    let g:airline_symbols.readonly = '⭤'
+    let g:airline_symbols.linenr = '⭡'
+
+    " Javascript concealment characters
+    let g:javascript_conceal_function   = "ƒ"
+    let g:javascript_conceal_null       = "ø"
+    let g:javascript_conceal_this       = "@"
+    let g:javascript_conceal_return     = "⇚"
+    let g:javascript_conceal_undefined  = "¿"
+    let g:javascript_conceal_NaN        = "ℕ"
+    let g:javascript_conceal_prototype  = "¶"
+    let g:javascript_conceal_static     = "•"
+    let g:javascript_conceal_super      = "Ω"
 endif
 
 " Shortcuts to change font size
@@ -183,7 +198,6 @@ set incsearch     " show search matches as you type
 set history=1000    " remember more commands and search history
 set undolevels=1000 " use many muchos levels of undo
 set ruler         " Not sure what it does
-set cursorline
 set autoread
 set encoding=utf-8 " UTF8 encoding
 
