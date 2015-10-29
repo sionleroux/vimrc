@@ -95,6 +95,8 @@ if !g:lame_terminal
     let g:airline_symbols.branch = '⭠'
     let g:airline_symbols.readonly = '⭤'
     let g:airline_symbols.linenr = '⭡'
+    let g:airline_symbols.paste = 'ρ'
+    let g:airline_symbols.whitespace = 'Ξ'
 
     " Javascript concealment characters
     let g:javascript_conceal_function   = "ƒ"
@@ -107,6 +109,21 @@ if !g:lame_terminal
     let g:javascript_conceal_static     = "•"
     let g:javascript_conceal_super      = "Ω"
 endif
+
+" or copy paste the following into your vimrc for shortform text
+let g:airline_mode_map = {
+            \ '__' : '-',
+            \ 'n'  : 'N',
+            \ 'i'  : 'I',
+            \ 'R'  : 'R',
+            \ 'c'  : 'C',
+            \ 'v'  : 'V',
+            \ 'V'  : 'V',
+            \ '' : 'V',
+            \ 's'  : 'S',
+            \ 'S'  : 'S',
+            \ '' : 'S',
+            \ }
 
 " Shortcuts to change font size
 command! FontRegular set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 10
