@@ -284,6 +284,9 @@ nmap <F8> :TagbarToggle<CR>
 " Toggle Window Manager with <Leader>wm
 nnoremap <Leader>wm :WMToggle<CR>
 
+" Use Dispatch for Go building commands
+let g:go_dispatch_enabled = 1
+
 " command LoadGameTetris so ~/.vim/games/Tetris.vim
 " command LoadGameXandO so ~/.vim/games/X-and-O.vim
 
