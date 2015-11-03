@@ -228,6 +228,9 @@ set complete+=kspell
 " More powerful Ruby completion
 let g:rubycomplete_buffer_loading = 1
 
+" Enable neocomplete
+let g:neocomplete#enable_at_startup = 1
+
 " Remove stupid mapping in sparkup
 let g:sparkupNextMapping = '^J'
 
