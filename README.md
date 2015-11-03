@@ -12,6 +12,10 @@ like this:
     git clone --recursive git://github.com/sinisterstuf/vimrc.git "$HOME/.vim"
     ln -s "$HOME/.vim/vimrc" "$HOME/.vimrc"
 
+If you want to use [VimShell](https://github.com/Shougo/vimshell.vim), you need to build vimproc first:
+
+    cd $HOME/.vim/bundle/vimproc && make
+
 I've switched to using [git sub-modules](http://git-scm.com/book/en/Git-Tools-Submodules) now, so the actual plugin files
 are no longer in my repository, just a `.gitmodules` file containing
 directory and link information to install the plugins from their own
@@ -108,6 +112,8 @@ The following is a list of plugins I use:
  * [toggle](https://github.com/taku-o/vim-toggle)
  * [togglelist](https://github.com/milkypostman/vim-togglelist)
  * [unimpaired](https://github.com/tpope/vim-unimpaired)
+ * [vimproc](https://github.com/Shougo/vimproc.vim)
+ * [vimshell](https://github.com/Shougo/vimshell.vim)
  * [vimwiki](https://github.com/vimwiki/vimwiki)
  * [vim-tags](https://github.com/szw/vim-tags)
  * [wakatime](https://github.com/wakatime/vim-wakatime)
