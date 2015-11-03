@@ -172,9 +172,6 @@
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = https://github.com/klen/python-mode.git
-[submodule "bundle/vtags"]
-	path = bundle/vtags
-	url = https://github.com/szw/vim-tags.git
 [submodule "bundle/DrawIt"]
 	path = bundle/DrawIt
 	url = https://github.com/vim-scripts/DrawIt.git
