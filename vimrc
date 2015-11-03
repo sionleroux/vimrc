@@ -229,7 +229,7 @@ set complete+=kspell
 let g:rubycomplete_buffer_loading = 1
 
 " Remove stupid mapping in sparkup
-let g:sparkupNextMapping = ''
+let g:sparkupNextMapping = '^J'
 
 " Ctrl-P and file search-related
 let g:ctrlp_working_path_mode = 'rc'
