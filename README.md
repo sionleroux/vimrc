@@ -83,6 +83,7 @@ The following is a list of plugins I use:
  * [javascript](https://github.com/pangloss/vim-javascript)
  * [jdaddy](https://github.com/tpope/vim-jdaddy)
  * [latex-suite](https://github.com/jcf/vim-latex)
+ * [limelight](https://github.com/junegunn/limelight.vim)
  * [lion](https://github.com/tommcdo/vim-lion)
  * [markdown](https://github.com/tpope/vim-markdown)
  * [neocomplete](https://github.com/Shougo/neocomplete.vim)
