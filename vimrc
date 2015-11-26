@@ -234,6 +234,9 @@ let g:neocomplete#enable_at_startup = 1
 " Remove stupid mapping in sparkup
 let g:sparkupNextMapping = '^J'
 
+" format with goimports instead of gofmt
+let g:go_fmt_command = "goimports"
+
 " Ctrl-P and file search-related
 let g:ctrlp_working_path_mode = 'rc'
 let g:ctrlp_use_caching = 1
