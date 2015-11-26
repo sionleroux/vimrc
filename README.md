@@ -1,7 +1,9 @@
 # sinisterstuf's vimrc
 
-This is my *vimrc*, including all plugins I use, so that I can keep it
-up to date between my machines.
+This is my personal *vimrc*, the configuration for the [Vim text
+editor](http://www.vim.org/others.php), including all plugins I use, so
+that I can keep it up to date between my machines.
+
 
 ## Installation:
 
@@ -9,22 +11,28 @@ If you would like to use my *vimrc*, clone this repository to your home
 directory and link the `vimrc` file from `.vim/vimrc` to `~/.vimrc`,
 like this:
 
-    git clone --recursive git://github.com/sinisterstuf/vimrc.git "$HOME/.vim"
+    git clone --recursive https://github.com/sinisterstuf/vimrc.git "$HOME/.vim"
     ln -s "$HOME/.vim/vimrc" "$HOME/.vimrc"
 
-If you want to use [VimShell](https://github.com/Shougo/vimshell.vim), you need to build vimproc first:
+If you want to use [VimShell](https://github.com/Shougo/vimshell.vim),
+you need to build vimproc first:
 
     cd $HOME/.vim/bundle/vimproc && make
 
-I've switched to using [git sub-modules](http://git-scm.com/book/en/Git-Tools-Submodules) now, so the actual plugin files
-are no longer in my repository, just a `.gitmodules` file containing
-directory and link information to install the plugins from their own
-repositories.
+I've switched to using [git sub-modules](http://git-scm.com/book/en/Git-Tools-Submodules)
+now, so the actual plugin files are no longer in my repository, just a
+`.gitmodules` file containing directory and link information to install
+the plugins from their own repositories.  If pulling in this repo causes
+changes in the sub-modules, you update the referenced plugins like this:
+
+    git submodule update --init
 
 I use Tim Pope's [pathogen plugin](https://github.com/tpope/vim-pathogen)
 to keep it all together.  Each plugin pathogen manages is a submodule
 living in the `bundle` directory, so if you see some you like but don't
 want my whole repo, just add the plugins you like, in a similar fashion.
+Just remember to follow the instructions from the pathogen README first.
+
 
 ### Windows:
 
@@ -33,23 +41,30 @@ If you're using Microsoft Windows™ then rename the `.vim` directory to
 `C:\Users\YOURNAME\.vimfiles`. You'll also have to **copy** the `vimrc`
 file to the parent folder instead of linking it, because that's the way
 things are done on Microsoft Windows™!
+
 **NOTE:** apparently in Windows™ 8 you can't use the file manager to
 make a folder whose name starts with a dot, so you'll have to fire up
 good ol' Windows™ command prompt to do [the renaming](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/rename.mspx?mfr=true).
 
-### Mac OSX
 
-If you're using Mac OSX, I assume the process is similar to that on
-GNU/Linux but nothing has been tested so don't complain if it does
-nothing or breaks everything.
+### Mac OS X
+
+If you're using Mac OS X, the process is similar to that shown for
+GNU/Linux above but the default Vim installation distributed with the
+operating system is out of date and you should install a new version
+using [homebrew](http://brew.sh/):
+
+    brew install vim
+
 
 ### Disclaimer
 
 This configuration works for me, but it might not necessarily work for
 you. You will probably want to read through the `vimrc` file and change
 it a bit to suit your needs and possibly add/remove some plug-ins
-depending on what you use vim for. I also accept **no responsibility**
+depending on what you use Vim for. I also accept **no responsibility**
 if you install this on your system and anything gets damaged in any way.
+
 
 ## Plugin List
 
