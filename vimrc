@@ -61,8 +61,11 @@ else
     """ These options only apply when running without GUI
 
     " Fix for background transparency in non-solarized (black) terminals
-    hi Normal ctermbg=none
-    hi NonText ctermbg=none
+    let g:solarized_termtrans = 1
+
+    if &term == "xterm"
+        let g:solarized_termcolors = 256
+    endif
 
     " xterm: used by GNOME dropdown terminal
     " linux: used in tty
@@ -70,7 +73,6 @@ else
     \ &term == "com25" ||
     \ &term == "vt100" ||
     \ &term == "builtin_gui" ||
-    \ &term == "xterm" ||
     \ &term == "screen"
         " lamer settings for weaker terminals
         let g:lame_terminal=1
