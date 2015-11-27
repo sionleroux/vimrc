@@ -311,6 +311,8 @@ let g:vimwiki_list = [wiki]
 "let g:winManagerWindowLayout = 'TodoList,FileExplorer|BufExplorer'
 let g:winManagerWindowLayout = 'FileExplorer|BufExplorer'
 
+" Use , for CamelCaseMotion
+call camelcasemotion#CreateMotionMappings('<leader>')
 
 " Run Dispatch's Make with F9
 nnoremap <F9> :Make<CR>
