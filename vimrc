@@ -147,11 +147,20 @@ endif
 " Distraction free writing shortcut and personal hooks
 nnoremap <Leader>go :Goyo<CR>
 
+" Try making Goyo a bit wider
+let g:goyo_width=80
+
 function! s:goyo_enter()
     if has('gui_running')
         FullScreenToggle
         FontLarge
     endif
+    set noshowmode
+    set noshowcmd
+    set scrolloff=999
+    set sidescrolloff=0
+    NeoCompleteDisable
+    Limelight
 endfunction
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
 
@@ -162,6 +171,12 @@ function! s:goyo_leave()
         " restore my favourite Window Size
         set lines=40 columns=85
     endif
+    set showmode
+    set showcmd
+    set scrolloff=1
+    set sidescrolloff=5
+    NeoCompleteEnable
+    Limelight!
 endfunction
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
