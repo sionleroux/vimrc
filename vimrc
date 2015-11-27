@@ -11,16 +11,6 @@ call pathogen#incubate()
 " change the mapleader from \ to ,
 let mapleader=","
 
-" Show whitespace
-set list
-if !has('win32') && (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8')
-    let &listchars = "tab:\u21e5 ,trail:\u2423,extends:\u21c9,precedes:\u21c7,nbsp:\u00b7"
-endif
-" Assume that non-tty terminals use the patched font (override it below for TTY)
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-
 " override these if the terminal is lame
 colorscheme solarized
 set cursorline
@@ -89,27 +79,39 @@ else
 endif
 
 if !g:lame_terminal
-    " use old vim-powerline symbols
-    let g:airline_left_sep = '⮀'
-    let g:airline_left_alt_sep = '⮁'
-    let g:airline_right_sep = '⮂'
-    let g:airline_right_alt_sep = '⮃'
-    let g:airline_symbols.branch = '⭠'
-    let g:airline_symbols.readonly = '⭤'
-    let g:airline_symbols.linenr = '⭡'
-    let g:airline_symbols.paste = 'ρ'
-    let g:airline_symbols.whitespace = 'Ξ'
 
-    " Javascript concealment characters
-    let g:javascript_conceal_function   = "ƒ"
-    let g:javascript_conceal_null       = "ø"
-    let g:javascript_conceal_this       = "@"
-    let g:javascript_conceal_return     = "⇚"
-    let g:javascript_conceal_undefined  = "¿"
-    let g:javascript_conceal_NaN        = "ℕ"
-    let g:javascript_conceal_prototype  = "¶"
-    let g:javascript_conceal_static     = "•"
-    let g:javascript_conceal_super      = "Ω"
+    if !has('win32') && (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8')
+        let &listchars = "tab:\u21e5 ,trail:\u2423,extends:\u21c9,precedes:\u21c7,nbsp:\u00b7"
+
+        " Assume that non-tty terminals use the patched font (override it below for TTY)
+        if !exists('g:airline_symbols')
+            let g:airline_symbols = {}
+        endif
+
+        " use old vim-powerline symbols
+        let g:airline_left_sep = '⮀'
+        let g:airline_left_alt_sep = '⮁'
+        let g:airline_right_sep = '⮂'
+        let g:airline_right_alt_sep = '⮃'
+        let g:airline_symbols.branch = '⭠'
+        let g:airline_symbols.readonly = '⭤'
+        let g:airline_symbols.linenr = '⭡'
+        let g:airline_symbols.paste = 'ρ'
+        let g:airline_symbols.whitespace = 'Ξ'
+
+        " Javascript concealment characters
+        let g:javascript_conceal_function   = "ƒ"
+        let g:javascript_conceal_null       = "ø"
+        let g:javascript_conceal_this       = "@"
+        let g:javascript_conceal_return     = "⇚"
+        let g:javascript_conceal_undefined  = "¿"
+        let g:javascript_conceal_NaN        = "ℕ"
+        let g:javascript_conceal_prototype  = "¶"
+        let g:javascript_conceal_static     = "•"
+        let g:javascript_conceal_super      = "Ω"
+
+    endif
+
 endif
 
 " or copy paste the following into your vimrc for shortform text
