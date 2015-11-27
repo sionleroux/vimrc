@@ -307,10 +307,6 @@ endif
 let wiki.nested_syntaxes ={'bash': 'bash', 'java': 'java'}
 let g:vimwiki_list = [wiki]
 
-" Make Enter / Shift-Enter insert newline below/above in command mode
-map <S-Enter> O<Esc>
-map <CR> o<Esc>
-
 " Add TodoList to Window Manager
 "let g:winManagerWindowLayout = 'TodoList,FileExplorer|BufExplorer'
 let g:winManagerWindowLayout = 'FileExplorer|BufExplorer'
