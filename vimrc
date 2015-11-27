@@ -420,6 +420,9 @@ set errorformat^=%-Gcp\ %f\ %m
 set errorformat^=%-Gmkdir\ %f
 set errorformat^=%-Grm\ %f
 
+" PHP Mess detector
+let &errorformat = &errorformat . ",%f:%l\t%m"
+
 if has('autocmd')
     augroup sinisterstuf
         " Remove ALL autocommands for the current group.
