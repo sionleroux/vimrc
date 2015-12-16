@@ -314,8 +314,9 @@ let g:winManagerWindowLayout = 'FileExplorer|BufExplorer'
 " Use , for CamelCaseMotion
 call camelcasemotion#CreateMotionMappings('<leader>')
 
-" Run Dispatch's Make with F9
+" Dispatch shortcuts
 nnoremap <F9> :Make<CR>
+nnoremap <F10> :Dispatch<CR>
 " Toggle tagbar with F8
 nmap <F8> :TagbarToggle<CR>
 " Toggle Window Manager with <Leader>wm
