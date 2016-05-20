@@ -136,7 +136,6 @@ The following is a list of plugins I use:
 [vimproc](https://github.com/Shougo/vimproc.vim)
 [vimshell](https://github.com/Shougo/vimshell.vim)
 [vimwiki](https://github.com/vimwiki/vimwiki)
-[wakatime](https://github.com/wakatime/vim-wakatime)
 [winmanager](https://github.com/vim-scripts/winmanager)
 [wordpress](https://github.com/dsawardekar/wordpress.vim)
 [vinegar](https://github.com/tpope/vim-vinegar)
