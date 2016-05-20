@@ -139,3 +139,4 @@ The following is a list of plugins I use:
 [wakatime](https://github.com/wakatime/vim-wakatime)
 [winmanager](https://github.com/vim-scripts/winmanager)
 [wordpress](https://github.com/dsawardekar/wordpress.vim)
+[vinegar](https://github.com/tpope/vim-vinegar)
