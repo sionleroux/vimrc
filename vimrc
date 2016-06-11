@@ -4,9 +4,8 @@ scriptencoding utf-8
 set fileencodings=ucs-bom,utf-8,default,latin2
 
 " Setup Pathogen to load all bundles and their helptags
-call pathogen#infect()
+call pathogen#infect('bundle/{}', '~/Hacking/vim/{}')
 call pathogen#helptags()
-call pathogen#incubate()
 
 " change the mapleader from \ to ,
 let mapleader=","
