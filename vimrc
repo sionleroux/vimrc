@@ -392,7 +392,6 @@ let g:fugitive_github_domains = ['github.schibsted.io']
 
 " Choose windows by letter
 nmap  -  <Plug>(choosewin)
-let g:choosewin_overlay_enable = 1
 
 " Make .tex files always tex, not plaintex
 let g:tex_flavor='latex'
