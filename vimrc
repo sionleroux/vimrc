@@ -212,7 +212,7 @@ nnoremap <silent> <leader>sv :so $MYVIMRC<CR>
 syntax enable on
 filetype plugin indent on
 
-set list            " Show whitespace
+set nolist          " Show whitespace
 set nowrap          " don't wrap lines
 set tabstop=4       " a tab is four spaces
 set shiftwidth=4    " number of spaces to use for autoindenting
