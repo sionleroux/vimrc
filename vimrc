@@ -187,6 +187,9 @@ if has('unix')
         set ttymouse=xterm2
         " OSX won't use Inconsolate font unless you write it like this:
         set guifont=Inconsolata-dz\ for\ Powerline\ dz\ 10 "Linux Only
+        " Change iTerm2 cursor when changing modes
+        let &t_SI = "\<Esc>]1337;CursorShape=1\x7"
+        let &t_EI = "\<Esc>]1337;CursorShape=0\x7"
     endif
 endif
 
