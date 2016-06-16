@@ -440,7 +440,7 @@ if has('autocmd')
                     \ endif
 
         " Turn on English spell-checking automatically
-        autocmd filetype gitcommit,vimwiki setlocal spell spelllang=en_gb
+        autocmd filetype gitcommit,vimwiki,mail setlocal spell spelllang=en_gb
 
         " Set foldmethod for config files
         autocmd BufRead,BufNewFile */.config/* setlocal foldmethod=marker
