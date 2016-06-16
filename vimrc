@@ -239,6 +239,7 @@ set encoding=utf-8  " UTF8 encoding
 set title           " change the terminal's title
 set visualbell      " don't beep
 set noerrorbells    " don't beep
+set sessionoptions-=options " don't track options in sessions
 
 " Complete from dictionary when spelling is turned on
 set complete+=kspell
