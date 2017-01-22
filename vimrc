@@ -128,6 +128,10 @@ let g:airline_mode_map = {
             \ '' : 'S',
             \ }
 
+" Rainbow Parentheses settings
+nnoremap <Leader>rr :RainbowParentheses!!<CR>
+let g:rainbow#pairs = [['(',')'], ['[',']'], ['{','}'], ['<%','%>']]
+
 " Shortcuts to change font size
 command! FontRegular set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 10
 command! FontSmall set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 8

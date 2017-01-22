@@ -84,7 +84,7 @@
 	url = https://github.com/tpope/vim-ragtag.git
 [submodule "bundle/rainbow"]
 	path = bundle/rainbow
-	url = https://github.com/kien/rainbow_parentheses.vim.git
+	url = https://github.com/junegunn/rainbow_parentheses.vim
 [submodule "bundle/repeat"]
 	path = bundle/repeat
 	url = https://github.com/tpope/vim-repeat.git

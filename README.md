@@ -117,7 +117,7 @@ The following is a list of plugins I use:
 [projectionist](https://github.com/tpope/vim-projectionist)
 [python-mode](https://github.com/klen/python-mode)
 [ragtag](https://github.com/tpope/vim-ragtag)
-[rainbow](https://github.com/kien/rainbow_parentheses.vim)
+[rainbow](https://github.com/junegunn/rainbow_parentheses.vim)
 [repeat](https://github.com/tpope/vim-repeat)
 [repress](https://github.com/vim-scripts/VimRepress)
 [rsi](https://github.com/tpope/vim-rsi)
