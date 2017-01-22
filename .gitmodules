@@ -36,7 +36,7 @@
 	url = https://github.com/ap/vim-css-color.git
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
-	url = https://github.com/kien/ctrlp.vim.git
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "bundle/ddldbl"]
 	path = bundle/ddldbl
 	url = https://github.com/duff/vim-ddldbl
@@ -205,3 +205,24 @@
 [submodule "bundle/vinegar"]
 	path = bundle/vinegar
 	url = https://github.com/tpope/vim-vinegar.git
+[submodule "bundle/coffee-script"]
+	path = bundle/coffee-script
+	url = https://github.com/kchmck/vim-coffee-script
+[submodule "bundle/FastFold"]
+	path = bundle/FastFold
+	url = https://github.com/Konfekt/FastFold
+[submodule "bundle/stay"]
+	path = bundle/stay
+	url = https://github.com/kopischke/vim-stay
+[submodule "bundle/fetch"]
+	path = bundle/fetch
+	url = https://github.com/kopischke/vim-fetch
+[submodule "bundle/showtime"]
+	path = bundle/showtime
+	url = https://github.com/thinca/vim-showtime
+[submodule "bundle/hugefile"]
+	path = bundle/hugefile
+	url = https://github.com/mhinz/vim-hugefile
+[submodule "bundle/gotests"]
+	path = bundle/gotests
+	url = https://github.com/buoto/gotests-vim
