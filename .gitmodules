@@ -226,3 +226,6 @@
 [submodule "bundle/gotests"]
 	path = bundle/gotests
 	url = https://github.com/buoto/gotests-vim
+[submodule "bundle/ctrlp-z"]
+	path = bundle/ctrlp-z
+	url = https://github.com/amiorin/ctrlp-z.git

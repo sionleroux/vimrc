@@ -272,6 +272,9 @@ set wildmode=list:longest,full
 let g:ctrlp_custom_ignore = {
     \ 'dir': '\v.+/(tmp|temp)',
     \ }
+let g:ctrlp_extensions = ['Z', 'F']
+nnoremap sz :CtrlPZ<Cr>
+nnoremap sf :CtrlPF<Cr>
 
 if version > 702 " stuff that doesn't work in Vim 7.2 (thank you Centos 6!)
     set colorcolumn=+1 " mark the end of text-width with a dark line
