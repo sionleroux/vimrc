@@ -15,3 +15,10 @@ setlocal makeprg=gulp\ --no-color
 
 " enable concealment
 set conceallevel=2
+
+" Tern mappings
+nnoremap K :TernDoc<CR>
+nnoremap gd :TernDef<CR>
+nnoremap g= :TernRefs<CR>
+nnoremap gr :TernRename<CR>
+nnoremap g? :TernType<CR>
