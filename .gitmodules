@@ -229,3 +229,6 @@
 [submodule "bundle/ctrlp-z"]
 	path = bundle/ctrlp-z
 	url = https://github.com/amiorin/ctrlp-z.git
+[submodule "bundle/jekyll"]
+	path = bundle/jekyll
+	url = https://github.com/parkr/vim-jekyll
