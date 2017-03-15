@@ -235,3 +235,9 @@
 [submodule "bundle/disapprove-deep-indentation"]
 	path = bundle/disapprove-deep-indentation
 	url = https://github.com/dodie/vim-disapprove-deep-indentation.git
+[submodule "bundle/ref"]
+	path = bundle/ref
+	url = https://github.com/thinca/vim-ref.git
+[submodule "bundle/php"]
+	path = bundle/php
+	url = https://github.com/StanAngeloff/php.vim.git
