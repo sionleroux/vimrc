@@ -232,3 +232,6 @@
 [submodule "bundle/jekyll"]
 	path = bundle/jekyll
 	url = https://github.com/parkr/vim-jekyll
+[submodule "bundle/disapprove-deep-indentation"]
+	path = bundle/disapprove-deep-indentation
+	url = https://github.com/dodie/vim-disapprove-deep-indentation.git
