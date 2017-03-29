@@ -380,7 +380,7 @@ nnoremap <Leader>cd :CD<CR>
 nnoremap <F4> :set et!<CR>:retab!<CR>
 
 " Like the do and dp commands
-nnoremap <Leader>du :diffupdate<CR>
+nnoremap du :diffupdate<CR>
 
 " Some tab shortcuts I feel are missing
 nnoremap <Leader>tn :tabnext<CR>
