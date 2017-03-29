@@ -324,6 +324,8 @@ let g:winManagerWindowLayout = 'FileExplorer|BufExplorer'
 " Use , for CamelCaseMotion
 call camelcasemotion#CreateMotionMappings('<leader>')
 
+nnoremap <Leader>f :tabe %<CR>
+
 " Dispatch shortcuts
 nnoremap <F9> :Make<CR>
 nnoremap <F10> :Dispatch<CR>
