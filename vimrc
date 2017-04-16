@@ -138,6 +138,8 @@ command! FontSmall set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 8
 command! FontLarge set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 14
 command! FontHuge set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 20
 
+command! Slugify call setline('.', join(split(tolower(substitute(iconv(getline('.'), 'utf8', 'ascii//TRANSLIT'), "[\"']", '', 'g')), '\W\+'), '-'))
+
 " Hack to fullscreen Gvim in GNOME
 if has('gui_running')
     " TODO: figure out similar command for Awesome WM
