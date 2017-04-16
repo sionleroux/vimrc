@@ -88,7 +88,6 @@ The following is a list of plugins I use:
 [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 [ctrlp-z](https://github.com/amiorin/ctrlp-z)
 [ddldbl](https://github.com/duff/vim-ddldbl)
-[disapprove-deep-indentation](https://github.com/dodie/vim-disapprove-deep-indentation)
 [dispatch](https://github.com/tpope/vim-dispatch)
 [DrawIt](https://github.com/vim-scripts/DrawIt)
 [easy-align](https://github.com/junegunn/vim-easy-align)
