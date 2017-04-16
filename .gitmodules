@@ -108,7 +108,7 @@
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/sparkup"]
 	path = bundle/sparkup
-	url = https://github.com/sinisterstuf/vim-sparkup.git
+	url = https://github.com/tristen/vim-sparkup.git
 [submodule "bundle/speeddating"]
 	path = bundle/speeddating
 	url = https://github.com/tpope/vim-speeddating.git
