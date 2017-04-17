@@ -23,7 +23,7 @@ if has('gui_running')
     set background=light
     so ~/.vim/bundle/solarized/autoload/togglebg.vim " enable F5 to toggle BG dark or light
     " Linux font by default, override elsewhere as needed
-    set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 10
+    let s:myfontface = 'lin'
     " hide mouse when typing:
     set mousehide
     set mousemodel=popup_setpos "enable right-click context menu
@@ -44,7 +44,7 @@ if has('gui_running')
     """ Windows™ only options
     if has("win95") || has("win16") || has("win32") || has("win64")
         :set guioptions-=T  "remove toolbar (only useful on Windows™ cos it's ugly)
-        set guifont=Consolas\ for\ Powerline\ FixedD:h11 "use patched Consolas font when on Windows™
+        let s:myfontface = 'win'
     endif
 else
     """ These options only apply when running without GUI
@@ -132,11 +132,45 @@ let g:airline_mode_map = {
 nnoremap <Leader>rr :RainbowParentheses!!<CR>
 let g:rainbow#pairs = [['(',')'], ['[',']'], ['{','}'], ['<%','%>']]
 
+" list of fonts by OS and their sizes
+let s:myfonts = {
+            \ 'face' : {
+                \ 'lin' : 'Inconsolata-dz for Powerline Medium ',
+                \ 'mac' : 'Inconsolata-dz for Powerline:h',
+                \ 'win' : 'Consolas for Powerline FixedD:h',
+            \ },
+            \ 'size' : ['8', '11', '14', '20']
+            \ }
+
+" convenience function for changing font size for OS font
+function! s:setfontsize(size)
+
+    " update current font size
+    if a:size >= len(s:myfonts['size'])
+        let s:myfontsize = 0
+    else
+        let s:myfontsize = a:size
+    endif
+
+    " use it
+    let &guifont = s:myfonts['face'][s:myfontface] .
+                \ s:myfonts['size'][s:myfontsize]
+endfunction
+
+" set regular font by default
+if has('gui_running')
+    call s:setfontsize(1) " Regular Size
+endif
+
 " Shortcuts to change font size
-command! FontRegular set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 10
-command! FontSmall set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 8
-command! FontLarge set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 14
-command! FontHuge set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 20
+command! FontRegular call s:setfontsize(1)
+command! FontSmall   call s:setfontsize(0)
+command! FontLarge   call s:setfontsize(2)
+command! FontHuge    call s:setfontsize(3)
+command! FontBigger  call s:setfontsize(s:myfontsize + 1)
+command! FontSmaller call s:setfontsize(s:myfontsize - 1)
+nnoremap <Leader>fa :FontBigger<CR> " like C-A
+nnoremap <Leader>fx :FontSmaller<CR> " like C-X
 
 command! Slugify call
             \ setline(
@@ -212,8 +246,7 @@ if has('unix')
     if s:uname == "Darwin\n"
         " A mouse mode is needed for iTerm2 on OSX:
         set ttymouse=xterm2
-        " OSX won't use Inconsolate font unless you write it like this:
-        set guifont=Inconsolata-dz\ for\ Powerline\ dz\ 10 "Linux Only
+        let s:myfontface = 'mac'
         " Change iTerm2 cursor when changing modes
         let &t_SI = "\<Esc>]1337;CursorShape=1\x7"
         let &t_EI = "\<Esc>]1337;CursorShape=0\x7"
