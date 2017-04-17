@@ -264,8 +264,6 @@ let g:sparkupNextMapping = '^J'
 
 " Ctrl-P and file search-related
 let g:ctrlp_working_path_mode = 'rc'
-let g:ctrlp_use_caching = 1
-let g:ctrlp_clear_cache_on_exit = 1
 set wildignore+=*.swo,*.swp,*.bak,*.pyc,*.class,*.o
 set wildignore+=*.pdf,*.aux,*.out,*.lol,*.lot,*.lof,*.toc
 set wildignore+=*/node_modules/*,Session.vim
@@ -274,6 +272,7 @@ set wildmode=list:longest,full
 let g:ctrlp_custom_ignore = {
     \ 'dir': '\v.+/(tmp|temp)',
     \ }
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:ctrlp_extensions = ['Z', 'F']
 nnoremap sz :CtrlPZ<Cr>
 nnoremap sf :CtrlPF<Cr>
