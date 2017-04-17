@@ -381,7 +381,8 @@ let g:winManagerWindowLayout = 'FileExplorer|BufExplorer'
 " Use , for CamelCaseMotion
 call camelcasemotion#CreateMotionMappings('<leader>')
 
-nnoremap <Leader>f :tabe %<CR>
+" Fake fullscreen buffer within Vim
+nnoremap <Leader>ff :tabe %<CR>
 
 " Dispatch shortcuts
 nnoremap <F9> :Make<CR>
