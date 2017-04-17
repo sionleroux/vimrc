@@ -196,6 +196,8 @@ if has('unix')
         " Change iTerm2 cursor when changing modes
         let &t_SI = "\<Esc>]1337;CursorShape=1\x7"
         let &t_EI = "\<Esc>]1337;CursorShape=0\x7"
+        " Ref reference viewer settings
+        let g:ref_man_cmd = "man -P cat" " workaround to get man output on Mac
     endif
 endif
 
