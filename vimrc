@@ -43,7 +43,7 @@ if has('gui_running')
     set go-=r " scrollbar
     """ Windows™ only options
     if has("win95") || has("win16") || has("win32") || has("win64")
-        :set guioptions-=T  "remove toolbar (only useful on Windows™ cos it's ugly)
+        set guioptions-=T  "remove toolbar (only useful on Windows™ cos it's ugly)
         let s:myfontface = 'win'
     endif
 else
