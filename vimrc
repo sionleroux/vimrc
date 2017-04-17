@@ -428,6 +428,15 @@ let g:tagbar_type_go = {
 " command LoadGameTetris so ~/.vim/games/Tetris.vim
 " command LoadGameXandO so ~/.vim/games/X-and-O.vim
 
+let g:ref_source_webdict_sites = {
+    \ 'default' : 'wiktionary',
+    \ 'wiktionary' : {
+        \ 'url'  : "https://en.wiktionary.org/wiki/%s",
+        \ 'line' : 3,
+        \ },
+    \ }
+let g:ref_source_webdict_cmd = 'lynx -dump -nonumbers %s'
+
 " convert vimwiki page to HTML with <Leader>vh
 nnoremap <Leader>vh :Vimwiki2HTML<CR>
 
