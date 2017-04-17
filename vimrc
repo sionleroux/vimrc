@@ -396,9 +396,6 @@ nnoremap <Leader>wm :WMToggle<CR>
 " Use Dispatch for Go building commands
 let g:go_dispatch_enabled = 1
 
-" Fix go imports when reformatting on save
-let g:go_fmt_command = "goimports"
-
 " Set tagbar options for Go
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
