@@ -113,6 +113,21 @@ if !g:lame_terminal
 
 endif
 
+" Mac OSX Specific stuff
+if has('unix')
+    let s:uname = system("uname")
+    if s:uname == "Darwin\n"
+        " A mouse mode is needed for iTerm2 on OSX:
+        set ttymouse=xterm2
+        let s:myfontface = 'mac'
+        " Change iTerm2 cursor when changing modes
+        let &t_SI = "\<Esc>]1337;CursorShape=1\x7"
+        let &t_EI = "\<Esc>]1337;CursorShape=0\x7"
+        " Ref reference viewer settings
+        let g:ref_man_cmd = "man -P cat" " workaround to get man output on Mac
+    endif
+endif
+
 " or copy paste the following into your vimrc for shortform text
 let g:airline_mode_map = {
             \ '__' : '-',
@@ -239,21 +254,6 @@ function! s:goyo_leave()
     Limelight!
 endfunction
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
-
-" Mac OSX Specific stuff
-if has('unix')
-    let s:uname = system("uname")
-    if s:uname == "Darwin\n"
-        " A mouse mode is needed for iTerm2 on OSX:
-        set ttymouse=xterm2
-        let s:myfontface = 'mac'
-        " Change iTerm2 cursor when changing modes
-        let &t_SI = "\<Esc>]1337;CursorShape=1\x7"
-        let &t_EI = "\<Esc>]1337;CursorShape=0\x7"
-        " Ref reference viewer settings
-        let g:ref_man_cmd = "man -P cat" " workaround to get man output on Mac
-    endif
-endif
 
 " Enable mouse
 if has('mouse')
