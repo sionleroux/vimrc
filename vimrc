@@ -456,6 +456,10 @@ nnoremap <Leader>gs :Gstatus<CR>
 nnoremap <Leader>gc :Gcommit<CR>
 nnoremap <Leader>gw :Gwrite<CR>
 
+if $PWD ==# $HOME
+    let g:fugitive_git_executable = 'yadm'
+endif
+
 " Let fugitive's Gbrowse recognise Schibsted's GitHub Enterprise domain
 let g:fugitive_github_domains = ['github.schibsted.io']
 
