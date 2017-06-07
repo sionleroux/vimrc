@@ -154,7 +154,7 @@ let s:myfonts = {
                 \ 'mac' : 'Inconsolata-dz for Powerline:h',
                 \ 'win' : 'Consolas for Powerline FixedD:h',
             \ },
-            \ 'size' : ['8', '11', '14', '20']
+            \ 'size' : ['8', '10', '14', '20']
             \ }
 
 " convenience function for changing font size for OS font
