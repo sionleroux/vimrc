@@ -137,6 +137,7 @@ The following is a list of plugins I use:
 [splitjoin](https://github.com/AndrewRadev/splitjoin.vim)
 [stay](https://github.com/kopischke/vim-stay)
 [surround](https://github.com/tpope/vim-surround)
+[swift](https://github.com/keith/swift.vim)
 [tagbar](https://github.com/majutsushi/tagbar)
 [tbone](https://github.com/tpope/vim-tbone)
 [tern](https://github.com/marijnh/tern_for_vim)
