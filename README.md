@@ -125,6 +125,7 @@ The following is a list of plugins I use:
 [repeat](https://github.com/tpope/vim-repeat)
 [repress](https://github.com/vim-scripts/VimRepress)
 [rsi](https://github.com/tpope/vim-rsi)
+[scala](https://github.com/derekwyatt/vim-scala)
 [scratch](https://github.com/mtth/scratch.vim)
 [scriptease](https://github.com/tpope/vim-scriptease)
 [sensible](https://github.com/tpope/vim-sensible)
