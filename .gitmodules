@@ -244,3 +244,15 @@
 [submodule "bundle/swift"]
 	path = bundle/swift
 	url = https://github.com/keith/swift.vim.git
+[submodule "bundle/luarefvim"]
+	path = bundle/luarefvim
+	url = https://github.com/wsdjeg/luarefvim
+[submodule "bundle/misc"]
+	path = bundle/misc
+	url = https://github.com/xolox/vim-misc
+[submodule "bundle/lua-inspect"]
+	path = bundle/lua-inspect
+	url = https://github.com/xolox/vim-lua-inspect
+[submodule "bundle/lua-ftplugin"]
+	path = bundle/lua-ftplugin
+	url = https://github.com/xolox/vim-lua-ftplugin

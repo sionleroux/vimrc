@@ -315,6 +315,18 @@ let g:rubycomplete_buffer_loading = 1
 
 " Enable neocomplete
 let g:neocomplete#enable_at_startup = 1
+" Enable heavy omni completion.
+if !exists('g:neocomplete#sources#omni#input_patterns')
+  let g:neocomplete#sources#omni#input_patterns = {}
+endif
+if !exists('g:neocomplete#sources#omni#functions')
+  let g:neocomplete#sources#omni#functions = {}
+endif
+" use xolox/vim-lua-ftplugin for lua completion:
+let g:neocomplete#sources#omni#functions.lua =
+        \ 'xolox#lua#omnifunc'
+let g:neocomplete#sources#omni#input_patterns.lua =
+        \ '\w\+[.:]\|require\s*(\?["'']\w*'
 
 " Remove stupid mapping in sparkup
 let g:sparkupNextMapping = '^J'
@@ -505,6 +517,16 @@ set errorformat^=%-Grm\ %f
 
 " PHP Mess detector
 let &errorformat = &errorformat . ",%f:%l\t%m"
+
+" turn off automatic semantic syntax highlighting
+" because it doesn't really work because luainspect tool can't find imports
+let g:lua_inspect_events = ''
+" prepare to use neocomplete with xolox/vim-lua-ftplugin
+let g:lua_check_syntax = 0
+let g:lua_complete_omni = 1
+let g:lua_complete_dynamic = 0
+let g:lua_define_completion_mappings = 0
+
 
 if has('autocmd')
     augroup sinisterstuf
