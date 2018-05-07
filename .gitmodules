@@ -256,6 +256,12 @@
 [submodule "bundle/lua-ftplugin"]
 	path = bundle/lua-ftplugin
 	url = https://github.com/xolox/vim-lua-ftplugin
+[submodule "bundle/nginx"]
+	path = bundle/nginx
+	url = ssh://git@github.com/chr4/nginx.vim.git
+[submodule "bundle/sslsecure"]
+	path = bundle/sslsecure
+	url = ssh://git@github.com/chr4/sslsecure.vim
 [submodule "bundle/gist"]
 	path = bundle/gist
 	url = https://github.com/mattn/gist-vim.git
