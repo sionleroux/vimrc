@@ -484,6 +484,9 @@ endif
 " Let fugitive's Gbrowse recognise Schibsted's GitHub Enterprise domain
 let g:fugitive_github_domains = ['github.schibsted.io']
 
+" Make gists in Schibsted's gists
+let g:gist_api_url = 'https://github.schibsted.io/api/v3'
+
 " Choose windows by letter
 nmap  -  <Plug>(choosewin)
 
