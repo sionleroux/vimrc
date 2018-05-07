@@ -262,6 +262,9 @@
 [submodule "bundle/sslsecure"]
 	path = bundle/sslsecure
 	url = ssh://git@github.com/chr4/sslsecure.vim
+[submodule "bundle/primary"]
+	path = bundle/primary
+	url = ssh://git@github.com/google/vim-colorscheme-primary.git
 [submodule "bundle/gist"]
 	path = bundle/gist
 	url = https://github.com/mattn/gist-vim.git

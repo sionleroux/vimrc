@@ -123,6 +123,7 @@ The following is a list of plugins I use:
 [php](https://github.com/StanAngeloff/php.vim)
 [php-folding](https://github.com/rayburgemeestre/phpfolding.vim)
 [php-manual](https://github.com/alvan/vim-php-manual)
+[primary](https://github.com/google/vim-colorscheme-primary)
 [projectionist](https://github.com/tpope/vim-projectionist)
 [python-mode](https://github.com/klen/python-mode)
 [ragtag](https://github.com/tpope/vim-ragtag)
