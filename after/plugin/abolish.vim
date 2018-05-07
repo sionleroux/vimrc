@@ -6,4 +6,6 @@ if exists(":Abolish")
     Abolish tempalte template
     Abolish fix{iu,ui}p fixup
     Abolish slrx Siôn le Roux
+    Abolish jfgx Jófogás
+    Abolish hzax Használtautó
 endif
