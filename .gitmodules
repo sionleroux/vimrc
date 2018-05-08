@@ -244,6 +244,15 @@
 [submodule "bundle/swift"]
 	path = bundle/swift
 	url = https://github.com/keith/swift.vim.git
+[submodule "bundle/neco-vim"]
+	path = bundle/neco-vim
+	url = https://github.com/Shougo/neco-vim.git
+[submodule "bundle/html5"]
+	path = bundle/html5
+	url = https://github.com/othree/html5.vim.git
+[submodule "bundle/phpcomplete"]
+	path = bundle/phpcomplete
+	url = https://github.com/shawncplus/phpcomplete.vim.git
 [submodule "bundle/luarefvim"]
 	path = bundle/luarefvim
 	url = https://github.com/wsdjeg/luarefvim
