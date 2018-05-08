@@ -262,6 +262,9 @@
 [submodule "bundle/sslsecure"]
 	path = bundle/sslsecure
 	url = ssh://git@github.com/chr4/sslsecure.vim
+[submodule "bundle/wakatime"]
+	path = bundle/wakatime
+	url = ssh://git@github.com/wakatime/vim-wakatime.git
 [submodule "bundle/primary"]
 	path = bundle/primary
 	url = ssh://git@github.com/google/vim-colorscheme-primary.git
