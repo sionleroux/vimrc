@@ -277,6 +277,9 @@
 [submodule "bundle/primary"]
 	path = bundle/primary
 	url = ssh://git@github.com/google/vim-colorscheme-primary.git
+[submodule "bundle/afterimage"]
+	path = bundle/afterimage
+	url = https://github.com/tpope/vim-afterimage
 [submodule "bundle/gist"]
 	path = bundle/gist
 	url = https://github.com/mattn/gist-vim.git

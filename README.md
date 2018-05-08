@@ -71,6 +71,7 @@ if you install this on your system and anything gets damaged in any way.
 The following is a list of plugins I use:
 
 [abolish](https://github.com/tpope/vim-abolish)
+[afterimage](https://github.com/tpope/vim-afterimage)
 [airline](https://github.com/bling/vim-airline)
 [ansiesc](https://github.com/vim-scripts/Improved-AnsiEsc)
 [arduino](https://github.com/jplaut/vim-arduino-ino)
