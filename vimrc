@@ -376,14 +376,10 @@ endif
 " Get sudo (only useful on Linux)
 cmap w!! w !sudo tee % >/dev/null
 
-" Some vimwiki settings
+" My personal Wiki settings
 let wiki = {}
-if isdirectory($HOME . '/Documents') " this only exists on my laptop
-    let wiki.path = '~/Documents/vimwiki'
-endif
-if isdirectory($HOME . '/Projects/Web/www') " same thing here
-    let wiki.path_html = '~/Projects/Web/www/vimwiki'
-endif
+let wiki.path = '~/wiki/'
+let wiki.path_html = '~/Documents/wiki/'
 let wiki.nested_syntaxes ={'bash': 'bash', 'java': 'java'}
 let g:vimwiki_list = [wiki]
 
