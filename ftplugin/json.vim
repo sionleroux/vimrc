@@ -1,5 +1,5 @@
 command! Uglify %!uglifyjs --expr
-command! Prettify %!uglifyjs --expr -b
+command! Prettify %!jq ''
 
 set shiftwidth=2 tabstop=2
 set nolist
