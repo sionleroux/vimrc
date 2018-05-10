@@ -1,4 +1,15 @@
-" automatic linebreaks at 72 chars
+"" (Most of this copy-pasted from ftplugin/markdown.vim, consider sourcing!)
+setlocal spell spelllang=en_gb
+
+"" automatic linebreaks at 72 chars
 set nowrap
-set tw=72
-set sw=2
+set textwidth=72
+
+"" 4-space indentation specially for code blocks
+set tabstop=4
+set shiftwidth=4
+set shiftround
+set expandtab
+
+"" use web dictionary for lookups
+call ref#register_detection('vimwiki', 'webdict')

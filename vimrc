@@ -381,7 +381,13 @@ let wiki = {}
 let wiki.path = '~/wiki/'
 let wiki.path_html = '~/Documents/wiki/'
 let wiki.nested_syntaxes ={'bash': 'bash', 'java': 'java'}
+let g:vimwiki_ext2syntax = {'.md': 'markdown'}
+let wiki.syntax = 'markdown'
+let wiki.ext = '.md'
+let wiki.auto_toc = 1
+" Add above to Wiki list
 let g:vimwiki_list = [wiki]
+let g:vimwiki_global_ext = 0 " only handle defined wikis as wikis
 
 " Add TodoList to Window Manager
 "let g:winManagerWindowLayout = 'TodoList,FileExplorer|BufExplorer'
