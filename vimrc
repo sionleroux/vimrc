@@ -18,8 +18,6 @@ let g:lame_terminal = 0
 " Stuff varying by OS or terminal is set here
 if has('gui_running')
     """ GUI only options
-    " bigger window
-    set lines=40 columns=85
     set background=light
     so ~/.vim/bundle/solarized/autoload/togglebg.vim " enable F5 to toggle BG dark or light
     " Linux font by default, override elsewhere as needed
@@ -243,8 +241,6 @@ function! s:goyo_leave()
     if has('gui_running')
         FontRegular
         FullScreenToggle
-        " restore my favourite Window Size
-        set lines=40 columns=85
     endif
     set showmode
     set showcmd
