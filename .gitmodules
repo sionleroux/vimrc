@@ -286,3 +286,6 @@
 [submodule "bundle/webapi"]
 	path = bundle/webapi
 	url = https://github.com/mattn/webapi-vim.git
+[submodule "bundle/apathy"]
+	path = bundle/apathy
+	url = https://github.com/tpope/vim-apathy
