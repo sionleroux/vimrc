@@ -289,3 +289,6 @@
 [submodule "bundle/apathy"]
 	path = bundle/apathy
 	url = https://github.com/tpope/vim-apathy
+[submodule "bundle/jikoku"]
+	path = bundle/jikoku
+	url = https://github.com/mattn/vim-jikoku
