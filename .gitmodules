@@ -142,9 +142,6 @@
 [submodule "bundle/winmanager"]
 	path = bundle/winmanager
 	url = https://github.com/vim-scripts/winmanager.git
-[submodule "bundle/brainfuck-syntax"]
-	path = bundle/brainfuck-syntax
-	url = https://github.com/Beerstorm/vim-brainfuck.git
 [submodule "bundle/php-manual"]
 	path = bundle/php-manual
 	url = https://github.com/alvan/vim-php-manual.git
@@ -175,12 +172,6 @@
 [submodule "bundle/go"]
 	path = bundle/go
 	url = https://github.com/fatih/vim-go.git
-[submodule "bundle/vimshell"]
-	path = bundle/vimshell
-	url = https://github.com/Shougo/vimshell.vim.git
-[submodule "bundle/vimproc"]
-	path = bundle/vimproc
-	url = https://github.com/Shougo/vimproc.vim.git
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
