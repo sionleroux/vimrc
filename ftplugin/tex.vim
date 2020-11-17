@@ -9,6 +9,11 @@ let g:Tex_DefaultTargetFormat='pdf'
 setlocal tabstop=2     " a tab is now TWO spaces
 setlocal shiftwidth=2  " number of spaces to use for autoindenting
 
+" The future is wrapping!
+set wrap
+set tw=0
+set linebreak
+
 " latex-suite does really dumb things with the quickfix window if buffers
 " are hidden instead of deleted
 set nohidden
