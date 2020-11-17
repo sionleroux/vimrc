@@ -117,7 +117,7 @@
 	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
-	url = https://github.com/majutsushi/tagbar.git
+	url = https://github.com/preservim/tagbar.git
 [submodule "bundle/tbone"]
 	path = bundle/tbone
 	url = https://github.com/tpope/vim-tbone.git
