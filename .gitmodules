@@ -106,9 +106,6 @@
 [submodule "bundle/solarized"]
 	path = bundle/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle/sparkup"]
-	path = bundle/sparkup
-	url = https://github.com/tristen/vim-sparkup.git
 [submodule "bundle/speeddating"]
 	path = bundle/speeddating
 	url = https://github.com/tpope/vim-speeddating.git
@@ -151,9 +148,6 @@
 [submodule "bundle/editorconfig"]
 	path = bundle/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim.git
-[submodule "bundle/wordpress"]
-	path = bundle/wordpress
-	url = https://github.com/dsawardekar/wordpress.vim.git
 [submodule "bundle/javascript"]
 	path = bundle/javascript
 	url = https://github.com/pangloss/vim-javascript.git
@@ -280,3 +274,42 @@
 [submodule "bundle/jikoku"]
 	path = bundle/jikoku
 	url = https://github.com/mattn/vim-jikoku
+[submodule "bundle/graphql"]
+	path = bundle/graphql
+	url = https://github.com/jparise/vim-graphql.git
+[submodule "bundle/tsx"]
+	path = bundle/tsx
+	url = https://github.com/ianks/vim-tsx.git
+[submodule "bundle/gitgutter"]
+	path = bundle/gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/closer"]
+	path = bundle/closer
+	url = https://github.com/rstacruz/vim-closer.git
+[submodule "bundle/VisIncr"]
+	path = bundle/VisIncr
+	url = https://github.com/vim-scripts/VisIncr.git
+[submodule "bundle/SwapText"]
+	path = bundle/SwapText
+	url = https://github.com/vim-scripts/SwapText.git
+[submodule "bundle/emmet"]
+	path = bundle/emmet
+	url = https://github.com/mattn/emmet-vim.git
+[submodule "bundle/hyperstyle"]
+	path = bundle/hyperstyle
+	url = https://github.com/rstacruz/vim-hyperstyle.git
+[submodule "bundle/expand-region"]
+	path = bundle/expand-region
+	url = https://github.com/terryma/vim-expand-region.git
+[submodule "bundle/highlightedyank"]
+	path = bundle/highlightedyank
+	url = https://github.com/machakann/vim-highlightedyank.git
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/dense-analysis/ale.git
+[submodule "bundle/tagalong"]
+	path = bundle/tagalong
+	url = https://github.com/AndrewRadev/tagalong.vim
+[submodule "bundle/ack"]
+	path = bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
