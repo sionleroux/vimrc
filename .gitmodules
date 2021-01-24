@@ -313,3 +313,6 @@
 [submodule "bundle/ack"]
 	path = bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/terminus"]
+	path = bundle/terminus
+	url = https://github.com/wincent/terminus.git
