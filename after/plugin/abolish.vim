@@ -8,4 +8,5 @@ if exists(":Abolish")
     Abolish slrx Siôn le Roux
     Abolish jfgx Jófogás
     Abolish hzax Használtautó
+    Abolish pdpx Personal Development Plan
 endif
