@@ -241,6 +241,7 @@ function! s:goyo_enter()
     set noshowcmd
     set scrolloff=999
     set sidescrolloff=0
+    autocmd CursorHold * :echo
     NeoCompleteDisable
     Limelight
 endfunction
