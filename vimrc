@@ -46,6 +46,7 @@ if has('gui_running')
     endif
 else
     """ These options only apply when running without GUI
+    set ttyfast " more responsive tty in local
 
     " Fix for background transparency in non-solarized (black) terminals
     let g:solarized_termtrans = 1
@@ -76,6 +77,8 @@ else
 endif
 
 if !g:lame_terminal
+
+    set nottyfast " if it's lame it might be over network
 
     if !has('win32') && (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8')
         let &listchars = "tab:\u21e5 ,trail:\u2423,extends:\u21c9,precedes:\u21c7,nbsp:\u00b7"
