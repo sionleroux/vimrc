@@ -313,6 +313,7 @@ set visualbell      " don't beep
 set noerrorbells    " don't beep
 set sessionoptions-=options " don't track options in sessions
 set updatetime=100  " make gitgutter more snappy
+set redrawtime=10000 " increase chance of syntax highlighting for long files
 
 " Complete from dictionary when spelling is turned on
 set complete+=kspell
