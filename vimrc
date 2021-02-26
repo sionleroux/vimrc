@@ -211,6 +211,8 @@ command! Slugify call
             \   )
             \ )
 
+command! Inception :exe "normal gUiw:s/./& · /g\ri*\e$xxxa*\ev0\"+d"
+
 " Hack to fullscreen Gvim in GNOME
 if has('gui_running')
     " TODO: figure out similar command for Awesome WM
