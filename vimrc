@@ -467,11 +467,11 @@ if $PWD ==# $HOME
     let g:fugitive_git_executable = 'yadm'
 endif
 
-" Let fugitive's Gbrowse recognise Schibsted's GitHub Enterprise domain
-let g:fugitive_github_domains = ['github.schibsted.io']
+" Let fugitive's Gbrowse recognise Adevinta's GitHub Enterprise domain
+let g:fugitive_github_domains = ['github.mpi-internal.com']
 
-" Make gists in Schibsted's gists
-let g:gist_api_url = 'https://github.schibsted.io/api/v3'
+" Make gists in Adevinta's gists
+let g:gist_api_url = 'https://github.mpi-internal.com/api/v3'
 
 " Choose windows by letter
 nmap  -  <Plug>(choosewin)
