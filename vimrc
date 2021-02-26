@@ -388,7 +388,15 @@ cmap w!! w !sudo tee % >/dev/null
 let wiki = {}
 let wiki.path = '~/wiki/'
 let wiki.path_html = '~/Documents/wiki/'
-let wiki.nested_syntaxes ={'bash': 'bash', 'java': 'java'}
+let wiki.nested_syntaxes = {
+            \ 'bash'  : 'bash',
+            \ 'c'     : 'c',
+            \ 'go'    : 'go',
+            \ 'html'  : 'html',
+            \ 'java'  : 'java',
+            \ 'python': 'python',
+            \ 'sql'   : 'sql'
+            \ }
 let g:vimwiki_ext2syntax = {'.md': 'markdown'}
 let wiki.syntax = 'markdown'
 let wiki.ext = '.md'
