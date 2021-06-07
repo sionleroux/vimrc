@@ -322,3 +322,6 @@
 [submodule "bundle/openscad"]
 	path = bundle/openscad
 	url = git@github.com:sirtaj/vim-openscad.git
+[submodule "plantuml-syntax"]
+	path = bundle/plantuml-syntax
+	url = git@github.com:aklt/plantuml-syntax.git
