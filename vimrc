@@ -46,6 +46,7 @@ if has('gui_running')
     endif
 else
     """ These options only apply when running without GUI
+    set ttyfast " more responsive tty in local
 
     " Fix for background transparency in non-solarized (black) terminals
     let g:solarized_termtrans = 1
@@ -76,6 +77,8 @@ else
 endif
 
 if !g:lame_terminal
+
+    set nottyfast " if it's lame it might be over network
 
     if !has('win32') && (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8')
         let &listchars = "tab:\u21e5 ,trail:\u2423,extends:\u21c9,precedes:\u21c7,nbsp:\u00b7"
@@ -208,6 +211,12 @@ command! Slugify call
             \   )
             \ )
 
+command! Inception :exe "normal gUiw:s/./& · /g\ri*\e$xxxa*\ev0\"+d"
+
+if executable('ag')
+    let g:ackprg = 'ag --vimgrep'
+endif
+
 " Hack to fullscreen Gvim in GNOME
 if has('gui_running')
     " TODO: figure out similar command for Awesome WM
@@ -232,6 +241,7 @@ function! s:goyo_enter()
     set noshowcmd
     set scrolloff=999
     set sidescrolloff=0
+    autocmd CursorHold * :echo
     NeoCompleteDisable
     Limelight
 endfunction
@@ -302,6 +312,8 @@ set title           " change the terminal's title
 set visualbell      " don't beep
 set noerrorbells    " don't beep
 set sessionoptions-=options " don't track options in sessions
+set updatetime=100  " make gitgutter more snappy
+set redrawtime=10000 " increase chance of syntax highlighting for long files
 
 " Complete from dictionary when spelling is turned on
 set complete+=kspell
@@ -376,7 +388,15 @@ cmap w!! w !sudo tee % >/dev/null
 let wiki = {}
 let wiki.path = '~/wiki/'
 let wiki.path_html = '~/Documents/wiki/'
-let wiki.nested_syntaxes ={'bash': 'bash', 'java': 'java'}
+let wiki.nested_syntaxes = {
+            \ 'bash'  : 'bash',
+            \ 'c'     : 'c',
+            \ 'go'    : 'go',
+            \ 'html'  : 'html',
+            \ 'java'  : 'java',
+            \ 'python': 'python',
+            \ 'sql'   : 'sql'
+            \ }
 let g:vimwiki_ext2syntax = {'.md': 'markdown'}
 let wiki.syntax = 'markdown'
 let wiki.ext = '.md'
@@ -447,11 +467,11 @@ if $PWD ==# $HOME
     let g:fugitive_git_executable = 'yadm'
 endif
 
-" Let fugitive's Gbrowse recognise Schibsted's GitHub Enterprise domain
-let g:fugitive_github_domains = ['github.schibsted.io']
+" Let fugitive's Gbrowse recognise Adevinta's GitHub Enterprise domain
+let g:fugitive_github_domains = ['github.mpi-internal.com']
 
-" Make gists in Schibsted's gists
-let g:gist_api_url = 'https://github.schibsted.io/api/v3'
+" Make gists in Adevinta's gists
+let g:gist_api_url = 'https://github.mpi-internal.com/api/v3'
 
 " Choose windows by letter
 nmap  -  <Plug>(choosewin)
