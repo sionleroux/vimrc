@@ -316,9 +316,6 @@
 [submodule "bundle/terminus"]
 	path = bundle/terminus
 	url = https://github.com/wincent/terminus.git
-[submodule "pack/kotlin-vim"]
-	path = pack/kotlin-vim
-	url = https://github.com/udalov/kotlin-vim
 [submodule "bundle/openscad"]
 	path = bundle/openscad
 	url = git@github.com:sirtaj/vim-openscad.git
@@ -328,3 +325,6 @@
 [submodule "bundle/vim-dadbod"]
 	path = bundle/vim-dadbod
 	url = https://github.com/tpope/vim-dadbod.git
+[submodule "pack/language-support/start/kotlin"]
+	path = pack/language-support/start/kotlin
+	url = https://github.com/udalov/kotlin-vim
