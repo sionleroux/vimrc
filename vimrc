@@ -156,7 +156,7 @@ let s:myfonts = {
                 \ 'mac' : 'InconsolataForPowerline:h',
                 \ 'win' : 'Consolas for Powerline FixedD:h',
             \ },
-            \ 'size' : ['8', '10', '14', '20']
+            \ 'size' : ['8', '12', '14', '20']
             \ }
 
 " convenience function for changing font size for OS font
@@ -242,7 +242,7 @@ let g:goyo_width=80
 function! s:goyo_enter()
     if has('gui_running')
         FullScreenToggle
-        FontLarge
+        FontHuge
     endif
     set noshowmode
     set noshowcmd
