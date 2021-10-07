@@ -371,6 +371,10 @@ map <Leader>sh :setlocal spell spelllang=hu_hu<CR>
 map <Leader>sd :setlocal spell spelllang=de_de<CR>
 map <Leader>sn :setlocal nospell<CR>
 
+" Make Y yank until EOL as expected
+" Using g_ instead of $ to not include the \n at EOL
+map Y yg_
+
 " Clear search highlighting with ,/
 nmap <silent> ,/ :nohlsearch<CR>
 
