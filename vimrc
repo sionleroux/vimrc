@@ -152,7 +152,7 @@ let g:rainbow#pairs = [['(',')'], ['[',']'], ['{','}'], ['<%','%>']]
 " list of fonts by OS and their sizes
 let s:myfonts = {
             \ 'face' : {
-                \ 'lin' : 'Inconsolata-dz for Powerline Medium ',
+                \ 'lin' : 'Inconsolata for Powerline Medium ',
                 \ 'mac' : 'InconsolataForPowerline:h',
                 \ 'win' : 'Consolas for Powerline FixedD:h',
             \ },
