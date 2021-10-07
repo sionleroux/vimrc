@@ -152,7 +152,7 @@ let g:rainbow#pairs = [['(',')'], ['[',']'], ['{','}'], ['<%','%>']]
 let s:myfonts = {
             \ 'face' : {
                 \ 'lin' : 'Inconsolata-dz for Powerline Medium ',
-                \ 'mac' : 'Inconsolata-dz for Powerline:h',
+                \ 'mac' : 'InconsolataForPowerline:h',
                 \ 'win' : 'Consolas for Powerline FixedD:h',
             \ },
             \ 'size' : ['8', '10', '14', '20']
