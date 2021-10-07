@@ -169,9 +169,15 @@ function! s:setfontsize(size)
         let s:myfontsize = a:size
     endif
 
-    " use it
+    " scale up font size on mac (could be a general HiDPI problem)
+    let s:size = s:myfonts['size'][s:myfontsize]
+    if s:myfontface == 'mac'
+        let s:size = float2nr(s:size * 1.6)
+    endif
+
+    " apply font and size
     let &guifont = s:myfonts['face'][s:myfontface] .
-                \ s:myfonts['size'][s:myfontsize]
+                \ s:size
 endfunction
 
 " set regular font by default
