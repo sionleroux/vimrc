@@ -325,3 +325,6 @@
 [submodule "plantuml-syntax"]
 	path = bundle/plantuml-syntax
 	url = git@github.com:aklt/plantuml-syntax.git
+[submodule "bundle/vim-dadbod"]
+	path = bundle/vim-dadbod
+	url = https://github.com/tpope/vim-dadbod.git
