@@ -18,8 +18,11 @@ set linebreak
 " are hidden instead of deleted
 set nohidden
 
-" set PDF reader to AcroRead when on Windows™
-" (apparently it can't do this by itself)
+" set OS-specific PDF viewers
+let g:Tex_ViewRule_pdf = 'xdg-open'
+if system("uname") == "Darwin\n"
+    let g:Tex_ViewRule_pdf = 'open'
+endif
 if has("win95") || has("win16") || has("win32") || has("win64")
     let g:Tex_ViewRule_pdf = 'AcroRd32' "Windows™ Only
 endif
