@@ -114,6 +114,8 @@ if !g:lame_terminal
 
 endif
 
+let g:airline_powerline_fonts = 1
+
 " Mac OSX Specific stuff
 if has('unix')
     let s:uname = system("uname")
