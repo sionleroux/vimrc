@@ -5,6 +5,7 @@ set textwidth=80
 " Convenience mappings
 nnoremap <Leader>gx :GoRename<CR>
 nnoremap <Leader>gr :GoRun<CR>
+nnoremap <Leader>gi :GoImports<CR>
 
 " Use Dispatch for Go building commands
 let g:go_dispatch_enabled = 1
