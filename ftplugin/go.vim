@@ -6,6 +6,9 @@ set textwidth=80
 nnoremap <Leader>gx :GoRename<CR>
 nnoremap <Leader>gr :GoRun<CR>
 nnoremap <Leader>gi :GoImports<CR>
+nnoremap <Leader>gt :GoTestFunc<CR>
+" Cast int to float64
+nnoremap <Leader>g6 :normal ysia)ifloat64<CR>
 
 " Use Dispatch for Go building commands
 let g:go_dispatch_enabled = 1
