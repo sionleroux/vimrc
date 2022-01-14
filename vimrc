@@ -196,6 +196,15 @@ command! FontSmaller call s:setfontsize(s:myfontsize - 1)
 nnoremap <Leader>fa :FontBigger<CR> " like C-A
 nnoremap <Leader>fx :FontSmaller<CR> " like C-X
 
+function! s:prezimode()
+    let &guifont = "Inconsolata-dz for Powerline Bold 20"
+    set background=light
+    colorscheme default
+    ShowtimeStart
+endfunction
+command! PreziMode  call s:prezimode()
+nnoremap <Leader>pp :PreziMode<CR>
+
 command! Slugify call
             \ setline(
             \   '.',
