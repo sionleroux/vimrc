@@ -251,8 +251,8 @@ let g:goyo_width=80
 
 function! s:goyo_enter()
     if has('gui_running')
-        FullScreenToggle
         FontHuge
+        FullScreenToggle
     endif
     set noshowmode
     set noshowcmd
