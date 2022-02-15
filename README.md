@@ -130,7 +130,6 @@ The following is a list of plugins I use:
 [python-mode](https://github.com/klen/python-mode)
 [ragtag](https://github.com/tpope/vim-ragtag)
 [rainbow](https://github.com/junegunn/rainbow_parentheses.vim)
-[ref](https://github.com/thinca/vim-ref)
 [repeat](https://github.com/tpope/vim-repeat)
 [rsi](https://github.com/tpope/vim-rsi)
 [scala](https://github.com/derekwyatt/vim-scala)

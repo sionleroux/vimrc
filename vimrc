@@ -126,8 +126,6 @@ if has('unix')
         " Change iTerm2 cursor when changing modes
         let &t_SI = "\<Esc>]1337;CursorShape=1\x7"
         let &t_EI = "\<Esc>]1337;CursorShape=0\x7"
-        " Ref reference viewer settings
-        let g:ref_man_cmd = "man -P cat" " workaround to get man output on Mac
     endif
 endif
 
@@ -444,15 +442,6 @@ nnoremap <Leader>wm :WMToggle<CR>
 
 " command LoadGameTetris so ~/.vim/games/Tetris.vim
 " command LoadGameXandO so ~/.vim/games/X-and-O.vim
-
-let g:ref_source_webdict_sites = {
-    \ 'default' : 'wiktionary',
-    \ 'wiktionary' : {
-        \ 'url'  : "https://en.wiktionary.org/wiki/%s",
-        \ 'line' : 3,
-        \ },
-    \ }
-let g:ref_source_webdict_cmd = 'lynx -dump -nonumbers %s'
 
 " convert vimwiki page to HTML with <Leader>vh
 nnoremap <Leader>vh :Vimwiki2HTML<CR>

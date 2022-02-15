@@ -11,6 +11,3 @@ set tabstop=4
 set shiftwidth=4
 set shiftround
 set expandtab
-
-"" use web dictionary for lookups
-call ref#register_detection('markdown', 'webdict')

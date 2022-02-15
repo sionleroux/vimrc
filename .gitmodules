@@ -211,9 +211,6 @@
 [submodule "bundle/jekyll"]
 	path = bundle/jekyll
 	url = https://github.com/parkr/vim-jekyll
-[submodule "bundle/ref"]
-	path = bundle/ref
-	url = https://github.com/thinca/vim-ref.git
 [submodule "bundle/php"]
 	path = bundle/php
 	url = https://github.com/StanAngeloff/php.vim.git
