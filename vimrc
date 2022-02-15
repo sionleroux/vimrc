@@ -233,13 +233,10 @@ if executable('ag')
 endif
 
 " Hack to fullscreen Gvim in GNOME
-if has('gui_running')
-    " TODO: figure out similar command for Awesome WM
-    " Fullscreen command for GNOME
-    command! FullScreenToggle call
-        \ system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")
-    map <silent> <F11> :FullScreenToggle<CR>
-endif
+" Fullscreen command for GNOME
+command! FullScreenToggle call
+    \ system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")
+map <silent> <F11> :FullScreenToggle<CR>
 
 " Distraction free writing shortcut and personal hooks
 nnoremap <Leader>go :Goyo<CR>
