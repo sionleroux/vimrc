@@ -78,7 +78,6 @@ The following is a list of plugins I use:
 [argtextobj](https://github.com/vim-scripts/argtextobj.vim)
 [bufexplorer](https://github.com/vim-scripts/bufexplorer.zip)
 [buffergator](https://github.com/vim-scripts/Buffergator)
-[CamelCaseMotion](https://github.com/bkad/CamelCaseMotion)
 [cd](https://github.com/vim-scripts/CD.vim)
 [characterize](https://github.com/tpope/vim-characterize)
 [choosewin](https://github.com/t9md/vim-choosewin)

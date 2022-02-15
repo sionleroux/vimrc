@@ -431,9 +431,6 @@ let g:vimwiki_global_ext = 0 " only handle defined wikis as wikis
 "let g:winManagerWindowLayout = 'TodoList,FileExplorer|BufExplorer'
 let g:winManagerWindowLayout = 'FileExplorer|BufExplorer'
 
-" Use , for CamelCaseMotion
-call camelcasemotion#CreateMotionMappings('<leader>')
-
 " Fake fullscreen buffer within Vim
 nnoremap <Leader>ff :tabe %<CR>
 
