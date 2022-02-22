@@ -411,8 +411,12 @@ let wiki.nested_syntaxes = {
             \ 'go'    : 'go',
             \ 'html'  : 'html',
             \ 'java'  : 'java',
+            \ 'json'  : 'json',
             \ 'python': 'python',
-            \ 'sql'   : 'sql'
+            \ 'sql'   : 'sql',
+            \ 'ini'   : 'toml',
+            \ 'toml'  : 'toml',
+            \ 'yaml'  : 'yaml'
             \ }
 let g:vimwiki_ext2syntax = {'.md': 'markdown'}
 let wiki.syntax = 'markdown'
