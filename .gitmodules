@@ -310,9 +310,6 @@
 [submodule "bundle/terminus"]
 	path = bundle/terminus
 	url = https://github.com/wincent/terminus.git
-[submodule "bundle/openscad"]
-	path = bundle/openscad
-	url = git@github.com:sirtaj/vim-openscad.git
 [submodule "plantuml-syntax"]
 	path = bundle/plantuml-syntax
 	url = git@github.com:aklt/plantuml-syntax.git
@@ -322,3 +319,6 @@
 [submodule "pack/language-support/start/kotlin"]
 	path = pack/language-support/start/kotlin
 	url = https://github.com/udalov/kotlin-vim
+[submodule "bundle/ebitengine-kage"]
+	path = bundle/ebitengine-kage
+	url = https://github.com/sedyh/ebitengine-kage-vim.git
