@@ -158,5 +158,4 @@ The following is a list of plugins I use:
 [vinegar](https://github.com/tpope/vim-vinegar)
 [wakatime](ssh://git@github.com/wakatime/vim-wakatime)
 [webapi](https://github.com/mattn/webapi-vim)
-[winmanager](https://github.com/vim-scripts/winmanager)
 [wordpress](https://github.com/dsawardekar/wordpress.vim)

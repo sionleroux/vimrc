@@ -136,9 +136,6 @@
 [submodule "bundle/vimwiki"]
 	path = bundle/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
-[submodule "bundle/winmanager"]
-	path = bundle/winmanager
-	url = https://github.com/vim-scripts/winmanager.git
 [submodule "bundle/php-manual"]
 	path = bundle/php-manual
 	url = https://github.com/alvan/vim-php-manual.git
