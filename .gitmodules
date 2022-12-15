@@ -322,3 +322,6 @@
 [submodule "pack/language-support/start/openscad"]
 	path = pack/language-support/start/openscad
 	url = git@github.com:sirtaj/vim-openscad.git
+[submodule "bundle/ref"]
+	path = bundle/ref
+	url = https://github.com/thinca/vim-ref.git
