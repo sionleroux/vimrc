@@ -336,6 +336,7 @@ set updatetime=100  " make gitgutter more snappy
 set redrawtime=10000 " increase chance of syntax highlighting for long files
 set lazyredraw      " this makes running macros much faster
 set viewoptions=cursor,folds,slash,unix " recommended verbatim by the stay plugin
+set nofoldenable    " disable folding
 
 " Complete from dictionary when spelling is turned on
 set complete+=kspell
