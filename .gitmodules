@@ -136,9 +136,6 @@
 [submodule "bundle/vimwiki"]
 	path = bundle/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
-[submodule "bundle/winmanager"]
-	path = bundle/winmanager
-	url = https://github.com/vim-scripts/winmanager.git
 [submodule "bundle/php-manual"]
 	path = bundle/php-manual
 	url = https://github.com/alvan/vim-php-manual.git
@@ -322,3 +319,9 @@
 [submodule "bundle/ebitengine-kage"]
 	path = bundle/ebitengine-kage
 	url = https://github.com/sedyh/ebitengine-kage-vim.git
+[submodule "pack/language-support/start/openscad"]
+	path = pack/language-support/start/openscad
+	url = git@github.com:sirtaj/vim-openscad.git
+[submodule "bundle/ref"]
+	path = bundle/ref
+	url = https://github.com/thinca/vim-ref.git

@@ -121,6 +121,7 @@ The following is a list of plugins I use:
 [NrrwRgn](https://github.com/chrisbra/NrrwRgn)
 [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
 [obsession](https://github.com/tpope/vim-obsession)
+[openscad](git@github.com:sirtaj/vim-openscad.git)
 [php](https://github.com/StanAngeloff/php.vim)
 [php-folding](https://github.com/rayburgemeestre/phpfolding.vim)
 [php-manual](https://github.com/alvan/vim-php-manual)
@@ -158,5 +159,4 @@ The following is a list of plugins I use:
 [vinegar](https://github.com/tpope/vim-vinegar)
 [wakatime](ssh://git@github.com/wakatime/vim-wakatime)
 [webapi](https://github.com/mattn/webapi-vim)
-[winmanager](https://github.com/vim-scripts/winmanager)
 [wordpress](https://github.com/dsawardekar/wordpress.vim)
