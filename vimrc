@@ -76,6 +76,14 @@ else
     set background=dark " these terminals are either B&W or solarized dark
 endif
 
+" Day/Night colours in gnome-shell
+" I wonder if there's something similar on MacOS too…
+if system('gsettings get org.gnome.desktop.interface color-scheme') =~ 'default'
+    set background=light
+else
+    set background=dark
+endif
+
 if !g:lame_terminal
 
     set nottyfast " if it's lame it might be over network
