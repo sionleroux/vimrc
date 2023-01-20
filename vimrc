@@ -96,17 +96,6 @@ if !g:lame_terminal
             let g:airline_symbols = {}
         endif
 
-        " use old vim-powerline symbols
-        let g:airline_left_sep = '⮀'
-        let g:airline_left_alt_sep = '⮁'
-        let g:airline_right_sep = '⮂'
-        let g:airline_right_alt_sep = '⮃'
-        let g:airline_symbols.branch = '⭠'
-        let g:airline_symbols.readonly = '⭤'
-        let g:airline_symbols.linenr = '⭡'
-        let g:airline_symbols.paste = 'ρ'
-        let g:airline_symbols.whitespace = 'Ξ'
-
         " Javascript concealment characters
         let g:javascript_conceal_function   = "ƒ"
         let g:javascript_conceal_null       = "ø"
