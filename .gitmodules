@@ -325,3 +325,6 @@
 [submodule "bundle/ref"]
 	path = bundle/ref
 	url = https://github.com/thinca/vim-ref.git
+[submodule "bundle/join"]
+	path = bundle/join
+	url = https://github.com/sk1418/Join.git

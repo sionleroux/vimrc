@@ -377,6 +377,9 @@ set pastetoggle=<F2>
 vmap Q gq
 nmap Q gqap
 
+" Join lines like J but with commas before the spaces
+vnoremap <Leader>J :Join ', '<CR>
+
 " Turn spelling and off with ,se and ,sn
 map <Leader>se :setlocal spell spelllang=en_gb<CR>
 map <Leader>sh :setlocal spell spelllang=hu_hu<CR>
