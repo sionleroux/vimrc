@@ -153,7 +153,7 @@
 	url = https://github.com/junegunn/goyo.vim.git
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
-	url = https://github.com/klen/python-mode.git
+	url = https://github.com/python-mode/python-mode.git
 [submodule "bundle/DrawIt"]
 	path = bundle/DrawIt
 	url = https://github.com/vim-scripts/DrawIt.git
