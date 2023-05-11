@@ -328,3 +328,6 @@
 [submodule "bundle/join"]
 	path = bundle/join
 	url = https://github.com/sk1418/Join.git
+[submodule "bundle/cue"]
+	path = bundle/cue
+	url = git@github.com:jjo/vim-cue.git
