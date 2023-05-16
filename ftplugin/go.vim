@@ -10,7 +10,7 @@ nnoremap <Leader>gt :GoTestFunc<CR>
 " Cast int to float64
 nnoremap <Leader>g6 :normal ysia)ifloat64<CR>
 " Show all declarations of this directory in a Ctrl-P window
-nnoremap <Leader>p :GoDecls<CR>
+nnoremap <Leader>gp :GoDecls<CR>
 nnoremap zh :GoSameIdsAutoToggle<CR>
 
 " Use Dispatch for Go building commands
