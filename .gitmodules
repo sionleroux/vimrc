@@ -331,3 +331,9 @@
 [submodule "bundle/cue"]
 	path = bundle/cue
 	url = git@github.com:jjo/vim-cue.git
+[submodule "bundle/kdl"]
+	path = bundle/kdl
+	url = https://github.com/imsnif/kdl.vim.git
+[submodule "bundle/haproxy"]
+	path = bundle/haproxy
+	url = https://github.com/Joorem/vim-haproxy
