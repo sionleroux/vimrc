@@ -22,8 +22,6 @@ if has('gui_running')
     so ~/.vim/bundle/solarized/autoload/togglebg.vim " enable F5 to toggle BG dark or light
     " Linux font by default, override elsewhere as needed
     let s:myfontface = 'lin'
-    " hide mouse when typing:
-    set mousehide
     set mousemodel=popup_setpos "enable right-click context menu
     " add some custom menu options:
     :menu &MyVim.Convert\ Format.To\ Dos :set fileformat=dos<cr> :w<cr>
