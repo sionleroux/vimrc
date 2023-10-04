@@ -434,11 +434,12 @@ let wiki.nested_syntaxes = {
             \ 'c'     : 'c',
             \ 'go'    : 'go',
             \ 'html'  : 'html',
+            \ 'ini'   : 'toml',
             \ 'java'  : 'java',
             \ 'json'  : 'json',
+            \ 'php'   : 'php',
             \ 'python': 'python',
             \ 'sql'   : 'sql',
-            \ 'ini'   : 'toml',
             \ 'toml'  : 'toml',
             \ 'yaml'  : 'yaml'
             \ }
