@@ -84,6 +84,28 @@ else
     set background=dark
 endif
 
+" foot-specific config
+if &term == "foot"
+
+  " Enable 24-bit colors
+  " set termguicolors " commented out because it made it much worse
+  " no idea what this does:
+  let &t_8f = "\<Esc>[38:2::%lu:%lu:%lum"
+  let &t_8b = "\<Esc>[48:2::%lu:%lu:%lum"
+
+  " Enable native mouse support
+  set ttymouse=sgr
+
+  " Workaround bug in vim, where it incorrectly thinks modifyOtherKeys level 2 is
+  " enabled, even when it's not. The snippets below ensure modifyOtherKeys=2 is
+  " enabled. https://github.com/vim/vim/issues/9014
+  let &t_TI = "\<Esc>[>4;2m"
+  let &t_TE = "\<Esc>[>4;m"
+
+  " Override to dark for foot because something's wrong with the light mode
+  set background=dark
+endif
+
 if !g:lame_terminal
 
     set nottyfast " if it's lame it might be over network
