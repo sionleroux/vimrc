@@ -5,12 +5,16 @@ set textwidth=80
 " Convenience mappings
 nnoremap <Leader>gx :GoRename<CR>
 nnoremap <Leader>gr :GoRun<CR>
+" ,gb Already taken by :GBlame
+nnoremap <Leader>gg :GoBuild<CR>
 nnoremap <Leader>gi :GoImports<CR>
 nnoremap <Leader>gt :GoTestFunc<CR>
 " Cast int to float64
 nnoremap <Leader>g6 :normal ysia)ifloat64<CR>
 " Show all declarations of this directory in a Ctrl-P window
 nnoremap <Leader>gp :GoDecls<CR>
+nnoremap <Leader>gl :GoCallers<CR>
+" Mneumonic gl the L is because it opens it in the location list
 nnoremap zh :GoSameIdsAutoToggle<CR>
 
 " Use Dispatch for Go building commands
