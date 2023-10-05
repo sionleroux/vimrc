@@ -19,6 +19,7 @@ let g:lame_terminal = 0
 if has('gui_running')
     """ GUI only options
     set background=light
+    set lines=30 columns=90
     so ~/.vim/bundle/solarized/autoload/togglebg.vim " enable F5 to toggle BG dark or light
     " Linux font by default, override elsewhere as needed
     let s:myfontface = 'lin'
@@ -318,6 +319,7 @@ function! s:goyo_leave()
     set showcmd
     set scrolloff=1
     set sidescrolloff=5
+    set lines=30 columns=90 " not sure I'm gonna like this
     autocmd! distractionfree
     NeoCompleteEnable
     Limelight!
