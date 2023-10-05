@@ -211,9 +211,12 @@ nnoremap <Leader>fa :FontBigger<CR> " like C-A
 nnoremap <Leader>fx :FontSmaller<CR> " like C-X
 
 function! s:prezimode()
-    let &guifont = "Inconsolata for Powerline Bold 20"
+    " let &guifont = "Inconsolata for Powerline Bold 20"
+    let &guifont = "Comic Mono Bold 20"
     set background=light
-    colorscheme default
+    colorscheme paramount
+    set noshowmode
+    set noshowcmd
     ShowtimeStart
 endfunction
 command! PreziMode  call s:prezimode()
