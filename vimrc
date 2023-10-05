@@ -270,7 +270,9 @@ function! s:goyo_enter()
     set noshowcmd
     set scrolloff=999
     set sidescrolloff=0
-    autocmd CursorHold * :echo
+    augroup distractionfree
+        autocmd CursorHold * :echo
+    augroup END
     NeoCompleteDisable
     Limelight
 endfunction
@@ -285,6 +287,7 @@ function! s:goyo_leave()
     set showcmd
     set scrolloff=1
     set sidescrolloff=5
+    autocmd! distractionfree
     NeoCompleteEnable
     Limelight!
 endfunction
