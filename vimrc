@@ -251,6 +251,10 @@ endif
 
 " Hack to fullscreen Gvim in GNOME
 " Fullscreen command for GNOME
+command! FullScreenOn call
+    \ system("wmctrl -ir " . v:windowid . " -b add,fullscreen")
+command! FullScreenOff call
+    \ system("wmctrl -ir " . v:windowid . " -b remove,fullscreen")
 command! FullScreenToggle call
     \ system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")
 map <silent> <F11> :FullScreenToggle<CR>
@@ -263,8 +267,8 @@ let g:goyo_width=80
 
 function! s:goyo_enter()
     if has('gui_running')
+        FullScreenOn
         FontHuge
-        FullScreenToggle
     endif
     set noshowmode
     set noshowcmd
@@ -280,8 +284,8 @@ autocmd! User GoyoEnter nested call <SID>goyo_enter()
 
 function! s:goyo_leave()
     if has('gui_running')
+        FullScreenOff
         FontRegular
-        FullScreenToggle
     endif
     set showmode
     set showcmd
