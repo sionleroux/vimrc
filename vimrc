@@ -259,6 +259,23 @@ command! FullScreenToggle call
     \ system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")
 map <silent> <F11> :FullScreenToggle<CR>
 
+let g:titlebar=1
+function! TitlebarToggle(on = -1)
+    let l:on = a:on
+    " use inverse global value if none provided (toggle)
+    if a:on == -1
+        let l:on = !g:titlebar
+    endif
+    call system("xprop "
+        \ . "-id " . v:windowid
+        \ . " -f _MOTIF_WM_HINTS 32c "
+        \ . "-set _MOTIF_WM_HINTS \"0x2, 0x0, 0x" . l:on . ", 0x0, 0x0\"")
+    let g:titlebar = l:on
+endfunction
+command! TitlebarOff call TitlebarToggle(0)
+command! TitlebarOn call TitlebarToggle(1)
+command! TitlebarToggle call TitlebarToggle(-1)
+
 " Distraction free writing shortcut and personal hooks
 nnoremap <Leader>go :Goyo<CR>
 
@@ -267,7 +284,8 @@ let g:goyo_width=80
 
 function! s:goyo_enter()
     if has('gui_running')
-        FullScreenOn
+        " FullScreenOn
+        TitlebarOff
         FontHuge
     endif
     set noshowmode
@@ -284,6 +302,7 @@ autocmd! User GoyoEnter nested call <SID>goyo_enter()
 
 function! s:goyo_leave()
     if has('gui_running')
+        TitlebarOn
         FullScreenOff
         FontRegular
     endif
