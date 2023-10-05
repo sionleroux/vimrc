@@ -19,7 +19,6 @@ let g:lame_terminal = 0
 if has('gui_running')
     """ GUI only options
     set lines=30 columns=90
-    so ~/.vim/bundle/solarized/autoload/togglebg.vim " enable F5 to toggle BG dark or light
     " Linux font by default, override elsewhere as needed
     let s:myfontface = 'lin'
     set mousemodel=popup_setpos "enable right-click context menu
