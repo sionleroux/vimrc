@@ -284,9 +284,15 @@ let g:goyo_width=80
 
 function! s:goyo_enter()
     if has('gui_running')
-        " FullScreenOn
-        TitlebarOff
-        FontHuge
+        set linespace=4
+        if search("^# Stakeholders$", "nw")
+            TitlebarOff
+            let &guifont = "Comic Mono 16"
+            colorscheme paramount
+        else
+            FullScreenOn
+            FontHuge
+        endif
     endif
     set noshowmode
     set noshowcmd
@@ -305,6 +311,8 @@ function! s:goyo_leave()
         TitlebarOn
         FullScreenOff
         FontRegular
+        colorscheme solarized
+        set linespace=0
     endif
     set showmode
     set showcmd
