@@ -337,3 +337,6 @@
 [submodule "bundle/haproxy"]
 	path = bundle/haproxy
 	url = https://github.com/Joorem/vim-haproxy
+[submodule "bundle/undotree"]
+	path = bundle/undotree
+	url = https://github.com/mbbill/undotree.git
