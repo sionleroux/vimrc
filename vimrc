@@ -545,6 +545,8 @@ let g:gist_api_url = 'https://github.mpi-internal.com/api/v3'
 " Choose windows by letter
 nmap  -  <Plug>(choosewin)
 
+nnoremap <F5> :UndotreeToggle<CR>
+
 " Make .tex files always tex, not plaintex
 let g:tex_flavor='latex'
 
