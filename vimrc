@@ -526,10 +526,10 @@ nnoremap <Leader>tu :tabnew<CR>
 nnoremap <Leader>o :only<CR>
 
 " Git-related shortcuts for fugitive commands
-nnoremap <Leader>gb :Gblame<CR>
+nnoremap <Leader>gb :Git blame<CR>
 nnoremap <Leader>gd :Gdiff<CR>
-nnoremap <Leader>gs :Gstatus<CR>
-nnoremap <Leader>gc :Gcommit<CR>
+nnoremap <Leader>gs :Git<CR>
+nnoremap <Leader>gc :Git commit<CR>
 nnoremap <Leader>gw :Gwrite<CR>
 
 if $PWD ==# $HOME
