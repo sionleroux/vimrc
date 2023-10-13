@@ -196,9 +196,6 @@
 [submodule "bundle/showtime"]
 	path = bundle/showtime
 	url = https://github.com/thinca/vim-showtime
-[submodule "bundle/hugefile"]
-	path = bundle/hugefile
-	url = https://github.com/mhinz/vim-hugefile
 [submodule "bundle/gotests"]
 	path = bundle/gotests
 	url = https://github.com/buoto/gotests-vim
