@@ -68,6 +68,10 @@ else
         colorscheme default " give up on using solarized
         set nocursorline
 
+    else
+        let &t_Cs = "\e[4:3m"
+        let &t_Ce = "\e[4:0m"
+        hi SpellBad     gui=undercurl guisp=red term=undercurl cterm=undercurl
     endif
 
     set background=dark " these terminals are either B&W or solarized dark
