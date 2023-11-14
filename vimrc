@@ -311,6 +311,8 @@ function! s:goyo_enter()
             FullScreenOn
             FontHuge
         endif
+    elseif &term == "xterm-kitty"
+        silent !kitty @ set-font-size 20
     endif
     set noshowmode
     set noshowcmd
@@ -331,6 +333,8 @@ function! s:goyo_leave()
         FontRegular
         colorscheme solarized
         set linespace=0
+    elseif &term == "xterm-kitty"
+        silent !kitty @ set-font-size 12
     endif
     set showmode
     set showcmd
