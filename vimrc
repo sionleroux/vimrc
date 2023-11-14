@@ -77,13 +77,25 @@ else
     set background=dark " these terminals are either B&W or solarized dark
 endif
 
+" Font-related settings for GUI vim (but used for some other things too, for
+" example printers...
+" Linux font by default, override elsewhere as needed
+let s:myfontface = 'lin'
+if has("win95") || has("win16") || has("win32") || has("win64")
+    let s:myfontface = 'win'
+endif
+
 " Day/Night colours in gnome-shell
 " I wonder if there's something similar on MacOS too…
-if system('gsettings get org.gnome.desktop.interface color-scheme') =~ 'default'
-    set background=light
-else
-    set background=dark
-endif
+function! s:switchdaynighttheme()
+    if system('gsettings get org.gnome.desktop.interface color-scheme') =~ 'default'
+        set background=light
+    else
+        set background=dark
+    endif
+endfunction
+call s:switchdaynighttheme() " run immediately on startup
+command! SwitchDayNightTheme call s:switchdaynighttheme()
 
 " foot-specific config
 if &term == "foot"
