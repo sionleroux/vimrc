@@ -28,6 +28,10 @@ let g:go_doc_balloon = 1
 let g:go_auto_type_info = 1
 let g:go_updatetime = 0
 
+let g:go_fmt_options = {
+    \ 'goimports': '-local github.mpi-internal.com github.com/sinisterstuf',
+    \ }
+
 " Set tagbar options for Go
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
