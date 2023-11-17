@@ -11,3 +11,5 @@ set tabstop=4
 set shiftwidth=4
 set shiftround
 set expandtab
+
+nnoremap <silent> <leader>uu :call vimwiki#base#linkify()<cr>
