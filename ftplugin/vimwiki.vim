@@ -13,3 +13,6 @@ set shiftround
 set expandtab
 
 nnoremap <silent> <leader>uu :call vimwiki#base#linkify()<cr>
+"" override vimwiki to make the concealment editable, otherwise it's impossible
+"" to navigate into inside a link in normal mode
+setlocal concealcursor=
