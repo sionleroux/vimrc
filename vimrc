@@ -497,6 +497,7 @@ let wiki.nested_syntaxes = {
             \ 'yaml'  : 'yaml'
             \ }
 let g:vimwiki_ext2syntax = {'.md': 'markdown'}
+let g:vimwiki_markdown_link_ext = 1
 let wiki.syntax = 'markdown'
 let wiki.ext = '.md'
 let wiki.auto_toc = 1
