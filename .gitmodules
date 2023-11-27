@@ -346,3 +346,6 @@
 [submodule "bundle/calendar"]
 	path = bundle/calendar
 	url = https://github.com/mattn/calendar-vim.git
+[submodule "bundle/catppuccin"]
+	path = bundle/catppuccin
+	url = https://github.com/catppuccin/vim.git
