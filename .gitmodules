@@ -349,3 +349,6 @@
 [submodule "bundle/catppuccin"]
 	path = bundle/catppuccin
 	url = https://github.com/catppuccin/vim.git
+[submodule "bundle/rhubarb"]
+	path = bundle/rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git

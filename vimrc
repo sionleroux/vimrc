@@ -557,6 +557,7 @@ endif
 
 " Let fugitive's Gbrowse recognise Adevinta's GitHub Enterprise domain
 let g:fugitive_github_domains = ['github.mpi-internal.com']
+let g:github_enterprise_urls = ['github.mpi-internal.com']
 
 " Make gists in Adevinta's gists
 let g:gist_api_url = 'https://github.mpi-internal.com/api/v3'
