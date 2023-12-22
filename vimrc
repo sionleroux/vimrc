@@ -503,6 +503,8 @@ let wiki.auto_toc = 1
 " Add above to Wiki list
 let g:vimwiki_list = [wiki]
 let g:vimwiki_global_ext = 0 " only handle defined wikis as wikis
+
+" Calendar settings
 let g:calendar_monday = 1 " start calendar weeks on Monday
 let g:calendar_weeknm = 5 " show week number in format '1'
 
