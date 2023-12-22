@@ -481,7 +481,6 @@ cmap w!! w !sudo tee % >/dev/null
 " My personal Wiki settings
 let wiki = {}
 let wiki.path = '~/wiki/'
-let wiki.path_html = '~/Documents/wiki/'
 let wiki.nested_syntaxes = {
             \ 'bash'  : 'bash',
             \ 'c'     : 'c',
