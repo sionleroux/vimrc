@@ -296,9 +296,6 @@ command! TitlebarToggle call TitlebarToggle(-1)
 " Distraction free writing shortcut and personal hooks
 nnoremap <Leader>go :Goyo<CR>
 
-" Try making Goyo a bit wider
-let g:goyo_width=80
-
 function! s:goyo_enter()
     if has('gui_running')
         set linespace=4
