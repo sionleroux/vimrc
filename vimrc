@@ -263,6 +263,9 @@ if executable('ag')
     let g:ackprg = 'ag --vimgrep'
 endif
 
+" Don't show ALE complaints for the whole file, it's distracting
+let g:ale_virtualtext_cursor = 'current'
+
 " Hack to fullscreen Gvim in GNOME
 " Fullscreen command for GNOME
 command! FullScreenOn call
