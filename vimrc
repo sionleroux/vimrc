@@ -330,7 +330,7 @@ function! s:goyo_leave()
         colorscheme catppuccin_macchiato
         set linespace=0
     elseif &term == "xterm-kitty"
-        silent !kitty @ set-font-size 12
+        silent !kitty @ set-font-size 14
     endif
     set showmode
     set showcmd
