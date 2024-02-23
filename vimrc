@@ -11,7 +11,10 @@ call pathogen#helptags()
 let mapleader=","
 
 " override these if the terminal is lame
-colorscheme solarized
+colorscheme catppuccin_macchiato
+let g:airline_theme = 'catppuccin_mocha'
+set termguicolors
+
 set cursorline
 let g:lame_terminal = 0
 
@@ -44,13 +47,6 @@ if has('gui_running')
 else
     """ These options only apply when running without GUI
 
-    " Fix for background transparency in non-solarized (black) terminals
-    let g:solarized_termtrans = 1
-
-    if &term == "xterm"
-        let g:solarized_termcolors = 256
-    endif
-
     " xterm: used by GNOME dropdown terminal
     " linux: used in tty
     if &term == "linux" ||
@@ -64,8 +60,7 @@ else
 
         let g:airline_symbols = {}
         let g:airline_left_sep = '>'
-        " set t_Co=16 " use less colours
-        colorscheme default " give up on using solarized
+        " colorscheme default " give up on using fancy colours
         set nocursorline
 
     else
@@ -74,7 +69,9 @@ else
         hi SpellBad     gui=undercurl guisp=red term=undercurl cterm=undercurl
     endif
 
-    set background=dark " these terminals are either B&W or solarized dark
+    " these terminals all have dark backgrounds
+    " except xterm, which is white, but whatever
+    set background=dark
 endif
 
 " Font-related settings for GUI vim (but used for some other things too, for
@@ -94,7 +91,8 @@ function! s:switchdaynighttheme()
         set background=dark
     endif
 endfunction
-call s:switchdaynighttheme() " run immediately on startup
+" commented out because catppuccin_macchiato should always be dark
+" call s:switchdaynighttheme() " run immediately on startup
 command! SwitchDayNightTheme call s:switchdaynighttheme()
 
 " foot-specific config
@@ -329,7 +327,7 @@ function! s:goyo_leave()
         TitlebarOn
         FullScreenOff
         FontRegular
-        colorscheme solarized
+        colorscheme catppuccin_macchiato
         set linespace=0
     elseif &term == "xterm-kitty"
         silent !kitty @ set-font-size 12
