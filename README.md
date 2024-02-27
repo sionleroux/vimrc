@@ -147,6 +147,7 @@ The following is a list of plugins I use:
 [sslsecure](https://github.com/chr4/sslsecure.vim)
 [stay](https://github.com/kopischke/vim-stay)
 [surround](https://github.com/tpope/vim-surround)
+[surround-funk](https://github.com/Matt-A-Bennett/vim-surround-funk.git)
 [swift](https://github.com/keith/swift.vim)
 [tagbar](https://github.com/majutsushi/tagbar)
 [tbone](https://github.com/tpope/vim-tbone)

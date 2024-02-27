@@ -352,3 +352,6 @@
 [submodule "bundle/rhubarb"]
 	path = bundle/rhubarb
 	url = https://github.com/tpope/vim-rhubarb.git
+[submodule "bundle/surround-funk"]
+	path = bundle/surround-funk
+	url = https://github.com/Matt-A-Bennett/vim-surround-funk.git
