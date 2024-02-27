@@ -307,6 +307,7 @@ function! s:goyo_enter()
             FullScreenOn
             FontHuge
         endif
+        highlight EndOfBuffer guifg=bg
     elseif &term == "xterm-kitty"
         silent !kitty @ set-font-size 20
     endif
