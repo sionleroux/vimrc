@@ -17,6 +17,8 @@ nnoremap <Leader>gl :GoCallers<CR>
 " Mneumonic gl the L is because it opens it in the location list
 nnoremap zh :GoSameIdsAutoToggle<CR>
 
+command A :GoAlternate
+
 " Use Dispatch for Go building commands
 let g:go_dispatch_enabled = 1
 let b:dispatch="go run %"
