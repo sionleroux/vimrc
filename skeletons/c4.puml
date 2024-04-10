@@ -1,0 +1,37 @@
+@startuml 1-xxx-system-context-diagram
+!include ./C4_Container.puml
+
+title 1. System Context Diagram for XXX
+caption Description goes here
+footer Last updated by Siôn le Roux on %date("YYYY-MM-dd")
+
+Person(user, "User Persona", "Description goes here")
+
+System(new, "Some new cool system", "Description goes here")
+System(old, "Legacy backend system", "Description goes here")
+
+Rel(user, new, "Uses")
+Rel(new, old, "Gets lame old data from")
+
+@enduml
+
+@startuml 2-xxx-container-diagram
+!include ./C4_Container.puml
+
+title 2. Container Diagram for XXX
+caption Description goes here
+footer Last updated by Siôn le Roux on %date("YYYY-MM-dd")
+
+Person(user, "User Persona", "Description goes here")
+
+System(old, "Legacy backend system", "Description goes here")
+System_Boundary(new, "Some new cool system", "Description goes here") {
+    Container(api, "Cool new API", "Go")
+    ContainerDb(db, "Cool new DB", "Postgres")
+}
+
+Rel(user, api, "Uses")
+Rel(api, old, "Gets lame old data from")
+Rel(api, db, "Stores cool new data in")
+
+@enduml

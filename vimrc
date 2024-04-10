@@ -636,4 +636,12 @@ if has('autocmd')
                     \ redraw!
 
     augroup END
+
+    " Automatically populate new boilerplate-heavy files from pre-written,
+    " generalised templates (I've called these skeletons)
+    augroup templates
+        autocmd!
+        autocmd BufNewFile *-c4.puml 0r ~/.vim/skeletons/c4.puml
+        autocmd BufNewFile *-timeline.puml 0r ~/.vim/skeletons/timeline.puml
+    augroup END
 endif "autocmd

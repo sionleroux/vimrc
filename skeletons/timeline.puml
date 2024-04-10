@@ -1,0 +1,18 @@
+@startgantt
+
+title Title goes here
+caption Description goes here
+footer Last updated by Siôn le Roux on %date("YYYY-MM-dd")
+
+/' printscale weekly zoom 2 '/
+/' hide footbox '/
+
+Project starts 2024-04-1
+today is %date("YYYY-MM-dd") and is colored in #AAF
+
+[Dev] starts on 2024-04-04 and lasts 2 weeks
+then [Testing] lasts 1 week
+then [Rollout] lasts 1 week
+[Release milestone] as [release] happens after [Rollout]'s end
+
+@endgantt
