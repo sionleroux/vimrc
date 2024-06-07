@@ -355,3 +355,9 @@
 [submodule "bundle/surround-funk"]
 	path = bundle/surround-funk
 	url = https://github.com/Matt-A-Bennett/vim-surround-funk.git
+[submodule "bundle/copilot"]
+	path = bundle/copilot
+	url = https://github.com/github/copilot.vim
+[submodule "bundle/ccls"]
+	path = bundle/ccls
+	url = https://github.com/m-pilia/vim-ccls.git
