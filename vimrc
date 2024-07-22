@@ -12,7 +12,7 @@ let mapleader=","
 
 " override these if the terminal is lame
 colorscheme catppuccin_macchiato
-let g:airline_theme = 'catppuccin_mocha'
+let g:airline_theme = 'catppuccin_macchiato'
 set termguicolors
 
 set cursorline
@@ -86,13 +86,16 @@ endif
 " I wonder if there's something similar on MacOS too…
 function! s:switchdaynighttheme()
     if system('gsettings get org.gnome.desktop.interface color-scheme') =~ 'default'
+        colo catppuccin_latte
+        let g:airline_theme = 'catppuccin_latte'
         set background=light
     else
+        colo catppuccin_macchiato
+        let g:airline_theme = 'catppuccin_macchiato'
         set background=dark
     endif
 endfunction
-" commented out because catppuccin_macchiato should always be dark
-" call s:switchdaynighttheme() " run immediately on startup
+call s:switchdaynighttheme() " run immediately on startup
 command! SwitchDayNightTheme call s:switchdaynighttheme()
 
 " foot-specific config
@@ -303,6 +306,7 @@ function! s:goyo_enter()
             TitlebarOff
             let &guifont = "Comic Mono 16"
             colorscheme paramount
+            set bg=light
         else
             FullScreenOn
             FontHuge
