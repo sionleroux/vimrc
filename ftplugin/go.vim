@@ -31,7 +31,7 @@ let g:go_auto_type_info = 1
 let g:go_updatetime = 0
 
 let g:go_fmt_options = {
-    \ 'goimports': '-local github.mpi-internal.com github.com/sinisterstuf',
+    \ 'goimports': '-local github.com/jofogas,github.com/jfghza,github.com/sinisterstuf',
     \ }
 
 " Set tagbar options for Go
