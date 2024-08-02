@@ -482,9 +482,7 @@ endif
 cmap w!! w !sudo tee % >/dev/null
 
 " My personal Wiki settings
-let wiki = {}
-let wiki.path = '~/wiki/'
-let wiki.nested_syntaxes = {
+let wiki_nested_syntaxes = {
             \ 'bash'  : 'bash',
             \ 'c'     : 'c',
             \ 'go'    : 'go',
@@ -498,13 +496,21 @@ let wiki.nested_syntaxes = {
             \ 'toml'  : 'toml',
             \ 'yaml'  : 'yaml'
             \ }
-let g:vimwiki_ext2syntax = {'.md': 'markdown'}
-let g:vimwiki_markdown_link_ext = 1
+let workwiki = {}
+let workwiki.path = '~/wiki/'
+let workwiki.nested_syntaxes = wiki_nested_syntaxes
+let workwiki.syntax = 'markdown'
+let workwiki.ext = '.md'
+let workwiki.auto_toc = 1
+let wiki = {}
+let wiki.path = '~/Documents/wiki/'
+let wiki.nested_syntaxes = wiki_nested_syntaxes
 let wiki.syntax = 'markdown'
 let wiki.ext = '.md'
 let wiki.auto_toc = 1
-" Add above to Wiki list
-let g:vimwiki_list = [wiki]
+let g:vimwiki_list = [workwiki, wiki]
+let g:vimwiki_ext2syntax = {'.md': 'markdown'}
+let g:vimwiki_markdown_link_ext = 1
 let g:vimwiki_global_ext = 0 " only handle defined wikis as wikis
 
 " Calendar settings
