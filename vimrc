@@ -86,13 +86,13 @@ endif
 " I wonder if there's something similar on MacOS too…
 function! s:switchdaynighttheme()
     if system('gsettings get org.gnome.desktop.interface color-scheme') =~ 'default'
+        set background=light
         colo catppuccin_latte
         let g:airline_theme = 'catppuccin_latte'
-        set background=light
     else
+        set background=dark
         colo catppuccin_macchiato
         let g:airline_theme = 'catppuccin_macchiato'
-        set background=dark
     endif
 endfunction
 call s:switchdaynighttheme() " run immediately on startup
