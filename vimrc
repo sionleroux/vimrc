@@ -585,6 +585,13 @@ let g:tex_flavor='latex'
 let g:splitjoin_split_mapping = 'sj'
 let g:splitjoin_join_mapping = 'sk'
 
+"" Less conflicting copilot maps
+" Conflicts with table cell jumping Tab in vimwiki markdown
+let g:copilot_no_tab_map = v:true
+imap <silent><script><expr> <C-Space> copilot#Accept("\<CR>")
+" Conflicts with GNOME workspace switching
+imap <M-S-Right> <Plug>(copilot-accept-line)
+
 " Delete comment character when joining commented lines
 if v:version > 703 || v:version == 703 && has("patch541")
     set formatoptions+=j
